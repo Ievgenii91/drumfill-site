@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use — DrumFillGenerator</title>
+<meta name="description" content="Terms of Use for DrumFillGenerator — the rules and conditions for using our iOS app and website.">
+<meta name="theme-color" content="#0B0D12">
+<meta name="robots" content="index, follow">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect x="1" y="17" width="5" height="8" rx="1.4" fill="%232E7DF5"/><rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="%232ED4B0"/><rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="%23A352E8"/><rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="%23E8943B"/></svg>'>
+</head>
+<body>
+<style>
+  :root {
+    --ground: #FBFBFD;
+    --surface: #FFFFFF;
+    --ink: #12141C;
+    --muted: #5B6172;
+    --hairline: #E7E9F0;
+    --hairline-strong: #D6D9E4;
+    --stage: #0B0D12;
+
+    --green: #2ECC70;
+    --green-deep: #25a85c;
+
+    --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Menlo", "Cascadia Code", monospace;
+
+    --maxw: 1140px;
+    --r: 16px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+  a { color: inherit; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  h1, h2, h3 { margin: 0; text-wrap: balance; letter-spacing: -0.02em; line-height: 1.12; }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--ground) 86%, transparent);
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav-inner { display: flex; align-items: center; gap: 24px; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 700; letter-spacing: -0.02em; font-size: 16px; }
+  .brand svg { display: block; }
+  .nav-links { display: flex; gap: 26px; margin-left: auto; }
+  .nav-links a {
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; transition: color .18s ease;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  @media (max-width: 760px) { .nav-links { display: none; } }
+
+  /* ---------- DOC HEADER ---------- */
+  .doc-head { padding: 64px 0 28px; }
+  .doc-head h1 { font-size: clamp(32px, 4.6vw, 48px); font-weight: 800; }
+  .doc-head .eyebrow { margin-bottom: 16px; }
+  .doc-head .updated { font-family: var(--mono); font-size: 13px; color: var(--muted); margin: 18px 0 0; }
+
+  /* ---------- PROSE ---------- */
+  .prose {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: var(--r);
+    padding: 40px clamp(24px, 4vw, 52px);
+    margin: 0 0 72px;
+    max-width: 820px;
+  }
+  .prose .intro { color: var(--muted); font-size: 18px; }
+  .prose h2 {
+    font-size: 22px; font-weight: 800; margin: 44px 0 14px;
+    padding-top: 28px; border-top: 1px solid var(--hairline);
+  }
+  .prose h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 36px; }
+  .prose p { margin: 14px 0; color: #2c2f3a; }
+  .prose ul { margin: 16px 0; padding-left: 0; list-style: none; }
+  .prose li {
+    position: relative; padding: 0 0 0 26px; margin: 12px 0; color: #2c2f3a;
+  }
+  .prose li::before {
+    content: ""; position: absolute; left: 4px; top: 12px;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+  }
+  .prose li b, .prose p b { color: var(--ink); font-weight: 700; }
+  .prose a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
+  .contact-card {
+    margin-top: 18px; padding: 20px 22px;
+    background: var(--ground); border: 1px solid var(--hairline); border-radius: 12px;
+  }
+  .contact-card .row { font-family: var(--mono); font-size: 14px; margin: 8px 0; color: #2c2f3a; }
+  .contact-card .row b { color: var(--ink); }
+
+  /* ---------- FOOTER ---------- */
+  .foot { padding: 48px 0 60px; border-top: 1px solid var(--hairline); }
+  .foot-inner { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
+  .foot .brand { font-size: 15px; }
+  .foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
+  .foot-links a {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; transition: color .18s ease;
+  }
+  .foot-links a:hover { color: var(--ink); }
+
+  :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px; }
+</style>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="DrumFillGenerator home">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="17" width="5" height="8" rx="1.4" fill="#2E7DF5"/>
+        <rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="#2ED4B0"/>
+        <rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="#A352E8"/>
+        <rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="#E8943B"/>
+      </svg>
+      <span>DrumFillGenerator</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#specs">Specs</a>
+    </div>
+  </div>
+</nav>
+
+<!-- DOC HEADER -->
+<header class="doc-head">
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>Terms of Use</h1>
+    <p class="updated">Effective date: June 30, 2026</p>
+  </div>
+</header>
+
+<!-- TERMS -->
+<main class="wrap">
+  <article class="prose">
+    <p class="intro">These Terms of Use ("Terms") constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you") and Evgeniy Butyrin (FOP), concerning your access to and use of the DrumFillGenerator mobile application and website (collectively, the "Services").</p>
+    <p>By accessing the Services, you acknowledge that you have read, understood, and agreed to be bound by all of these Terms. If you do not agree with all of these Terms, you are explicitly prohibited from using the Services.</p>
+
+    <h2>1. Description of Services</h2>
+    <p>DrumFillGenerator provides an automated smart linear drum fill generation simulator for drummers.</p>
+    <ul>
+      <li><b>Free Tier:</b> Grants limited access to basic single-bar generation layouts, standard time signatures, and fundamental subdivisions.</li>
+      <li><b>Premium Subscription:</b> Unlocks advanced multi-bar generation capabilities (up to 4 bars), expanded subdivision settings (triplets, 16th notes), additional custom electronic sound banks (e.g., 808 Kit), and interactive finger-scrubbing controls.</li>
+    </ul>
+
+    <h2>2. Billing, Subscriptions, and Trials</h2>
+    <ul>
+      <li><b>Auto-Renewable Subscriptions:</b> Payment for Premium access will be charged to your Apple ID account at the confirmation of purchase. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing cycle.</li>
+      <li><b>Free Trials:</b> If offered, a free trial period converts automatically into a paid monthly or yearly subscription unless canceled manually within the specified trial window.</li>
+      <li><b>Localization &amp; Tiered Pricing:</b> Subscription fees are dynamically adjusted based on geographical markets (USD for USA, EUR for EU, localized Tiered Pricing for Ukraine). All currency transactions are securely processed by Apple.</li>
+      <li><b>Refunds:</b> All financial transactions, billing disputes, and refund requests are handled exclusively by Apple Media Services Support. We do not possess the authority to process direct user refunds.</li>
+    </ul>
+
+    <h2>3. Intellectual Property Rights</h2>
+    <p>Unless otherwise indicated, the App, its source code, algorithm logic, visual Dual-UI frameworks (Grid/Notation layouts), SF Symbol integrations, database schemas, and preloaded proprietary audio buffers are our exclusive property and protected by copyright and trademark laws. You are granted a limited, non-exclusive, non-transferable license to download and play with the App for personal, non-commercial practice use.</p>
+
+    <h2>4. Prohibited Activities</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Reverse-engineer, decompile, or attempt to extract the underlying mathematical logic of the Randomizer Engine or audio pipeline.</li>
+      <li>Exploit the App's one-shot audio assets outside the context of personal drum practicing.</li>
+      <li>Use any automated scripts or bots to crawl data from the App interface.</li>
+    </ul>
+
+    <h2>5. Limitation of Liability</h2>
+    <p>The App is provided on an "as-is" and "as-available" basis. While our core audio engine is highly optimized via native hardware clock synchronization, we are not liable for subtle tempo drifting, audio latencies caused by faulty third-party Bluetooth hardware, or any hearing damage resulting from improper headphones volume utilization during drum training.</p>
+
+    <h2>6. Governing Law</h2>
+    <p>These Terms and your use of the App are governed by and construed in accordance with the laws of Ukraine, without regard to its conflict of law principles. Any legal actions arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Ukraine.</p>
+
+    <h2>7. Changes to Terms</h2>
+    <p>We reserve the right, in our sole discretion, to make changes or modifications to these Terms at any time. We will alert you about any changes by updating the "Effective Date" of these Terms.</p>
+
+    <h2>8. Trader Contact Information (EU DSA Compliance)</h2>
+    <p>In compliance with the European Union Digital Services Act (DSA), EU consumers can access the designated commercial trader details below:</p>
+    <div class="contact-card">
+      <div class="row"><b>Legal Entity:</b> Evgeniy Butyrin (Individual Entrepreneur / FOP)</div>
+      <div class="row"><b>Country of Registration:</b> Ukraine</div>
+      <div class="row"><b>Contact Email:</b> <a href="mailto:jimmydeanmastern@gmail.com">jimmydeanmastern@gmail.com</a></div>
+      <div class="row"><b>Business Address:</b> Ukraine, Zhitomir state, Zhitomir city, Korolenka street 10, app 9</div>
+    </div>
+  </article>
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <a class="brand" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="17" width="5" height="8" rx="1.4" fill="#2E7DF5"/>
+        <rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="#2ED4B0"/>
+        <rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="#A352E8"/>
+        <rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="#E8943B"/>
+      </svg>
+      <span>DrumFillGenerator</span>
+    </a>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

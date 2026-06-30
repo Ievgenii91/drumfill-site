@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — DrumFillGenerator</title>
+<meta name="description" content="Privacy Policy for DrumFillGenerator — how we collect, use, and safeguard your information across our iOS app and website.">
+<meta name="theme-color" content="#0B0D12">
+<meta name="robots" content="index, follow">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect x="1" y="17" width="5" height="8" rx="1.4" fill="%232E7DF5"/><rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="%232ED4B0"/><rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="%23A352E8"/><rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="%23E8943B"/></svg>'>
+</head>
+<body>
+<style>
+  :root {
+    --ground: #FBFBFD;
+    --surface: #FFFFFF;
+    --ink: #12141C;
+    --muted: #5B6172;
+    --hairline: #E7E9F0;
+    --hairline-strong: #D6D9E4;
+    --stage: #0B0D12;
+
+    --green: #2ECC70;
+    --green-deep: #25a85c;
+
+    --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Menlo", "Cascadia Code", monospace;
+
+    --maxw: 1140px;
+    --r: 16px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+  a { color: inherit; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  h1, h2, h3 { margin: 0; text-wrap: balance; letter-spacing: -0.02em; line-height: 1.12; }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--ground) 86%, transparent);
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav-inner { display: flex; align-items: center; gap: 24px; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 700; letter-spacing: -0.02em; font-size: 16px; }
+  .brand svg { display: block; }
+  .nav-links { display: flex; gap: 26px; margin-left: auto; }
+  .nav-links a {
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; transition: color .18s ease;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  @media (max-width: 760px) { .nav-links { display: none; } }
+
+  /* ---------- DOC HEADER ---------- */
+  .doc-head { padding: 64px 0 28px; }
+  .doc-head h1 { font-size: clamp(32px, 4.6vw, 48px); font-weight: 800; }
+  .doc-head .eyebrow { margin-bottom: 16px; }
+  .doc-head .updated { font-family: var(--mono); font-size: 13px; color: var(--muted); margin: 18px 0 0; }
+
+  /* ---------- PROSE ---------- */
+  .prose {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: var(--r);
+    padding: 40px clamp(24px, 4vw, 52px);
+    margin: 0 0 72px;
+    max-width: 820px;
+  }
+  .prose .intro { color: var(--muted); font-size: 18px; }
+  .prose h2 {
+    font-size: 22px; font-weight: 800; margin: 44px 0 14px;
+    padding-top: 28px; border-top: 1px solid var(--hairline);
+  }
+  .prose h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 36px; }
+  .prose p { margin: 14px 0; color: #2c2f3a; }
+  .prose ul { margin: 16px 0; padding-left: 0; list-style: none; }
+  .prose li {
+    position: relative; padding: 0 0 0 26px; margin: 12px 0; color: #2c2f3a;
+  }
+  .prose li::before {
+    content: ""; position: absolute; left: 4px; top: 12px;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+  }
+  .prose li b, .prose p b { color: var(--ink); font-weight: 700; }
+  .prose a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
+  .contact-card {
+    margin-top: 18px; padding: 20px 22px;
+    background: var(--ground); border: 1px solid var(--hairline); border-radius: 12px;
+  }
+  .contact-card .row { font-family: var(--mono); font-size: 14px; margin: 8px 0; color: #2c2f3a; }
+  .contact-card .row b { color: var(--ink); }
+
+  /* ---------- FOOTER ---------- */
+  .foot { padding: 48px 0 60px; border-top: 1px solid var(--hairline); }
+  .foot-inner { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
+  .foot .brand { font-size: 15px; }
+  .foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
+  .foot-links a {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; transition: color .18s ease;
+  }
+  .foot-links a:hover { color: var(--ink); }
+
+  :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px; }
+</style>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="DrumFillGenerator home">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="17" width="5" height="8" rx="1.4" fill="#2E7DF5"/>
+        <rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="#2ED4B0"/>
+        <rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="#A352E8"/>
+        <rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="#E8943B"/>
+      </svg>
+      <span>DrumFillGenerator</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#specs">Specs</a>
+    </div>
+  </div>
+</nav>
+
+<!-- DOC HEADER -->
+<header class="doc-head">
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective date: June 30, 2026</p>
+  </div>
+</header>
+
+<!-- POLICY -->
+<main class="wrap">
+  <article class="prose">
+    <p class="intro">Welcome to DrumFillGenerator ("we," "our," or "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App") and our website (the "Site").</p>
+    <p>Please read this Privacy Policy carefully. By accessing or using the App or Site, you agree to the terms of this Privacy Policy. If you do not agree, please do not use our services.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>As a standalone, high-performance practice tool, we follow a data minimization principle. We only collect information necessary to provide and monetize our services.</p>
+    <ul>
+      <li><b>Account and Subscription Data:</b> Since we utilize third-party SDKs for subscription handling (such as Adapty), anonymized transaction identifiers, purchase history, subscription status (Free Tier vs. Premium), and platform identifiers (Apple App Store ID) are processed to manage your access levels.</li>
+      <li><b>Device and Technical Data:</b> We may collect pseudonymous technical logs, including device model, iOS operating system version, app version, and basic performance telemetry. This data is critical for ensuring jitter-free audio performance and app stability.</li>
+      <li><b>Audio and Microphone Data (Future Stages):</b> The current version of the App operates strictly offline using preloaded audio samples. The App does not record, stream, or store ambient audio files.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>We use the collected information solely to:</p>
+    <ul>
+      <li>Validate and maintain your Premium Active subscription state.</li>
+      <li>Optimize the layout responsiveness and performance of the audio engine (AVAudioEngine).</li>
+      <li>Comply with global financial, taxation, and legal regulations (including EU Digital Services Act and Apple App Store policies).</li>
+    </ul>
+
+    <h2>3. Data Sharing and Third-Party Services</h2>
+    <p>We do not sell, rent, or lease your personal data. To facilitate seamless in-app purchases and performance metrics, we securely share minimal pseudonymous data with the following trusted providers:</p>
+    <ul>
+      <li><b>Apple Inc. (App Store Connect):</b> For core payment processing, standard regional tax administration (VAT/Sales Tax), and secure user authentication.</li>
+      <li><b>Adapty (Adapty Tech Inc.):</b> For server-side purchase validation, managing subscription access levels, and dynamic paywall configurations.</li>
+    </ul>
+
+    <h2>4. International Data Transfers (US, EU, Ukraine, China)</h2>
+    <p>Your technical and transactional data may be stored and processed on secure cloud servers operated by our third-party infrastructure providers. We ensure that all transfers comply with prevailing framework regulations, including the GDPR (for EU users) and local privacy acts.</p>
+
+    <h2>5. Your Rights and Choices</h2>
+    <p>Depending on your geographic location, you may possess the right to:</p>
+    <ul>
+      <li>Request access to the data we hold about you.</li>
+      <li>Request the rectification or deletion of your data.</li>
+      <li>Manage or cancel your auto-renewable subscriptions directly via your native Apple ID settings.</li>
+    </ul>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+    <div class="contact-card">
+      <div class="row"><b>Developer Name / Trader Entity:</b> Evgeniy Butyrin (FOP)</div>
+      <div class="row"><b>Email:</b> <a href="mailto:jimmydeanmastern@gmail.com">jimmydeanmastern@gmail.com</a></div>
+      <div class="row"><b>Business Address:</b> Ukraine, Zhitomir state, Zhitomir city, Korolenka street 10, app 9</div>
+    </div>
+  </article>
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <a class="brand" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="17" width="5" height="8" rx="1.4" fill="#2E7DF5"/>
+        <rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="#2ED4B0"/>
+        <rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="#A352E8"/>
+        <rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="#E8943B"/>
+      </svg>
+      <span>DrumFillGenerator</span>
+    </a>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
