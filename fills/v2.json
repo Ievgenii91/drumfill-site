@@ -1,0 +1,245 @@
+{
+  "fills": [
+    {
+      "attribution": "Linear group-of-3 (RLK) descending the toms",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Linear RLK Cascade",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K TM2_R SNR_L- / KCK_K TM2_R SNR_L- KCK_K / FTM_R+ SNR_L- KCK_K FTM_R"
+    },
+    {
+      "attribution": "Linear RLRLKK ×2 + RLRL (Garibaldi-style)",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Group-of-Six Funk",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K KCK_K TM2_R SNR_L- / FTM_R+ SNR_L- KCK_K KCK_K / SNR_R+ SNR_L- FTM_R SNR_L-"
+    },
+    {
+      "attribution": "Classic four-per-drum sixteenth roll",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Around the Kit (16ths)",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R+ TM1_L TM1_R TM1_L / TM2_R+ TM2_L TM2_R TM2_L / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Linear group-of-5 (RLLKK) ×3 + R",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Five-Stroke Linear",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- SNR_L- KCK_K / KCK_K TM2_R SNR_L- SNR_L- / KCK_K KCK_K FTM_R SNR_L- / SNR_L- KCK_K KCK_K FTM_R"
+    },
+    {
+      "attribution": "Linear group-of-4 (RLLK) ×4 around the kit",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Four-Note Linear (RLLK)",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- SNR_L- KCK_K / TM2_R+ SNR_L- SNR_L- KCK_K / FTM_R+ SNR_L- SNR_L- KCK_K / SNR_R+ SNR_L- SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Hi-hat / snare / kick linear groove-fill",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Linear Funk w/ Hats",
+      "timeSignature": "fourFour",
+      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R / HHT_R+ SNR_L- KCK_K SNR_L- / HHT_R+ SNR_L- KCK_K TM2_R / FTM_R+ SNR_L- KCK_K FTM_R"
+    },
+    {
+      "attribution": "Linear group-of-6 (RLRLLK) ×2 + RLLK",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Gospel Six Chop",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / SNR_L- KCK_K TM2_R SNR_L- / FTM_R+ SNR_L- SNR_L- KCK_K / FTM_R+ SNR_L- SNR_L- KCK_K"
+    },
+    {
+      "attribution": "RLK bursts separated by rests (uses rest token)",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Syncopated Bursts",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K . / TM1_R+ SNR_L- KCK_K . / TM2_R+ SNR_L- KCK_K . / FTM_R+ SNR_L- KCK_K ."
+    },
+    {
+      "attribution": "Single paradiddle (RLRR LRLL) ×2, accents move to toms",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Paradiddle Melody",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R- TM1_R / SNR_L+ SNR_R- SNR_L- TM2_L / SNR_R- SNR_L- SNR_R- FTM_R / SNR_L+ SNR_R- SNR_L- FTM_L"
+    },
+    {
+      "attribution": "Two-per-drum eighth-note descent",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Tom Descent (8ths)",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L / TM1_R+ TM1_L / TM2_R+ TM2_L / FTM_R+ FTM_L"
+    },
+    {
+      "attribution": "Linear RLK in eighths + kick",
+      "barCount": 1,
+      "isFree": true,
+      "name": "RLK Eighths",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ TM1_L / KCK_K SNR_R / TM2_L+ KCK_K / FTM_R+ FTM_L"
+    },
+    {
+      "attribution": "Classic snare/floor-tom eighth-note build",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Eighth-Note Build",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ FTM_L / SNR_R+ FTM_L / SNR_R+ FTM_L / SNR_R+ FTM_L"
+    },
+    {
+      "attribution": "Linear RLK ×4 in eighth-note triplets",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Triplet RLK Roll",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- KCK_K / TM1_R+ SNR_L- KCK_K / TM2_R+ SNR_L- KCK_K / FTM_R+ SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Snare / floor-tom / kick triplet (Bonham)",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Bonham Triplets",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K"
+    },
+    {
+      "attribution": "Three-per-drum descending triplet roll",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Triplet Tom Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R / TM1_L+ TM1_R TM1_L / TM2_R+ TM2_L TM2_R / FTM_L+ FTM_R FTM_L"
+    },
+    {
+      "attribution": "Linear group-of-6 (KLRRLK-style) ×2, Gadd-style",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Gadd Six (triplet)",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_L- TM1_R / SNR_R- SNR_L- KCK_K / KCK_K SNR_L- TM2_R / SNR_R- SNR_L- KCK_K"
+    },
+    {
+      "attribution": "One hit per beat, snare down the toms",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Quarter Tom March",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / TM1_R+ / TM2_R+ / FTM_R+"
+    },
+    {
+      "attribution": "Quarter-note snare-to-floor build",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Quarter Snare/Floor",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / FTM_R+ / SNR_R+ / FTM_R+"
+    },
+    {
+      "attribution": "Linear RLK ×4 across 3/4",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz RLK Run",
+      "timeSignature": "threeFour",
+      "tokens": "TM1_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K TM2_R SNR_L- / KCK_K FTM_R SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Four-per-drum sixteenth roll over three drums",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Around the Kit",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R+ TM1_L TM1_R TM1_L / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Linear RLRLKK ×2 in 3/4",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Group-of-Six",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K KCK_K TM2_R SNR_L- / FTM_R+ SNR_L- KCK_K KCK_K"
+    },
+    {
+      "attribution": "RLK + rest per beat across 3/4 (uses rest token)",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Bursts",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ TM1_L- KCK_K . / TM2_R+ FTM_L- KCK_K . / FTM_R+ SNR_L- KCK_K ."
+    },
+    {
+      "attribution": "Eighth-note tom descent in 3/4",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Tom Eighths",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ TM1_L / TM1_R+ TM2_L / FTM_R+ FTM_L"
+    },
+    {
+      "attribution": "Linear RLK ×2 in 3/4 eighths",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz RLK Eighths",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ TM2_L / KCK_K FTM_R / SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Linear RLK ×3, jazz-waltz feel",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Jazz Waltz Triplets",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ TM1_L- KCK_K / SNR_R+ TM2_L- KCK_K / SNR_R+ FTM_L- KCK_K"
+    },
+    {
+      "attribution": "Snare / floor / kick triplet ×3 in 3/4",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Bonham Triplets",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K"
+    },
+    {
+      "attribution": "Three-per-drum triplet roll down the toms",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Triplet Roll",
+      "timeSignature": "threeFour",
+      "tokens": "TM1_R+ TM1_L TM1_R / TM2_L+ TM2_R TM2_L / FTM_R+ FTM_L FTM_R"
+    },
+    {
+      "attribution": "One hit per beat: snare, mid, floor",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Quarter March",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ / TM2_R+ / FTM_R+"
+    },
+    {
+      "attribution": "Quarter-note descent high → mid → floor",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Quarter Toms",
+      "timeSignature": "threeFour",
+      "tokens": "TM1_R+ / TM2_R+ / FTM_R+"
+    },
+    {
+      "attribution": "Snare / kick / snare across the bar",
+      "barCount": 1,
+      "isFree": true,
+      "name": "Waltz Quarter Backbeat",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ / KCK_K / SNR_R+"
+    }
+  ],
+  "schemaVersion": 2
+}

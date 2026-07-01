@@ -1,0 +1,31 @@
+name: validate-fills
+
+# Pre-publish guard for the curated-fill catalog. Runs the same gates the
+# DrumFillGenerator app applies at runtime (see the app repo
+# docs/REMOTE_FILLS.md §5) so a broken or partial fills/v2.json can never reach
+# users — GitHub Pages serves fills/v2.json straight from `main`, so this must be
+# green before merge. This is a validation check only; it does not deploy Pages.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "fills/**"
+      - "tools/validate-fills.py"
+      - ".github/workflows/validate-fills.yml"
+  pull_request:
+    paths:
+      - "fills/**"
+      - "tools/validate-fills.py"
+      - ".github/workflows/validate-fills.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate curated-fill catalog
+        run: python3 tools/validate-fills.py fills/v2.json
