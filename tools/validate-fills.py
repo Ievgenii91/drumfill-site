@@ -9,7 +9,7 @@ the primary gate). See the app repo `docs/REMOTE_FILLS.md` §5.
 
 The Swift source of truth is `CuratedFill.validated()` +
 `FillCatalogStore.coversAllTimeSignatures` (app repo). Keep this in sync when the
-grammar, instrument codes, or supported grids change. Stdlib only.
+grammar, instrument codes, supported grids, or the bpm range change. Stdlib only.
 
 Usage:  python3 tools/validate-fills.py fills/v2.json
 Exit:   0 = valid, 1 = invalid (details on stderr).
@@ -37,6 +37,12 @@ BEATS_PER_BAR = {"fourFour": 4, "threeFour": 3}
 # A beat's slot count is its subdivision (1 quarter / 2 eighth / 3 triplet /
 # 4 sixteenth); anything else is rejected by the parser.
 VALID_SLOT_COUNTS = {1, 2, 3, 4}
+
+# CuratedFill.validBPMRange — an optional authored tempo (`bpm`) must fall within
+# this range (mirrors CuratedFill.validated()). The app decodes `bpm` as an Int, so
+# a present non-integer value fails to decode and would reject the *whole* catalog
+# on-device; the guard rejects it here instead.
+BPM_MIN, BPM_MAX = 60, 240
 
 REST_SLOT = "."
 # CODE _ LIMB [ +|- ] — no leading digits, no velocity numbers.
@@ -124,6 +130,15 @@ def validate_fill(fill: dict) -> str:
         )
     if hit_count == 0:
         raise ValidationError(f'"{name}": no audible hits')
+
+    # Optional per-fill tempo: absent leaves it unset; present must be an integer
+    # within the transport range (mirrors CuratedFill.validated()'s .badTempo gate).
+    bpm = fill.get("bpm")
+    if bpm is not None:
+        if not isinstance(bpm, int) or isinstance(bpm, bool):
+            raise ValidationError(f'"{name}": bpm must be an integer, got {bpm!r}')
+        if not (BPM_MIN <= bpm <= BPM_MAX):
+            raise ValidationError(f'"{name}": bpm {bpm} outside {BPM_MIN}-{BPM_MAX}')
     return name
 
 
