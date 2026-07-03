@@ -39,7 +39,9 @@ jobs:
         run: |
           rm -rf _site
           mkdir -p _site
-          cp -- *.html *.js .nojekyll CNAME _site/
+          shopt -s nullglob
+          files=( *.html *.js .nojekyll CNAME )
+          cp -- "${files[@]}" _site/
           cp -R fills _site/
 
       - name: Upload Pages artifact
