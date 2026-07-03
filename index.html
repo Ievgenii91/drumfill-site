@@ -639,13 +639,34 @@
       if (!cfg.supabaseUrl || !cfg.supabaseAnonKey) {
         return Promise.reject(new Error('Waitlist storage is not configured. Update waitlist-config.js with your Supabase project values.'));
       }
-      return fetch(cfg.supabaseUrl + '/rest/v1/' + encodeURIComponent(cfg.table) + '?on_conflict=email', {
+      function mapWaitlistError(payloadText) {
+        if (!payloadText) return 'Failed to save your email.';
+        try {
+          var payload = JSON.parse(payloadText);
+          if (payload && payload.code === 'PGRST205') {
+            return 'Waitlist storage is not set up yet. Create the public.waitlist_signups table in Supabase first.';
+          }
+          if (payload && payload.code === '42501') {
+            return 'Waitlist storage is blocked by Supabase permissions. Re-run tools/waitlist-supabase.sql to refresh the public insert policy.';
+          }
+          if (payload && payload.code === '23505') {
+            return "You're already on the list with this email.";
+          }
+          if (payload && payload.message) {
+            return payload.message;
+          }
+        } catch (e) {
+          // Keep the original text when the response is not JSON.
+        }
+        return payloadText;
+      }
+      return fetch(cfg.supabaseUrl + '/rest/v1/' + encodeURIComponent(cfg.table), {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           apikey: cfg.supabaseAnonKey,
           Authorization: 'Bearer ' + cfg.supabaseAnonKey,
-          Prefer: 'resolution=ignore-duplicates,return=representation'
+          Prefer: 'return=minimal'
         },
         body: JSON.stringify([{
           email: email,
@@ -656,10 +677,10 @@
       }).then(function (response) {
         if (!response.ok) {
           return response.text().then(function (message) {
-            throw new Error(message || 'Failed to save your email.');
+            throw new Error(mapWaitlistError(message));
           });
         }
-        return response.json();
+        return null;
       });
     }
     document.querySelectorAll('[data-focus-waitlist]').forEach(function (link) {
