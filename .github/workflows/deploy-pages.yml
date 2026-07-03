@@ -20,7 +20,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -41,8 +41,12 @@ jobs:
           mkdir -p _site
           shopt -s nullglob
           files=( *.html *.js .nojekyll CNAME )
-          cp -- "${files[@]}" _site/
-          cp -R fills _site/
+          if ((${#files[@]})); then
+            cp -- "${files[@]}" _site/
+          fi
+          if [ -d fills ]; then
+            cp -R fills _site/
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
