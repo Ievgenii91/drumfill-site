@@ -39,8 +39,8 @@ jobs:
         run: |
           rm -rf _site
           mkdir -p _site
-          cp .nojekyll CNAME index.html privacy.html terms.html waitlist-admin.html waitlist-config.js _site/
-          cp -R fills _site/fills
+          cp -- *.html *.js .nojekyll CNAME _site/
+          cp -R fills _site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
