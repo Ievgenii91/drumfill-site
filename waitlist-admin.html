@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waitlist Admin — DrumFillGenerator</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0B0D12">
+<script src="waitlist-config.js"></script>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --panel: #15171e;
+    --line: #2a2c34;
+    --ink: #f6f7fb;
+    --muted: #9fa5b4;
+    --green: #2ecc70;
+    --green-deep: #25a85c;
+    --red: #f07167;
+    --blue: #2e7df5;
+    --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Menlo", monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, #0b0d12 0%, #121520 100%);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+  .hero { padding: 36px 0 20px; }
+  .eyebrow {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+  .lede { margin: 14px 0 0; max-width: 56rem; color: var(--muted); }
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+    gap: 18px;
+    padding: 16px 0 42px;
+  }
+  .card {
+    background: color-mix(in srgb, var(--panel) 94%, transparent);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 24px 50px -36px rgba(0, 0, 0, 0.55);
+  }
+  .card-inner { padding: 22px; }
+  .card h2 {
+    margin: 0 0 14px;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+  }
+  .hint {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  label {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .label-note {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-weight: 400;
+  }
+  input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: #0f1117;
+    color: var(--ink);
+    font: inherit;
+  }
+  .actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  button {
+    border: 0;
+    border-radius: 999px;
+    padding: 11px 16px;
+    font: inherit;
+    font-weight: 650;
+    cursor: pointer;
+  }
+  .btn-primary { background: var(--green); color: #06270f; }
+  .btn-primary:hover { background: var(--green-deep); }
+  .btn-secondary { background: #212531; color: var(--ink); border: 1px solid #2d3140; }
+  .status {
+    min-height: 22px;
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .status.ok { color: var(--green); }
+  .status.err { color: var(--red); }
+  .toolbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  .metric {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 9px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,0.02);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+  .metric b { color: var(--ink); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #0f1117;
+  }
+  thead th {
+    text-align: left;
+    padding: 14px 16px;
+    color: var(--muted);
+    font-size: 12px;
+    font-family: var(--mono);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--line);
+  }
+  tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    vertical-align: top;
+    font-size: 14px;
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  code {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: rgba(46,125,245,0.14);
+    color: #b7d4ff;
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+  .empty {
+    padding: 28px 18px;
+    text-align: center;
+    color: var(--muted);
+    border: 1px dashed var(--line);
+    border-radius: 14px;
+  }
+  .top-link {
+    display: inline-flex;
+    margin-top: 12px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap hero">
+    <p class="eyebrow">Owner access</p>
+    <h1>Waitlist Admin</h1>
+    <p class="lede">Load collected emails from Supabase without committing your read key to the repo. Paste the service-role key locally in this browser session, then refresh the table or export a CSV.</p>
+    <a class="top-link" href="index.html">&larr; Back to site</a>
+  </div>
+
+  <div class="wrap grid">
+    <section class="card">
+      <div class="card-inner">
+        <h2>Connection</h2>
+        <p class="hint">The public site uses the anon key from <code>waitlist-config.js</code> to write records. This page reads with a service-role key that is stored only in your browser.</p>
+        <label>
+          Supabase URL
+          <span class="label-note">Defaults to the value in <code>waitlist-config.js</code>.</span>
+          <input id="supabase-url" type="url" placeholder="https://your-project.supabase.co">
+        </label>
+        <label>
+          Waitlist table
+          <span class="label-note">Use the table created by <code>tools/waitlist-supabase.sql</code>.</span>
+          <input id="supabase-table" type="text" placeholder="waitlist_signups">
+        </label>
+        <label>
+          Service-role key
+          <span class="label-note">Required to list emails. It is never written back into the repository.</span>
+          <input id="service-role-key" type="password" placeholder="Paste Supabase service-role key">
+        </label>
+        <div class="actions">
+          <button class="btn-primary" id="load-button" type="button">Load emails</button>
+          <button class="btn-secondary" id="export-button" type="button">Export CSV</button>
+          <button class="btn-secondary" id="clear-button" type="button">Clear saved key</button>
+        </div>
+        <p class="status" id="connection-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-inner">
+        <div class="toolbar">
+          <div class="metric">Rows <b id="row-count">0</b></div>
+          <div class="metric">Latest signup <b id="latest-signup">—</b></div>
+        </div>
+        <div id="table-shell" class="empty">No data loaded yet.</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = 'drumfill.waitlist.admin';
+      var state = { rows: [] };
+      var cfg = window.WAITLIST_CONFIG || {};
+      var urlInput = document.getElementById('supabase-url');
+      var tableInput = document.getElementById('supabase-table');
+      var keyInput = document.getElementById('service-role-key');
+      var status = document.getElementById('connection-status');
+      var rowCount = document.getElementById('row-count');
+      var latestSignup = document.getElementById('latest-signup');
+      var tableShell = document.getElementById('table-shell');
+
+      function readSavedConfig() {
+        try {
+          return JSON.parse(sessionStorage.getItem(STORAGE_KEY) || '{}');
+        } catch (_) {
+          return {};
+        }
+      }
+
+      function saveConfig() {
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+          supabaseUrl: urlInput.value.trim(),
+          table: tableInput.value.trim(),
+          serviceRoleKey: keyInput.value.trim()
+        }));
+      }
+
+      function setStatus(message, kind) {
+        status.textContent = message;
+        status.className = kind ? 'status ' + kind : 'status';
+      }
+
+      function formatDate(iso) {
+        if (!iso) return '—';
+        var date = new Date(iso);
+        if (Number.isNaN(date.getTime())) return iso;
+        return date.toLocaleString();
+      }
+
+      function escapeHtml(value) {
+        return String(value == null ? '' : value)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function renderRows() {
+        rowCount.textContent = String(state.rows.length);
+        latestSignup.textContent = state.rows.length ? formatDate(state.rows[0].created_at) : '—';
+        if (!state.rows.length) {
+          tableShell.className = 'empty';
+          tableShell.textContent = 'No signups found yet.';
+          return;
+        }
+
+        var rowsHtml = state.rows.map(function (row) {
+          return '<tr>' +
+            '<td><a href="mailto:' + escapeHtml(row.email) + '">' + escapeHtml(row.email) + '</a></td>' +
+            '<td><code>' + escapeHtml(row.source || 'unknown') + '</code></td>' +
+            '<td>' + escapeHtml(row.page_path || '—') + '</td>' +
+            '<td>' + formatDate(row.created_at) + '</td>' +
+          '</tr>';
+        }).join('');
+
+        tableShell.className = '';
+        tableShell.innerHTML =
+          '<table>' +
+            '<thead><tr><th>Email</th><th>Source</th><th>Page</th><th>Submitted</th></tr></thead>' +
+            '<tbody>' + rowsHtml + '</tbody>' +
+          '</table>';
+      }
+
+      function buildCsv() {
+        var header = ['email', 'source', 'page_path', 'created_at'];
+        var lines = [header.join(',')];
+        state.rows.forEach(function (row) {
+          lines.push(header.map(function (column) {
+            var value = row[column] == null ? '' : String(row[column]);
+            return '"' + value.replace(/"/g, '""') + '"';
+          }).join(','));
+        });
+        return lines.join('\n');
+      }
+
+      function downloadCsv() {
+        if (!state.rows.length) {
+          setStatus('Load emails before exporting a CSV.', 'err');
+          return;
+        }
+        var blob = new Blob([buildCsv()], { type: 'text/csv;charset=utf-8' });
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement('a');
+        link.href = url;
+        link.download = 'waitlist-signups.csv';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      }
+
+      function loadRows() {
+        var supabaseUrl = urlInput.value.trim().replace(/\/+$/, '');
+        var table = tableInput.value.trim() || 'waitlist_signups';
+        var serviceRoleKey = keyInput.value.trim();
+        if (!supabaseUrl || !serviceRoleKey) {
+          setStatus('Enter both the Supabase URL and a service-role key.', 'err');
+          return;
+        }
+
+        saveConfig();
+        setStatus('Loading emails...', '');
+        fetch(
+          supabaseUrl + '/rest/v1/' + encodeURIComponent(table) +
+          '?select=id,email,source,page_path,created_at&order=created_at.desc',
+          {
+            headers: {
+              apikey: serviceRoleKey,
+              Authorization: 'Bearer ' + serviceRoleKey
+            }
+          }
+        )
+          .then(function (response) {
+            if (!response.ok) {
+              return response.text().then(function (message) {
+                throw new Error(message || 'Unable to load emails.');
+              });
+            }
+            return response.json();
+          })
+          .then(function (rows) {
+            state.rows = Array.isArray(rows) ? rows : [];
+            renderRows();
+            setStatus('Emails loaded successfully.', 'ok');
+          })
+          .catch(function (error) {
+            setStatus(error && error.message ? error.message : 'Unable to load emails.', 'err');
+          });
+      }
+
+      function clearSavedKey() {
+        sessionStorage.removeItem(STORAGE_KEY);
+        keyInput.value = '';
+        setStatus('Saved service-role key cleared from this browser session.', 'ok');
+      }
+
+      var saved = readSavedConfig();
+      urlInput.value = saved.supabaseUrl || cfg.supabaseUrl || '';
+      tableInput.value = saved.table || cfg.table || 'waitlist_signups';
+      keyInput.value = saved.serviceRoleKey || '';
+
+      document.getElementById('load-button').addEventListener('click', loadRows);
+      document.getElementById('export-button').addEventListener('click', downloadCsv);
+      document.getElementById('clear-button').addEventListener('click', clearSavedKey);
+    })();
+  </script>
+</body>
+</html>
