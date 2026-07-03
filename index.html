@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DrumFillGenerator — real drum fills, generated</title>
-<meta name="description" content="An iOS drum-fill generator and rhythm trainer. Build linear fills from a library of hand-transcribed patterns, read them as a color-coded step grid or a classical staff, and loop them at any tempo.">
+<meta name="description" content="A free iOS drum-fill generator and rhythm trainer. Practice real linear fills from a hand-transcribed library, read them as a color-coded step grid or a classical staff, and loop at any tempo — zero-latency, 10 languages, freemium.">
 <meta name="theme-color" content="#0B0D12">
 <meta property="og:type" content="website">
 <meta property="og:title" content="DrumFillGenerator — real drum fills, generated">
-<meta property="og:description" content="Practice real drum fills, not random noise. Sample-accurate, zero-latency, with grid and notation views. Coming soon to iOS.">
+<meta property="og:description" content="Practice real drum fills, not random noise. A generous free tier with the full curated library, sample-accurate playback, grid and notation views. Coming soon to iOS.">
 <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect x="1" y="17" width="5" height="8" rx="1.4" fill="%232E7DF5"/><rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="%232ED4B0"/><rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="%23A352E8"/><rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="%23E8943B"/></svg>'>
 <script src="waitlist-config.js"></script>
 </head>
@@ -293,7 +293,7 @@
     <div class="hero-copy">
       <p class="eyebrow">iOS · MVP · Coming soon</p>
       <h1>Practice <span class="c-snare">real</span> drum fills, not <span class="c-kick">random</span> noise.</h1>
-      <p class="hero-sub">DrumFillGenerator builds linear fills from a library of hand-transcribed patterns — then shows you each one as a color-coded step grid <em>and</em> on a classical staff. Sample-accurate, zero-latency, built for the music stand.</p>
+      <p class="hero-sub">DrumFillGenerator picks from a bank of hand-transcribed linear fills — or generates a fresh one when nothing fits your grid. Every curated fill is free. Read each one as a color-coded step grid <em>or</em> on a classical staff. Sample-accurate, zero-latency, built for the music stand.</p>
 
       <div class="waitlist" id="join">
         <form class="waitlist-form" data-source="hero-notify" novalidate>
@@ -307,9 +307,9 @@
       </div>
 
       <div class="hero-tags">
-        <span><i class="dot" style="background:var(--snare)"></i>~30 curated fills</span>
+        <span><i class="dot" style="background:var(--snare)"></i>~30 curated fills · all free</span>
         <span><i class="dot" style="background:var(--tom)"></i>Grid + notation</span>
-        <span><i class="dot" style="background:var(--green)"></i>Zero-latency engine</span>
+        <span><i class="dot" style="background:var(--green)"></i>10 languages</span>
       </div>
     </div>
 
@@ -340,7 +340,7 @@
     <div class="section-head reveal">
       <p class="eyebrow">What it does</p>
       <h2>Everything you need to drill a fill — and nothing you don't.</h2>
-      <p>A read-only generator and trainer: clean structural fills, a rock-solid audio engine, and two ways to read every pattern.</p>
+      <p>A read-only generator and trainer with a generous free tier: the full curated library, a rock-solid audio engine, and two ways to read every pattern.</p>
     </div>
     <div class="features">
       <div class="card reveal">
@@ -349,7 +349,7 @@
         </div>
         <span class="tag" style="color:var(--kick)">Curated library</span>
         <h3>Real fills, hand-transcribed</h3>
-        <p>~30 named linear fills covering every grid — 4/4 and 3/4 across quarter, eighth, sixteenth and triplet feels. They play exactly as authored.</p>
+        <p>~30 named linear fills covering every grid — 4/4 and 3/4 across quarter, eighth, sixteenth and triplet feels. All curated fills are free. The library updates remotely without an app release.</p>
       </div>
       <div class="card reveal">
         <div class="icon" style="background:color-mix(in srgb,var(--green) 18%,transparent)">
@@ -357,7 +357,7 @@
         </div>
         <span class="tag" style="color:var(--green-deep)">Audio engine</span>
         <h3>Sample-accurate, zero latency</h3>
-        <p>An AVAudioEngine sampler per voice, driven by a dedicated audio-thread clock. Notes fire with no main-thread hop, so timing stays tight at any tempo.</p>
+        <p>AVAudioEngine with an optimized AVAudioUnitSampler node, driven by a dedicated audio-thread clock. Notes fire with no main-thread hop and three velocity tiers (accent, base, ghost) stay tight at any tempo.</p>
       </div>
       <div class="card reveal">
         <div class="icon" style="background:color-mix(in srgb,var(--tom) 16%,transparent)">
@@ -365,7 +365,7 @@
         </div>
         <span class="tag" style="color:var(--tom)">Dual view</span>
         <h3>Two views, one pattern</h3>
-        <p>Read every fill as a chunky color-coded step grid or a traditional 5-line drum staff — both render from the same source, perfectly in lock-step.</p>
+        <p>Read every fill as a chunky color-coded step grid (free) or a traditional 5-line drum staff (premium) — both render from the same source. Tap a step to cue, drag to scrub or seek live.</p>
       </div>
       <div class="card reveal">
         <div class="icon" style="background:color-mix(in srgb,var(--snare) 16%,transparent)">
@@ -388,8 +388,8 @@
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3l5 13H5z" stroke="#2E7DF5" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 7v5" stroke="#2E7DF5" stroke-width="1.7" stroke-linecap="round"/></svg>
         </div>
         <span class="tag" style="color:var(--kick)">Tempo + click</span>
-        <h3>Metronome, always in sync</h3>
-        <p>A click that accents the downbeat and layers onto the same clock as the fill — plus live retempo, so you can speed a loop up without ever stopping it.</p>
+        <h3>Metronome &amp; prefill groove</h3>
+        <p>A synced click that accents the downbeat, live retempo via a swipeable ruler, plus an optional prefill groove that wraps your fill with a backbeat bar — so you hear it in full-song context.</p>
       </div>
     </div>
   </div>
@@ -408,21 +408,21 @@
           <div class="step-num">1</div>
           <div>
             <h3>Set your grid</h3>
-            <p>Pick a time signature (4/4 or 3/4), a subdivision from quarters to triplets, and 1–4 bars. Toggle which kit pieces are allowed to play.</p>
+            <p>Pick a time signature (4/4 or 3/4), a subdivision from quarters to triplets, and 1–4 bars. Toggle which of the six voices play — snare, three toms, hi-hat, and bass drum.</p>
           </div>
         </div>
         <div class="step-row">
           <div class="step-num">2</div>
           <div>
             <h3>Generate</h3>
-            <p>A matching curated fill is preferred. When none fits your grid, the linear randomizer builds one that honors your instrument pool — one voice per step, hands cleanly alternated.</p>
+            <p>A matching curated fill is preferred — chosen only when every voice it strikes is in your instrument pool. When none fits, the linear randomizer builds one that honors the same pool — one voice per step, hands cleanly alternated.</p>
           </div>
         </div>
         <div class="step-row">
           <div class="step-num">3</div>
           <div>
             <h3>Practice</h3>
-            <p>Tap a step to cue it, drag to scrub the playhead, flip between grid and staff, and loop at any tempo with the click on.</p>
+            <p>Tap a step to cue it, drag to scrub or seek the live playhead. Flip between grid and staff, loop at any tempo with the click on, and toggle the prefill groove for full-song context.</p>
           </div>
         </div>
       </div>
@@ -491,7 +491,7 @@
       <div class="spec"><div class="num">1–4</div><div class="lbl">Bars per fill</div></div>
       <div class="spec"><div class="num">3</div><div class="lbl">Velocity tiers</div></div>
       <div class="spec"><div class="num">6</div><div class="lbl">Drum voices</div></div>
-      <div class="spec"><div class="num">~30</div><div class="lbl">Curated fills</div></div>
+      <div class="spec"><div class="num">10</div><div class="lbl">Languages</div></div>
     </div>
   </div>
 </section>

@@ -1,22 +1,40 @@
 {
   "fills": [
     {
-      "attribution": "Linear group-of-3 (RLK) descending the toms",
+      "attribution": "Latin — 6/8 bell feel as tom triplets over kick",
       "barCount": 1,
-      "bpm": 109,
+      "bpm": 115,
       "isFree": true,
-      "name": "Linear RLK Cascade",
+      "name": "Afro Six-Eight Feel",
       "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- KCK_K TM1_R / SNR_L- KCK_K TM2_R SNR_L- / KCK_K TM2_R SNR_L- KCK_K / FTM_R SNR_L- KCK_K FTM_R"
+      "tokens": "TM1_R+ SNR_L- TM2_R / KCK_K TM1_L- SNR_R / TM2_R+ SNR_L- FTM_R / KCK_K SNR_L- FTM_R"
     },
     {
-      "attribution": "Linear RLRLKK \u00d72 + RLRL (Garibaldi-style)",
+      "attribution": "Latin — 6/8 bell feel voiced as tom triplets in 3/4",
       "barCount": 1,
-      "bpm": 106,
+      "bpm": 112,
       "isFree": true,
-      "name": "Group-of-Six Funk",
+      "name": "Afro Waltz Six-Eight",
+      "timeSignature": "threeFour",
+      "tokens": "TM1_R+ SNR_L- TM2_R / KCK_K SNR_L- FTM_R / TM1_R+ SNR_L- KCK_K"
+    },
+    {
+      "attribution": "World — Afrobeat tom accents over a busy kick, 3/4",
+      "barCount": 1,
+      "bpm": 115,
+      "isFree": true,
+      "name": "Afrobeat Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R- TM1_L+ SNR_R- KCK_K / SNR_L- TM2_R+ SNR_L- KCK_K / FTM_R+ SNR_L- KCK_K KCK_K"
+    },
+    {
+      "attribution": "Rock — one groove bar then a full 16th tom fill",
+      "barCount": 2,
+      "bpm": 122,
+      "isFree": true,
+      "name": "Anthem Two-Bar",
       "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K KCK_K TM2_R SNR_L- / FTM_R SNR_L- KCK_K KCK_K / SNR_R+ SNR_L- FTM_R SNR_L-"
+      "tokens": "SNR_R+ KCK_K / TM1_L SNR_R / KCK_K SNR_R+ / TM2_L KCK_K | SNR_R+ SNR_L TM1_R TM1_L / TM2_R+ TM2_L FTM_R FTM_L / FTM_R+ FTM_L FTM_R FTM_L / SNR_R+ TM1_L TM2_R FTM_L+"
     },
     {
       "attribution": "Classic four-per-drum sixteenth roll",
@@ -25,97 +43,70 @@
       "isFree": true,
       "name": "Around the Kit (16ths)",
       "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM1_R TM1_L / TM2_R TM2_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L"
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R+ TM1_L TM1_R TM1_L / TM2_R+ TM2_L TM2_R TM2_L / FTM_R+ FTM_L FTM_R FTM_L"
     },
     {
-      "attribution": "Linear group-of-5 (RLLKK) \u00d73 + R",
+      "attribution": "Metal — one voice per drum split by kick, 16ths",
       "barCount": 1,
-      "bpm": 113,
+      "bpm": 214,
       "isFree": true,
-      "name": "Five-Stroke Linear",
+      "name": "Around-Kit Thrash",
       "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- SNR_L- KCK_K / KCK_K TM2_R SNR_L- SNR_L- / KCK_K KCK_K FTM_R SNR_L- / SNR_L- KCK_K KCK_K FTM_R"
+      "tokens": "SNR_R+ KCK_K TM1_L KCK_K / TM1_R+ KCK_K TM2_L KCK_K / TM2_R+ KCK_K FTM_L KCK_K / FTM_R+ KCK_K FTM_L KCK_K"
     },
     {
-      "attribution": "Linear group-of-4 (RLLK) \u00d74 around the kit",
+      "attribution": "Rock — floor-to-high tom 16th climb",
       "barCount": 1,
-      "bpm": 111,
+      "bpm": 126,
       "isFree": true,
-      "name": "Four-Note Linear (RLLK)",
+      "name": "Ascending Tom Climb",
       "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- SNR_L- KCK_K / TM2_R SNR_L- SNR_L- KCK_K / FTM_R SNR_L- SNR_L- KCK_K / SNR_R+ SNR_L- SNR_L- KCK_K"
+      "tokens": "FTM_R+ FTM_L FTM_R FTM_L / TM2_R+ TM2_L TM2_R TM2_L / TM1_R+ TM1_L TM1_R TM1_L / SNR_R+ SNR_L SNR_R SNR_L"
     },
     {
-      "attribution": "Hi-hat / snare / kick linear groove-fill",
+      "attribution": "Rock — displaced snare backbeat resolving down the toms",
       "barCount": 1,
-      "bpm": 104,
+      "bpm": 126,
       "isFree": true,
-      "name": "Linear Funk w/ Hats",
+      "name": "Backbeat Displaced",
       "timeSignature": "fourFour",
-      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R / HHT_R+ SNR_L- KCK_K SNR_L- / HHT_R+ SNR_L- KCK_K TM2_R / FTM_R SNR_L- KCK_K FTM_R"
+      "tokens": "TM1_R SNR_L+ / TM2_R SNR_L+ / FTM_R SNR_L+ / FTM_R+ FTM_L KCK_K KCK_K"
     },
     {
-      "attribution": "Linear group-of-6 (RLRLLK) \u00d72 + RLLK",
+      "attribution": "Rock — snare/tom on the beat, kick on the &",
       "barCount": 1,
-      "bpm": 109,
+      "bpm": 119,
       "isFree": true,
-      "name": "Gospel Six Chop",
+      "name": "Backbeat Kick-Tom Eighths",
       "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / SNR_L- KCK_K TM2_R SNR_L- / FTM_R SNR_L- SNR_L- KCK_K / FTM_R SNR_L- SNR_L- KCK_K"
+      "tokens": "SNR_R+ KCK_K / TM1_R KCK_K / TM2_R KCK_K / FTM_R KCK_K"
     },
     {
-      "attribution": "RLK bursts separated by rests (uses rest token)",
+      "attribution": "Latin — Brazilian baião kick pattern under a linear fill",
       "barCount": 1,
-      "bpm": 114,
+      "bpm": 115,
       "isFree": true,
-      "name": "Syncopated Bursts",
+      "name": "Baiao Kick",
       "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K . / TM1_R SNR_L- KCK_K . / TM2_R SNR_L- KCK_K . / FTM_R SNR_L- KCK_K ."
+      "tokens": "KCK_K SNR_R+ SNR_L- KCK_K / SNR_R- KCK_K TM1_L SNR_R- / KCK_K SNR_L- FTM_R KCK_K / SNR_R+ SNR_L- KCK_K SNR_R-"
     },
     {
-      "attribution": "Single paradiddle (RLRR LRLL) \u00d72, accents move to toms",
+      "attribution": "Rock — accented triplet toms into a floor-tom landing",
       "barCount": 1,
-      "bpm": 113,
+      "bpm": 120,
       "isFree": true,
-      "name": "Paradiddle Melody",
+      "name": "Big Rock Ending",
       "timeSignature": "fourFour",
-      "tokens": "SNR_R- SNR_L- SNR_R- TM1_R / SNR_L+ SNR_R- SNR_L- TM2_L / SNR_R- SNR_L- SNR_R- FTM_R / SNR_L+ SNR_R- SNR_L- FTM_L"
+      "tokens": "SNR_R+ TM1_L TM2_R / SNR_L+ TM1_R TM2_L / FTM_R+ FTM_L FTM_R / FTM_R+ FTM_L FTM_R KCK_K"
     },
     {
-      "attribution": "Two-per-drum eighth-note descent",
+      "attribution": "Blues — a 3/4 blues waltz around snare and toms",
       "barCount": 1,
-      "bpm": 110,
+      "bpm": 101,
       "isFree": true,
-      "name": "Tom Descent (8ths)",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L / TM1_R TM1_L / TM2_R TM2_L / FTM_R FTM_L"
-    },
-    {
-      "attribution": "Linear RLK in eighths + kick",
-      "barCount": 1,
-      "bpm": 108,
-      "isFree": true,
-      "name": "RLK Eighths",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ TM1_L / KCK_K SNR_R / TM2_L KCK_K / FTM_R FTM_L"
-    },
-    {
-      "attribution": "Classic snare/floor-tom eighth-note build",
-      "barCount": 1,
-      "bpm": 113,
-      "isFree": true,
-      "name": "Eighth-Note Build",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ FTM_L / SNR_R+ FTM_L / SNR_R+ FTM_L / SNR_R+ FTM_L"
-    },
-    {
-      "attribution": "Linear RLK \u00d74 in eighth-note triplets",
-      "barCount": 1,
-      "bpm": 122,
-      "isFree": true,
-      "name": "Triplet RLK Roll",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- KCK_K / TM1_R SNR_L- KCK_K / TM2_R SNR_L- KCK_K / FTM_R SNR_L- KCK_K"
+      "name": "Blues Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R / TM2_R SNR_L- FTM_R / KCK_K SNR_L- SNR_R+"
     },
     {
       "attribution": "Snare / floor-tom / kick triplet (Bonham)",
@@ -127,16 +118,394 @@
       "tokens": "SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K"
     },
     {
-      "attribution": "Three-per-drum descending triplet roll",
+      "attribution": "Blues — boogie shuffle driven by the kick",
       "barCount": 1,
-      "bpm": 121,
+      "bpm": 94,
       "isFree": true,
-      "name": "Triplet Tom Roll",
+      "name": "Boogie Kick Shuffle",
       "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R / TM1_L TM1_R TM1_L / TM2_R TM2_L TM2_R / FTM_L FTM_R FTM_L"
+      "tokens": "KCK_K SNR_R+ SNR_L- / KCK_K SNR_R- TM1_L / KCK_K SNR_R- TM2_L / KCK_K FTM_R+ FTM_L"
     },
     {
-      "attribution": "Linear group-of-6 (KLRRLK-style) \u00d72, Gadd-style",
+      "attribution": "Hip-hop — hard, sparse boom-bap snare with kick punctuation",
+      "barCount": 1,
+      "bpm": 90,
+      "isFree": true,
+      "name": "Boom-Bap Fill",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K . SNR_R+ . / . KCK_K . SNR_L- / KCK_K KCK_K SNR_R+ . / . SNR_L- TM1_R FTM_R+"
+    },
+    {
+      "attribution": "Hip-hop — a boom-bap bar into a tom-tag fill",
+      "barCount": 2,
+      "bpm": 92,
+      "isFree": true,
+      "name": "Boom-Bap Two-Bar",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K . SNR_R+ . / KCK_K KCK_K SNR_L- . / . KCK_K SNR_R+ . / SNR_L- . KCK_K SNR_R- | KCK_K SNR_R+ . SNR_L- / . KCK_K SNR_R- . / SNR_L+ TM1_R TM2_L FTM_R / FTM_L+ FTM_R KCK_K SNR_R+"
+    },
+    {
+      "attribution": "Latin — sparse bossa: ghosted snare (cross-stick role) and kick",
+      "barCount": 1,
+      "bpm": 119,
+      "isFree": true,
+      "name": "Bossa Feel",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- . KCK_K SNR_L- / . SNR_R- KCK_K . / SNR_L- TM1_R . KCK_K / FTM_R+ SNR_L- KCK_K SNR_R-"
+    },
+    {
+      "attribution": "Latin — sparse bossa waltz (ghosted cross-stick role)",
+      "barCount": 1,
+      "bpm": 116,
+      "isFree": true,
+      "name": "Bossa Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R- . KCK_K / . SNR_L- . / KCK_K TM1_R SNR_L+"
+    },
+    {
+      "attribution": "Fusion — sparse linear phrase full of rests",
+      "barCount": 1,
+      "bpm": 149,
+      "isFree": true,
+      "name": "Broken Linear Fusion",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ . TM1_L KCK_K / . SNR_R- TM2_L . / KCK_K FTM_R . SNR_L- / TM1_R+ . KCK_K FTM_R"
+    },
+    {
+      "attribution": "Rock — syncopated 16th fill with rests and kick punctuation",
+      "barCount": 1,
+      "bpm": 122,
+      "isFree": true,
+      "name": "Broken Sixteenth Fill",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ . SNR_L TM1_R / . TM2_L KCK_K . / FTM_R+ FTM_L . KCK_K / SNR_R+ . TM2_L FTM_R"
+    },
+    {
+      "attribution": "Latin — cascara rhythm running around the drums",
+      "barCount": 1,
+      "bpm": 119,
+      "isFree": true,
+      "name": "Cascara Around Kit",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ TM1_L SNR_R- TM1_R / TM2_R+ SNR_L- TM2_R TM2_L / FTM_R+ FTM_L SNR_R- FTM_R / SNR_R+ TM1_L TM2_R FTM_L"
+    },
+    {
+      "attribution": "Fusion — accents displaced across a 16th snare bed",
+      "barCount": 1,
+      "bpm": 147,
+      "isFree": true,
+      "name": "Colaiuta Displacement",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- SNR_R- TM1_L / SNR_R+ SNR_L- TM2_R- SNR_L- / SNR_R+ SNR_L- FTM_R- SNR_L- / TM1_R+ TM2_L FTM_R KCK_K"
+    },
+    {
+      "attribution": "Country — gentle 3/4 country waltz (brush feel on snare)",
+      "barCount": 1,
+      "bpm": 117,
+      "isFree": true,
+      "name": "Country Waltz Brush",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L / TM1_R FTM_L / SNR_R+ KCK_K"
+    },
+    {
+      "attribution": "Punk — driving d-beat kick/snare spilling to the toms",
+      "barCount": 1,
+      "bpm": 203,
+      "isFree": true,
+      "name": "D-Beat Fill",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ KCK_K / SNR_L+ KCK_K / TM1_R TM2_L / FTM_R+ KCK_K"
+    },
+    {
+      "attribution": "Hip-hop — off-kilter, drunk-feel snare and kick",
+      "barCount": 1,
+      "bpm": 85,
+      "isFree": true,
+      "name": "Dilla Wonky",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_R+ . SNR_L- / . KCK_K SNR_R- . / SNR_L+ . KCK_K SNR_R- / . SNR_L- TM1_R KCK_K"
+    },
+    {
+      "attribution": "Funk — snare accents displaced across a triplet grid",
+      "barCount": 1,
+      "bpm": 107,
+      "isFree": true,
+      "name": "Displaced Snare Triplets",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- KCK_K SNR_L+ / SNR_R- SNR_L- KCK_K / SNR_R+ SNR_L- SNR_R- / KCK_K SNR_L+ SNR_R-"
+    },
+    {
+      "attribution": "Metal — snare on the beat, kick 16th bursts between",
+      "barCount": 1,
+      "bpm": 205,
+      "isFree": true,
+      "name": "Double Bass Under Snare",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / KCK_K KCK_K KCK_K KCK_K / SNR_R+ / KCK_K KCK_K KCK_K KCK_K"
+    },
+    {
+      "attribution": "Rudimental — RLRLRR double paradiddle over a triplet grid",
+      "barCount": 1,
+      "bpm": 120,
+      "isFree": true,
+      "name": "Double Paradiddle",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R / SNR_L SNR_R SNR_R / SNR_L+ SNR_R SNR_L / SNR_R SNR_L SNR_L"
+    },
+    {
+      "attribution": "Metal — three-kick bursts capped by a snare accent",
+      "barCount": 1,
+      "bpm": 208,
+      "isFree": true,
+      "name": "Double-Kick Sixteenths",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K KCK_K KCK_K SNR_R+ / KCK_K KCK_K KCK_K SNR_R+ / KCK_K KCK_K KCK_K SNR_R+ / KCK_K KCK_K KCK_K SNR_R+"
+    },
+    {
+      "attribution": "Metal — a bar of gallop then a double-kick tom climb",
+      "barCount": 2,
+      "bpm": 212,
+      "isFree": true,
+      "name": "Double-Kick Tom Climb",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ KCK_K KCK_K SNR_L / SNR_R+ KCK_K KCK_K SNR_L / SNR_R+ KCK_K KCK_K SNR_L / SNR_R+ KCK_K KCK_K SNR_L | FTM_R+ FTM_L KCK_K KCK_K / TM2_R+ TM2_L KCK_K KCK_K / TM1_R+ TM1_L KCK_K KCK_K / SNR_R+ SNR_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Metal — double-kick 16ths under a tom melody in 3/4",
+      "barCount": 1,
+      "bpm": 207,
+      "isFree": true,
+      "name": "Double-Kick Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "KCK_K KCK_K SNR_R+ SNR_L / KCK_K KCK_K TM1_R TM2_L / KCK_K KCK_K FTM_R FTM_L"
+    },
+    {
+      "attribution": "Rudimental — RRLL double-stroke roll with pulsed accents",
+      "barCount": 1,
+      "bpm": 114,
+      "isFree": true,
+      "name": "Double-Stroke Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_R SNR_L SNR_L / SNR_R+ SNR_R SNR_L SNR_L / SNR_R+ SNR_R SNR_L SNR_L / SNR_R+ SNR_R SNR_L SNR_L"
+    },
+    {
+      "attribution": "Rock — kick-and-backbeat drive spilling around the toms",
+      "barCount": 1,
+      "bpm": 126,
+      "isFree": true,
+      "name": "Driving Snare-Tom Eighths",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_R+ / TM1_L TM1_R / KCK_K SNR_R+ / TM2_L FTM_R+"
+    },
+    {
+      "attribution": "Classic snare/floor-tom eighth-note build",
+      "barCount": 1,
+      "bpm": 113,
+      "isFree": true,
+      "name": "Eighth-Note Build",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ FTM_L / SNR_R+ FTM_L / SNR_R+ FTM_L / SNR_R+ FTM_L"
+    },
+    {
+      "attribution": "Prog — a five-note grouping accenting across the 16th grid",
+      "barCount": 1,
+      "bpm": 137,
+      "isFree": true,
+      "name": "Five-Over-Four",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / SNR_R+ TM1_L TM1_R TM1_L / TM2_R+ TM2_L FTM_R FTM_L / FTM_R+ SNR_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Linear group-of-5 (RLLKK) ×3 + R",
+      "barCount": 1,
+      "bpm": 113,
+      "isFree": true,
+      "name": "Five-Stroke Linear",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- SNR_L- KCK_K / KCK_K TM2_R SNR_L- SNR_L- / KCK_K KCK_K FTM_R SNR_L- / SNR_L- KCK_K KCK_K FTM_R"
+    },
+    {
+      "attribution": "Rudimental — five-stroke rolls opening onto the toms",
+      "barCount": 1,
+      "bpm": 112,
+      "isFree": true,
+      "name": "Five-Stroke Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R SNR_R SNR_L SNR_L / TM1_R+ TM1_R TM1_L TM1_L / TM2_R+ TM2_R TM2_L TM2_L / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Rudimental — flam accents (ghost grace) over a triplet grid",
+      "barCount": 1,
+      "bpm": 119,
+      "isFree": true,
+      "name": "Flam Accent",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_L- SNR_R+ SNR_L / SNR_R- SNR_L+ SNR_R / SNR_L- SNR_R+ TM1_L / TM2_R+ FTM_L FTM_R"
+    },
+    {
+      "attribution": "Rudimental — flam taps (ghost-then-accent pairs) down the kit",
+      "barCount": 1,
+      "bpm": 119,
+      "isFree": true,
+      "name": "Flam Tap",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_L- SNR_R+ SNR_R- SNR_L+ / SNR_R- SNR_L+ SNR_L- SNR_R+ / TM1_L- TM1_R+ TM2_L- TM2_R+ / FTM_L- FTM_R+ FTM_R- FTM_L+"
+    },
+    {
+      "attribution": "Rock — heavy floor-tom eighths with kick",
+      "barCount": 1,
+      "bpm": 119,
+      "isFree": true,
+      "name": "Floor Tom Thunder",
+      "timeSignature": "fourFour",
+      "tokens": "FTM_R+ FTM_L / FTM_R+ KCK_K / FTM_R+ FTM_L / SNR_R+ KCK_K"
+    },
+    {
+      "attribution": "Metal — half-time breakdown: floor tom + double kick",
+      "barCount": 1,
+      "bpm": 183,
+      "isFree": true,
+      "name": "Floor-Kick Breakdown",
+      "timeSignature": "fourFour",
+      "tokens": "FTM_R+ . KCK_K KCK_K / SNR_R+ . KCK_K . / FTM_R+ . KCK_K KCK_K / SNR_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Linear group-of-4 (RLLK) ×4 around the kit",
+      "barCount": 1,
+      "bpm": 111,
+      "isFree": true,
+      "name": "Four-Note Linear (RLLK)",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- SNR_L- KCK_K / TM2_R+ SNR_L- SNR_L- KCK_K / FTM_R+ SNR_L- SNR_L- KCK_K / SNR_R+ SNR_L- SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Funk — RLRR-LRLL paradiddle spilling accents onto the toms",
+      "barCount": 1,
+      "bpm": 106,
+      "isFree": true,
+      "name": "Funk Paradiddle to Toms",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R+ TM1_R / SNR_L- SNR_R- SNR_L+ TM2_L / SNR_R- SNR_L- SNR_R+ FTM_R / SNR_L- SNR_R- SNR_L+ FTM_L"
+    },
+    {
+      "attribution": "Funk — six-stroke groupings marching down the kit",
+      "barCount": 1,
+      "bpm": 108,
+      "isFree": true,
+      "name": "Funk Six-Stroke",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- SNR_L- KCK_K / SNR_R+ SNR_L- SNR_L- KCK_K / TM1_R+ TM1_L- TM2_R- KCK_K / FTM_R+ FTM_L- SNR_R- KCK_K"
+    },
+    {
+      "attribution": "Funk — tom ghosts riding a deep kick pocket",
+      "barCount": 1,
+      "bpm": 100,
+      "isFree": true,
+      "name": "Funk Tom Pocket",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K TM1_R- SNR_L+ TM1_R- / KCK_K TM2_R- SNR_L+ FTM_R- / KCK_K TM1_R- SNR_L+ / FTM_R+ SNR_L- KCK_K SNR_R-"
+    },
+    {
+      "attribution": "Funk — a bar of linear groove then a ghosted tom fill",
+      "barCount": 2,
+      "bpm": 108,
+      "isFree": true,
+      "name": "Funk Two-Bar Pocket",
+      "timeSignature": "fourFour",
+      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- KCK_K SNR_R- | SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K SNR_R- TM2_L SNR_R- / SNR_L- KCK_K FTM_R SNR_L- / FTM_R+ FTM_L SNR_R- KCK_K"
+    },
+    {
+      "attribution": "Funk — ghosted linear 16ths in 3/4",
+      "barCount": 1,
+      "bpm": 101,
+      "isFree": true,
+      "name": "Funk Waltz Ghosts",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K SNR_R- SNR_L- / SNR_R+ SNR_L- KCK_K KCK_K"
+    },
+    {
+      "attribution": "Funk — closed-hat lead waltz with snare ghosts",
+      "barCount": 1,
+      "bpm": 101,
+      "isFree": true,
+      "name": "Funk Waltz Pocket",
+      "timeSignature": "threeFour",
+      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- TM1_R SNR_L- / FTM_R+ SNR_L- KCK_K SNR_R-"
+    },
+    {
+      "attribution": "Fusion — kick ostinato under 16th hand bursts (mixed grid)",
+      "barCount": 1,
+      "bpm": 145,
+      "isFree": true,
+      "name": "Fusion Kick Ostinato",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_R+ / KCK_K TM1_R SNR_L- TM2_R / KCK_K SNR_R+ / KCK_K FTM_R SNR_L- FTM_R"
+    },
+    {
+      "attribution": "Fusion — two bars mixing triplet, 8th and 16th beats",
+      "barCount": 2,
+      "bpm": 148,
+      "isFree": true,
+      "name": "Fusion Mixed Two-Bar",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R TM2_L / KCK_K SNR_R- SNR_L- / FTM_R+ FTM_L FTM_R FTM_L | SNR_R+ KCK_K TM1_L / SNR_R+ KCK_K TM2_L / SNR_R+ KCK_K FTM_L / KCK_K FTM_R FTM_L KCK_K"
+    },
+    {
+      "attribution": "Fusion — melodic tom line ghosted on the snare",
+      "barCount": 1,
+      "bpm": 147,
+      "isFree": true,
+      "name": "Fusion Tom Melody",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- TM2_R SNR_L- / FTM_R+ SNR_L- TM1_R / TM2_R+ SNR_L- FTM_R SNR_L- / TM1_R+ TM2_L FTM_R KCK_K"
+    },
+    {
+      "attribution": "Fusion — snare/tom/kick triplets tumbling down the kit",
+      "barCount": 1,
+      "bpm": 152,
+      "isFree": true,
+      "name": "Fusion Triplet Sextet",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ TM1_L KCK_K / SNR_R+ TM2_L KCK_K / SNR_R+ FTM_L KCK_K / TM1_R FTM_L KCK_K"
+    },
+    {
+      "attribution": "Fusion — a linear phrase resolving into an around-the-kit bar",
+      "barCount": 2,
+      "bpm": 148,
+      "isFree": true,
+      "name": "Fusion Two-Bar Solo",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R- TM2_L / KCK_K SNR_R- SNR_L- FTM_R / SNR_L- KCK_K SNR_R+ SNR_L- | TM1_R+ TM1_L TM2_R TM2_L / FTM_R FTM_L SNR_R SNR_L / KCK_K TM1_R KCK_K TM2_R / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Fusion — a 3/4 fill mixing triplet, 16th and triplet beats",
+      "barCount": 1,
+      "bpm": 150,
+      "isFree": true,
+      "name": "Fusion Waltz Mixed",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R TM2_L FTM_R FTM_L / KCK_K SNR_R- SNR_L-"
+    },
+    {
+      "attribution": "Fusion — a mixed-grid waltz phrase into an around-the-kit bar",
+      "barCount": 2,
+      "bpm": 148,
+      "isFree": true,
+      "name": "Fusion Waltz Two-Bar",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R TM2_L / KCK_K SNR_R- SNR_L- | TM1_R+ SNR_L- TM2_R SNR_L- / FTM_R+ SNR_L- TM1_R SNR_L- / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Fusion — Gadd-style linear groupings threaded with kick",
+      "barCount": 1,
+      "bpm": 144,
+      "isFree": true,
+      "name": "Gadd Linear Sixteenths",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_L- SNR_R- TM1_R / SNR_L- KCK_K SNR_R- SNR_L- / TM2_R KCK_K SNR_L- SNR_R- / FTM_R KCK_K SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Linear group-of-6 (KLRRLK-style) ×2, Gadd-style",
       "barCount": 1,
       "bpm": 116,
       "isFree": true,
@@ -145,13 +514,643 @@
       "tokens": "KCK_K SNR_L- TM1_R / SNR_R- SNR_L- KCK_K / KCK_K SNR_L- TM2_R / SNR_R- SNR_L- KCK_K"
     },
     {
-      "attribution": "One hit per beat, snare down the toms",
+      "attribution": "Funk — ghost 16ths swelling into an accented burst",
+      "barCount": 1,
+      "bpm": 100,
+      "isFree": true,
+      "name": "Ghost Roll Crescendo",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R- SNR_L- / SNR_R- SNR_L- SNR_R SNR_L / SNR_R SNR_L SNR_R+ SNR_L / SNR_R+ SNR_L+ TM1_R+ FTM_R+"
+    },
+    {
+      "attribution": "Funk — backbeat accents surrounded by rests and ghosts",
+      "barCount": 1,
+      "bpm": 103,
+      "isFree": true,
+      "name": "Ghost-Accent Backbeat",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R+ . / SNR_L- KCK_K SNR_R- SNR_L- / SNR_R+ . SNR_L- KCK_K / SNR_R- SNR_L- SNR_R+ SNR_L-"
+    },
+    {
+      "attribution": "Funk — accents floating over a bed of ghosted snare 16ths",
+      "barCount": 1,
+      "bpm": 103,
+      "isFree": true,
+      "name": "Ghost-Note Snare Groove",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R+ SNR_L- / KCK_K SNR_R- SNR_L+ SNR_R- / SNR_L- KCK_K SNR_R- SNR_L- / SNR_R+ SNR_L- KCK_K SNR_R-"
+    },
+    {
+      "attribution": "Funk — dense ghost-note 16ths with a shifting accent",
+      "barCount": 1,
+      "bpm": 112,
+      "isFree": true,
+      "name": "Ghosted Snare Machine",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R- SNR_L+ / SNR_R- SNR_L- SNR_R+ SNR_L- / SNR_R- SNR_L+ SNR_R- SNR_L- / SNR_R+ SNR_L- KCK_K KCK_K"
+    },
+    {
+      "attribution": "Gospel — linear chop tumbling around the kit",
+      "barCount": 1,
+      "bpm": 107,
+      "isFree": true,
+      "name": "Gospel Chop Sixteenths",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R- TM2_L / KCK_K SNR_R- SNR_L- FTM_R / SNR_L- SNR_R+ KCK_K KCK_K"
+    },
+    {
+      "attribution": "Gospel — rapid hand-to-foot 16ths around the drums",
+      "barCount": 1,
+      "bpm": 108,
+      "isFree": true,
+      "name": "Gospel Hand-Foot",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ KCK_K SNR_L- KCK_K / SNR_R- KCK_K SNR_L+ KCK_K / TM1_R KCK_K TM2_L KCK_K / FTM_R+ KCK_K FTM_L KCK_K"
+    },
+    {
+      "attribution": "Gospel — kick-led five-note groupings around the kit",
+      "barCount": 1,
+      "bpm": 107,
+      "isFree": true,
+      "name": "Gospel Linear Five",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_R- SNR_L- TM1_R / KCK_K SNR_L- SNR_R- TM2_L / KCK_K SNR_R- SNR_L- FTM_R / KCK_K SNR_L- SNR_R+ SNR_L+"
+    },
+    {
+      "attribution": "Gospel — a triplet-and-16th chop (mixed grid)",
+      "barCount": 1,
+      "bpm": 106,
+      "isFree": true,
+      "name": "Gospel Mixed Chop",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K / SNR_R- SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R- / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Gospel — accented triplet shout down to the floor tom",
+      "barCount": 1,
+      "bpm": 104,
+      "isFree": true,
+      "name": "Gospel Shout Fill",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ TM1_L SNR_R / SNR_L+ TM2_R SNR_L / SNR_R+ FTM_L SNR_R / FTM_L+ FTM_R KCK_K KCK_K"
+    },
+    {
+      "attribution": "Linear group-of-6 (RLRLLK) ×2 + RLLK",
+      "barCount": 1,
+      "bpm": 109,
+      "isFree": true,
+      "name": "Gospel Six Chop",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / SNR_L- KCK_K TM2_R SNR_L- / FTM_R+ SNR_L- SNR_L- KCK_K / FTM_R+ SNR_L- SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Gospel — six-stroke roll opening onto the toms",
+      "barCount": 1,
+      "bpm": 108,
+      "isFree": true,
+      "name": "Gospel Six-Stroke Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / SNR_R SNR_L SNR_R+ SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Gospel — snare/tom/kick triplet chop descending the toms",
+      "barCount": 1,
+      "bpm": 109,
+      "isFree": true,
+      "name": "Gospel Triplet Chop",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R SNR_L- KCK_K / TM2_R SNR_L- KCK_K / FTM_R SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Gospel — a linear chop bar resolving into a full roll",
+      "barCount": 2,
+      "bpm": 104,
+      "isFree": true,
+      "name": "Gospel Two-Bar Chop",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K SNR_R- TM1_L / KCK_K SNR_R- SNR_L- TM2_R / SNR_L- KCK_K FTM_R KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L SNR_R SNR_L / KCK_K FTM_R KCK_K SNR_R+"
+    },
+    {
+      "attribution": "Gospel — a linear chop tumbling through 3/4",
+      "barCount": 1,
+      "bpm": 106,
+      "isFree": true,
+      "name": "Gospel Waltz Chop",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R- TM2_L / KCK_K SNR_R- FTM_R FTM_L"
+    },
+    {
+      "attribution": "Metal — accented single-stroke snare 16ths (gravity-roll feel)",
+      "barCount": 1,
+      "bpm": 209,
+      "isFree": true,
+      "name": "Gravity Snare Buzz",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- SNR_R SNR_L / SNR_R+ SNR_L- SNR_R SNR_L / SNR_R+ SNR_L- SNR_R SNR_L / SNR_R+ SNR_L- SNR_R SNR_L"
+    },
+    {
+      "attribution": "Linear RLRLKK ×2 + RLRL (Garibaldi-style)",
+      "barCount": 1,
+      "bpm": 106,
+      "isFree": true,
+      "name": "Group-of-Six Funk",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K KCK_K TM2_R SNR_L- / FTM_R+ SNR_L- KCK_K KCK_K / SNR_R+ SNR_L- FTM_R SNR_L-"
+    },
+    {
+      "attribution": "Metal — a five-note grouping displacing the accent (prog-metal)",
+      "barCount": 1,
+      "bpm": 202,
+      "isFree": true,
+      "name": "Groups of Five",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L KCK_K KCK_K / SNR_R SNR_L+ SNR_R KCK_K / KCK_K SNR_R SNR_L+ KCK_K / SNR_R FTM_L+ FTM_R KCK_K"
+    },
+    {
+      "attribution": "Latin — rumba guaguancó snare/tom triplet phrase",
+      "barCount": 1,
+      "bpm": 112,
+      "isFree": true,
+      "name": "Guaguanco Triplets",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R / KCK_K SNR_L- TM2_R / SNR_R- FTM_L KCK_K / SNR_R+ SNR_L- FTM_R"
+    },
+    {
+      "attribution": "Funk — two groove beats then an accelerating tom spill",
+      "barCount": 1,
+      "bpm": 108,
+      "isFree": true,
+      "name": "Half-Bar Funk Drop",
+      "timeSignature": "fourFour",
+      "tokens": "HHT_R+ SNR_L- / KCK_K SNR_R+ / SNR_L- SNR_R- SNR_L- KCK_K / TM1_R+ TM2_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Rock — two beats groove, then an accelerating tom drop",
+      "barCount": 1,
+      "bpm": 123,
+      "isFree": true,
+      "name": "Half-Bar Tom Setup",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / KCK_K / TM1_R TM2_L / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Rock — sparse half-time snare with a floor-tom answer",
+      "barCount": 1,
+      "bpm": 106,
+      "isFree": true,
+      "name": "Half-Time Crush",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K . / SNR_R+ . / KCK_K KCK_K / FTM_R+ SNR_L+"
+    },
+    {
+      "attribution": "Hip-hop — wide half-time backbeat with a ghost tail",
+      "barCount": 1,
+      "bpm": 76,
+      "isFree": true,
+      "name": "Half-Time Hip-Hop",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K . / SNR_R+ . / . KCK_K / SNR_R+ SNR_L-"
+    },
+    {
+      "attribution": "Rock — barking closed-hat + snare eighths into toms",
+      "barCount": 1,
+      "bpm": 123,
+      "isFree": true,
+      "name": "Hi-Hat Bark",
+      "timeSignature": "fourFour",
+      "tokens": "HHT_R+ SNR_L / HHT_R+ SNR_L / TM1_R+ TM2_L / FTM_R+ FTM_L"
+    },
+    {
+      "attribution": "Funk — closed-hat lead with snare ghosts and kick",
+      "barCount": 1,
+      "bpm": 103,
+      "isFree": true,
+      "name": "Hi-Hat Funk Linear",
+      "timeSignature": "fourFour",
+      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- TM1_R SNR_L- / FTM_R+ SNR_L- KCK_K SNR_R-"
+    },
+    {
+      "attribution": "World — West-African highlife tom melody in 3/4",
+      "barCount": 1,
+      "bpm": 111,
+      "isFree": true,
+      "name": "Highlife Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ TM1_L TM2_R / SNR_L+ FTM_R TM1_L / FTM_R+ SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Jazz — soft ghosted waltz triplets (brush feel on snare)",
+      "barCount": 1,
+      "bpm": 172,
+      "isFree": true,
+      "name": "Jazz Waltz Brushes",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R- SNR_L- SNR_R+ / SNR_L- SNR_R- TM1_L / TM2_R SNR_L- FTM_R"
+    },
+    {
+      "attribution": "Jazz — comping jazz-waltz triplets, snare/tom over kick",
+      "barCount": 1,
+      "bpm": 172,
+      "isFree": true,
+      "name": "Jazz Waltz Comp",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R- TM1_L KCK_K / SNR_R- TM2_L KCK_K / SNR_R+ FTM_L KCK_K"
+    },
+    {
+      "attribution": "Jazz — spang-a-lang waltz phrase around snare and toms",
+      "barCount": 1,
+      "bpm": 170,
+      "isFree": true,
+      "name": "Jazz Waltz Spang",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R / TM2_R SNR_L- FTM_R / SNR_R+ SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Linear RLK ×3, jazz-waltz feel",
+      "barCount": 1,
+      "bpm": 165,
+      "isFree": true,
+      "name": "Jazz Waltz Triplets",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ TM1_L- KCK_K / SNR_R+ TM2_L- KCK_K / SNR_R+ FTM_L- KCK_K"
+    },
+    {
+      "attribution": "Jazz — a comping waltz bar answered by a tom melody",
+      "barCount": 2,
+      "bpm": 175,
+      "isFree": true,
+      "name": "Jazz Waltz Two-Bar",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R- TM1_L KCK_K / SNR_R- TM2_L KCK_K / SNR_R- FTM_L KCK_K | SNR_R+ SNR_L- TM1_R / TM2_R SNR_L- FTM_R / FTM_L+ SNR_R- KCK_K"
+    },
+    {
+      "attribution": "Latin — samba-lean waltz, tom accents over kick",
+      "barCount": 1,
+      "bpm": 115,
+      "isFree": true,
+      "name": "Jazz-Samba Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R- TM1_L+ KCK_K / SNR_R- TM2_L+ KCK_K / FTM_R+ SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Funk — kick shoved off the beat under snare accents",
+      "barCount": 1,
+      "bpm": 108,
+      "isFree": true,
+      "name": "Kick-Displaced Funk",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_R+ SNR_L- KCK_K / SNR_R- KCK_K SNR_L+ SNR_R- / KCK_K SNR_L- SNR_R- KCK_K / SNR_L+ SNR_R- KCK_K SNR_L-"
+    },
+    {
+      "attribution": "Rock — kick starts each beat, hands answer",
+      "barCount": 1,
+      "bpm": 120,
+      "isFree": true,
+      "name": "Kick-Led Sixteenths",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_R SNR_L SNR_R+ / KCK_K TM1_L TM1_R TM1_L+ / KCK_K TM2_L TM2_R TM2_L+ / KCK_K FTM_L FTM_R FTM_L+"
+    },
+    {
+      "attribution": "Metal — tom accents launched off kick triplets",
+      "barCount": 1,
+      "bpm": 208,
+      "isFree": true,
+      "name": "Kick-Machine Toms",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ KCK_K KCK_K / TM2_R+ KCK_K KCK_K / FTM_R+ KCK_K KCK_K / SNR_R+ KCK_K KCK_K"
+    },
+    {
+      "attribution": "Funk — conversational kick-and-snare 16ths",
+      "barCount": 1,
+      "bpm": 103,
+      "isFree": true,
+      "name": "Kick-Snare Interplay",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K KCK_K SNR_R+ SNR_L- / SNR_R- KCK_K SNR_L- KCK_K / SNR_R+ SNR_L- SNR_R- KCK_K / KCK_K SNR_L- SNR_R+ SNR_L-"
+    },
+    {
+      "attribution": "Metal — kick/snare/kick triplet gallop into the floor",
+      "barCount": 1,
+      "bpm": 203,
+      "isFree": true,
+      "name": "Kick-Snare Triplet Gallop",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K SNR_R+ KCK_K / KCK_K SNR_L+ KCK_K / KCK_K SNR_R+ KCK_K / FTM_R+ FTM_L FTM_R"
+    },
+    {
+      "attribution": "Latin — a clave-driven groove bar into a tom melody",
+      "barCount": 2,
+      "bpm": 115,
+      "isFree": true,
+      "name": "Latin Two-Bar Clave",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- TM1_L+ KCK_K SNR_R- / SNR_L- KCK_K TM2_R+ SNR_L- / SNR_R- FTM_L+ KCK_K SNR_R- / SNR_L- KCK_K SNR_R+ SNR_L- | TM1_R+ SNR_L- TM2_R SNR_L- / FTM_R+ SNR_L- TM1_R SNR_L- / TM2_R+ FTM_L SNR_R- KCK_K / FTM_R+ FTM_L KCK_K SNR_R+"
+    },
+    {
+      "attribution": "Hi-hat / snare / kick linear groove-fill",
+      "barCount": 1,
+      "bpm": 104,
+      "isFree": true,
+      "name": "Linear Funk w/ Hats",
+      "timeSignature": "fourFour",
+      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R / HHT_R+ SNR_L- KCK_K SNR_L- / HHT_R+ SNR_L- KCK_K TM2_R / FTM_R+ SNR_L- KCK_K FTM_R"
+    },
+    {
+      "attribution": "Funk — linear ghost-note 16ths punctuated by kick (Garibaldi feel)",
+      "barCount": 1,
+      "bpm": 105,
+      "isFree": true,
+      "name": "Linear Ghost Sixteenths",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K SNR_R+ SNR_L- / KCK_K SNR_R- SNR_L- KCK_K / SNR_R+ SNR_L- KCK_K SNR_R-"
+    },
+    {
+      "attribution": "Fusion — five-note linear groupings around the kit",
+      "barCount": 1,
+      "bpm": 148,
+      "isFree": true,
+      "name": "Linear Group of Five",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R+ SNR_L- / TM2_R KCK_K SNR_L- SNR_R+ / SNR_L- KCK_K FTM_R FTM_L"
+    },
+    {
+      "attribution": "Linear group-of-3 (RLK) descending the toms",
+      "barCount": 1,
+      "bpm": 109,
+      "isFree": true,
+      "name": "Linear RLK Cascade",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K TM2_R SNR_L- / KCK_K TM2_R SNR_L- KCK_K / FTM_R+ SNR_L- KCK_K FTM_R"
+    },
+    {
+      "attribution": "Metal — dense snare/kick machine-gun 16ths",
+      "barCount": 1,
+      "bpm": 214,
+      "isFree": true,
+      "name": "Machine-Gun Snare-Kick",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L KCK_K SNR_R / SNR_L KCK_K SNR_R SNR_L / KCK_K SNR_R SNR_L KCK_K / SNR_R+ SNR_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Latin — mambo tom melody with a 16th kick answer (mixed grid)",
       "barCount": 1,
       "bpm": 114,
       "isFree": true,
-      "name": "Quarter Tom March",
+      "name": "Mambo Tom Melody",
       "timeSignature": "fourFour",
-      "tokens": "SNR_R+ / TM1_R / TM2_R / FTM_R"
+      "tokens": "TM1_R+ SNR_L- / TM2_R+ SNR_L- FTM_R KCK_K / FTM_R+ SNR_L- / SNR_R+ TM1_L TM2_R FTM_L"
+    },
+    {
+      "attribution": "Rock — a snare 16th figure with the accent walking forward",
+      "barCount": 1,
+      "bpm": 122,
+      "isFree": true,
+      "name": "Marching Snare Accents",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- SNR_R- SNR_L- / SNR_R- SNR_L+ SNR_R- SNR_L- / SNR_R- SNR_L- SNR_R+ SNR_L- / TM1_R+ TM2_L FTM_R+ FTM_L"
+    },
+    {
+      "attribution": "Metal — kick-kick-tom triplet gallop around the kit",
+      "barCount": 1,
+      "bpm": 200,
+      "isFree": true,
+      "name": "Metal Gallop",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K KCK_K TM1_R / KCK_K KCK_K TM2_R / KCK_K KCK_K FTM_R / KCK_K KCK_K SNR_R+"
+    },
+    {
+      "attribution": "Metal — heavy eighth-note tom march into the snare",
+      "barCount": 1,
+      "bpm": 204,
+      "isFree": true,
+      "name": "Metal Tom March",
+      "timeSignature": "fourFour",
+      "tokens": "FTM_R+ FTM_L / TM2_R+ TM2_L / TM1_R+ TM1_L / SNR_R+ KCK_K"
+    },
+    {
+      "attribution": "Metal — alternating snare/kick blast in 3/4",
+      "barCount": 1,
+      "bpm": 210,
+      "isFree": true,
+      "name": "Metal Waltz Blast",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Metal — a bar of blast into a double-kick tom run, 3/4",
+      "barCount": 2,
+      "bpm": 217,
+      "isFree": true,
+      "name": "Metal Waltz Two-Bar",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / FTM_R+ FTM_L KCK_K KCK_K | TM1_R+ KCK_K TM1_L KCK_K / TM2_R+ KCK_K TM2_L KCK_K / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Fusion — triplet and 16th beats alternating (mixed grid)",
+      "barCount": 1,
+      "bpm": 151,
+      "isFree": true,
+      "name": "Mixed-Meter Fusion",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R SNR_L- TM2_R SNR_L- / KCK_K SNR_R- SNR_L- / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Latin — Mozambique feel voiced around the toms",
+      "barCount": 1,
+      "bpm": 119,
+      "isFree": true,
+      "name": "Mozambique Toms",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- TM1_R KCK_K / TM2_R+ SNR_L- TM2_R KCK_K / FTM_R+ SNR_L- FTM_R KCK_K / SNR_R+ TM1_L TM2_R FTM_L"
+    },
+    {
+      "attribution": "Hip-hop — laid-back neo-soul ghosts under a closed hat",
+      "barCount": 1,
+      "bpm": 83,
+      "isFree": true,
+      "name": "Neo-Soul Ghost Fill",
+      "timeSignature": "fourFour",
+      "tokens": "HHT_R+ SNR_L- . SNR_R- / KCK_K . SNR_L+ . / SNR_R- . KCK_K SNR_L- / SNR_R+ . TM1_L FTM_R"
+    },
+    {
+      "attribution": "Funk — sparse, laid-back ghost figure with closed hat",
+      "barCount": 1,
+      "bpm": 84,
+      "isFree": true,
+      "name": "Neo-Soul Laid Back",
+      "timeSignature": "fourFour",
+      "tokens": "HHT_R+ . SNR_L- . / KCK_K SNR_R+ . SNR_L- / . HHT_R+ SNR_L- KCK_K / SNR_R+ . SNR_L- ."
+    },
+    {
+      "attribution": "Hip-hop — laid-back neo-soul waltz triplets with hat",
+      "barCount": 1,
+      "bpm": 78,
+      "isFree": true,
+      "name": "Neo-Soul Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "HHT_R+ SNR_L- KCK_K / KCK_K SNR_R+ SNR_L- / SNR_R- TM1_R KCK_K"
+    },
+    {
+      "attribution": "Fusion — a seven-note grouping over the 16th grid",
+      "barCount": 1,
+      "bpm": 151,
+      "isFree": true,
+      "name": "Odd Grouping Seven",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- SNR_R+ SNR_L- KCK_K / SNR_R- SNR_L- SNR_R+ SNR_L- / KCK_K SNR_R- TM1_L+ FTM_R+"
+    },
+    {
+      "attribution": "Prog — five-note groupings displacing the accent in 3/4",
+      "barCount": 1,
+      "bpm": 141,
+      "isFree": true,
+      "name": "Odd Waltz Five",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L KCK_K SNR_R / SNR_L SNR_R+ TM1_L TM2_R / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Reggae — one-drop feel adapted to 3/4",
+      "barCount": 1,
+      "bpm": 78,
+      "isFree": true,
+      "name": "One-Drop Waltz",
+      "timeSignature": "threeFour",
+      "tokens": ". SNR_R+ . / KCK_K . SNR_L- / . FTM_R+ KCK_K"
+    },
+    {
+      "attribution": "Single paradiddle (RLRR LRLL) ×2, accents move to toms",
+      "barCount": 1,
+      "bpm": 113,
+      "isFree": true,
+      "name": "Paradiddle Melody",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R- TM1_R / SNR_L+ SNR_R- SNR_L- TM2_L / SNR_R- SNR_L- SNR_R- FTM_R / SNR_L+ SNR_R- SNR_L- FTM_L"
+    },
+    {
+      "attribution": "Rudimental — RLRR-LRLL paradiddle spilling to the toms, 3/4",
+      "barCount": 1,
+      "bpm": 119,
+      "isFree": true,
+      "name": "Paradiddle Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_R / SNR_L+ SNR_R SNR_L SNR_L / TM1_R+ TM2_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Rudimental — RLRRLL paradiddle-diddle over triplets, onto toms",
+      "barCount": 1,
+      "bpm": 112,
+      "isFree": true,
+      "name": "Paradiddle-Diddle",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R / SNR_R SNR_L SNR_L / TM1_R+ TM2_L FTM_R / FTM_R SNR_L SNR_L"
+    },
+    {
+      "attribution": "Punk — eighth-note snare crescendo into a floor hit",
+      "barCount": 1,
+      "bpm": 188,
+      "isFree": true,
+      "name": "Pop-Punk Snare Build",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L / SNR_R+ SNR_L / SNR_R+ SNR_L / TM1_R FTM_R+"
+    },
+    {
+      "attribution": "Prog — four bars escalating quarter -> 8th -> triplet -> 16th (mixed grid)",
+      "barCount": 4,
+      "bpm": 135,
+      "isFree": true,
+      "name": "Prog Four-Bar Build",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / FTM_R+ / SNR_R+ / FTM_R+ | SNR_R+ TM1_L / TM2_R FTM_L / SNR_R+ TM1_L / TM2_R FTM_L | SNR_R+ SNR_L KCK_K / TM1_R SNR_L KCK_K / TM2_R SNR_L KCK_K / FTM_R SNR_L KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / FTM_R+ SNR_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Prog — a four-bar linear solo phrase across the kit",
+      "barCount": 4,
+      "bpm": 141,
+      "isFree": true,
+      "name": "Prog Four-Bar Epic",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K TM1_R SNR_L- / KCK_K SNR_R- TM2_L SNR_R- / SNR_L- KCK_K FTM_R KCK_K | TM1_R+ TM1_L TM2_R TM2_L / FTM_R FTM_L SNR_R SNR_L / KCK_K TM1_R KCK_K TM2_R / FTM_R+ FTM_L KCK_K KCK_K | SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / TM1_R KCK_K TM2_L KCK_K / FTM_R+ KCK_K FTM_L KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ TM1_L FTM_R KCK_K"
+    },
+    {
+      "attribution": "Prog — two bars mixing triplet, 8th and 16th beats",
+      "barCount": 2,
+      "bpm": 134,
+      "isFree": true,
+      "name": "Prog Mixed Two-Bar",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R TM2_L / KCK_K SNR_R SNR_L / FTM_R+ FTM_L FTM_R FTM_L | TM1_R+ TM1_L TM1_R / TM2_R+ TM2_L / FTM_R+ FTM_L FTM_R FTM_L / SNR_R+ KCK_K"
+    },
+    {
+      "attribution": "Prog — three bars escalating quarter -> 8th -> 16th (mixed grid)",
+      "barCount": 3,
+      "bpm": 137,
+      "isFree": true,
+      "name": "Prog Three-Bar Build",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / TM1_R / TM2_R / FTM_R+ | SNR_R+ SNR_L / TM1_R TM2_L / FTM_R FTM_L / SNR_R+ KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ TM1_L TM2_R FTM_L"
+    },
+    {
+      "attribution": "Prog — a three-bar linear journey around the kit",
+      "barCount": 3,
+      "bpm": 137,
+      "isFree": true,
+      "name": "Prog Three-Bar Journey",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K SNR_R- TM1_L / KCK_K SNR_R- SNR_L- TM2_R / SNR_L- KCK_K FTM_R KCK_K | TM1_R+ TM1_L TM2_R TM2_L / FTM_R FTM_L SNR_R SNR_L / TM1_R TM2_L FTM_R SNR_L / KCK_K SNR_R KCK_K SNR_L | SNR_R+ TM1_L KCK_K TM1_R / SNR_L- TM2_R KCK_K TM2_L / FTM_R KCK_K FTM_L KCK_K / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Prog — displaced accents over two bars into a tom cadence",
+      "barCount": 2,
+      "bpm": 135,
+      "isFree": true,
+      "name": "Prog Two-Bar Odd",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L KCK_K SNR_R / SNR_L SNR_R+ SNR_L KCK_K / TM1_R SNR_L SNR_R+ SNR_L / TM2_R KCK_K FTM_R FTM_L | SNR_R+ TM1_L TM2_R FTM_L / SNR_R+ TM1_L TM2_R FTM_L / KCK_K SNR_R SNR_L KCK_K / FTM_R+ FTM_L SNR_R+ KCK_K"
+    },
+    {
+      "attribution": "Prog — a shifting accent over waltz triplets",
+      "barCount": 1,
+      "bpm": 134,
+      "isFree": true,
+      "name": "Prog Waltz Grouping",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L SNR_R / SNR_L SNR_R+ SNR_L / TM1_R TM2_L FTM_R"
+    },
+    {
+      "attribution": "Punk — half-time breakdown with double kick and floor tom",
+      "barCount": 1,
+      "bpm": 175,
+      "isFree": true,
+      "name": "Punk Breakdown",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ . SNR_L . / KCK_K KCK_K SNR_R+ . / . SNR_L- FTM_R . / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Punk — big quarter-note tom slams into snare + kick",
+      "barCount": 1,
+      "bpm": 188,
+      "isFree": true,
+      "name": "Punk Tom Slam",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ / TM2_R+ / FTM_R+ / SNR_R+ KCK_K"
+    },
+    {
+      "attribution": "Punk — a bar of gallop into a full 16th tom charge",
+      "barCount": 2,
+      "bpm": 196,
+      "isFree": true,
+      "name": "Punk Two-Bar Charge",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R+ KCK_K SNR_L KCK_K / SNR_R+ KCK_K SNR_L KCK_K / TM1_R TM2_L FTM_R FTM_L | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Funk — shuffled triplet with the classic ghosted snare",
+      "barCount": 1,
+      "bpm": 105,
+      "isFree": true,
+      "name": "Purdie Shuffle Ghosts",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- SNR_R- / KCK_K SNR_L- SNR_R- / SNR_L+ SNR_R- SNR_L- / KCK_K SNR_R- SNR_L-"
     },
     {
       "attribution": "Quarter-note snare-to-floor build",
@@ -160,16 +1159,484 @@
       "isFree": true,
       "name": "Quarter Snare/Floor",
       "timeSignature": "fourFour",
-      "tokens": "SNR_R+ / FTM_R / SNR_R+ / FTM_R"
+      "tokens": "SNR_R+ / FTM_R+ / SNR_R+ / FTM_R+"
     },
     {
-      "attribution": "Linear RLK \u00d74 across 3/4",
+      "attribution": "One hit per beat, snare down the toms",
       "barCount": 1,
-      "bpm": 148,
+      "bpm": 114,
       "isFree": true,
-      "name": "Waltz RLK Run",
+      "name": "Quarter Tom March",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / TM1_R+ / TM2_R+ / FTM_R+"
+    },
+    {
+      "attribution": "Rock — one big accented tom per beat",
+      "barCount": 1,
+      "bpm": 121,
+      "isFree": true,
+      "name": "Quarter-Note Power Toms",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ / SNR_R+ / TM2_R+ / FTM_R+"
+    },
+    {
+      "attribution": "Hip-hop — dragged R&B ghosts spilling onto the toms",
+      "barCount": 1,
+      "bpm": 87,
+      "isFree": true,
+      "name": "R&B Snare Drag",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R+ . / SNR_L- . SNR_R- SNR_L+ / SNR_R- SNR_L- KCK_K / SNR_R+ TM1_L TM2_R FTM_L"
+    },
+    {
+      "attribution": "Linear RLK in eighths + kick",
+      "barCount": 1,
+      "bpm": 108,
+      "isFree": true,
+      "name": "RLK Eighths",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ TM1_L / KCK_K SNR_R / TM2_L+ KCK_K / FTM_R+ FTM_L"
+    },
+    {
+      "attribution": "Rock — a driving 16th waltz roll down to the floor",
+      "barCount": 1,
+      "bpm": 121,
+      "isFree": true,
+      "name": "Rock Waltz Sixteenths",
       "timeSignature": "threeFour",
-      "tokens": "TM1_R SNR_L- KCK_K TM1_R / SNR_L- KCK_K TM2_R SNR_L- / KCK_K FTM_R SNR_L- KCK_K"
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM2_L FTM_R FTM_L / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Rock — a straight-eighth 3/4 tom fill",
+      "barCount": 1,
+      "bpm": 126,
+      "isFree": true,
+      "name": "Rock Waltz Toms",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ KCK_K / TM1_R TM2_L / FTM_R+ FTM_L"
+    },
+    {
+      "attribution": "Rock — a groove bar then a 16th tom roll, 3/4",
+      "barCount": 2,
+      "bpm": 118,
+      "isFree": true,
+      "name": "Rock Waltz Two-Bar",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ KCK_K / TM1_R SNR_L / FTM_R+ KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM2_L FTM_R FTM_L / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Rudimental — double-stroke roll-off resolving on the toms, 3/4",
+      "barCount": 1,
+      "bpm": 115,
+      "isFree": true,
+      "name": "Roll-Off Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_R SNR_L SNR_L / SNR_R SNR_R SNR_L SNR_L / TM1_R+ TM2_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Latin — Columbia-style tom accents over ghosted 16ths",
+      "barCount": 1,
+      "bpm": 118,
+      "isFree": true,
+      "name": "Rumba Columbia",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- SNR_R- TM2_L / FTM_R+ SNR_L- SNR_R- TM1_L / TM2_R+ SNR_L- FTM_R- / SNR_R+ TM1_L FTM_R KCK_K"
+    },
+    {
+      "attribution": "Latin — syncopated samba spread across snare, toms and kick",
+      "barCount": 1,
+      "bpm": 112,
+      "isFree": true,
+      "name": "Samba Batucada",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K SNR_R- FTM_L SNR_R- / SNR_L- TM2_R SNR_L- KCK_K / FTM_R+ SNR_L- KCK_K SNR_R-"
+    },
+    {
+      "attribution": "Prog — a seven-note phrase tumbling down the kit",
+      "barCount": 1,
+      "bpm": 136,
+      "isFree": true,
+      "name": "Seven Grouping",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / SNR_R SNR_L SNR_R+ TM1_L / TM1_R TM2_L TM2_R FTM_L / FTM_R+ FTM_L KCK_K SNR_R+"
+    },
+    {
+      "attribution": "Blues — rolling shuffle triplets spilling to the toms",
+      "barCount": 1,
+      "bpm": 97,
+      "isFree": true,
+      "name": "Shuffle Snare Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R / SNR_L SNR_R SNR_L / TM1_R TM2_L FTM_R / FTM_L SNR_R+ KCK_K"
+    },
+    {
+      "attribution": "Blues — skip-note shuffle triplets down the kit",
+      "barCount": 1,
+      "bpm": 98,
+      "isFree": true,
+      "name": "Shuffle Triplet Fill",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ . SNR_L- / KCK_K . SNR_R- / SNR_L+ . TM1_R / TM2_R . FTM_R+"
+    },
+    {
+      "attribution": "Blues — half-time shuffle answering floor tom and snare",
+      "barCount": 1,
+      "bpm": 95,
+      "isFree": true,
+      "name": "Shuffle Two-Feel",
+      "timeSignature": "fourFour",
+      "tokens": "FTM_R+ . SNR_L- / TM2_R . SNR_L- / TM1_R . SNR_L- / SNR_R+ . KCK_K"
+    },
+    {
+      "attribution": "Blues — skip-note shuffle triplets in 3/4",
+      "barCount": 1,
+      "bpm": 95,
+      "isFree": true,
+      "name": "Shuffle Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ . TM1_L / TM2_R . FTM_L / KCK_K . SNR_R+"
+    },
+    {
+      "attribution": "Rudimental — RLRR-LRLL paradiddle, accents on each primary",
+      "barCount": 1,
+      "bpm": 118,
+      "isFree": true,
+      "name": "Single Paradiddle",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_R / SNR_L+ SNR_R SNR_L SNR_L / SNR_R+ SNR_L SNR_R SNR_R / SNR_L+ SNR_R SNR_L SNR_L"
+    },
+    {
+      "attribution": "Metal — alternating snare/kick 16ths (blast-beat feel)",
+      "barCount": 1,
+      "bpm": 210,
+      "isFree": true,
+      "name": "Single-Stroke Blast Run",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / SNR_R+ KCK_K SNR_L KCK_K"
+    },
+    {
+      "attribution": "Rudimental — RLLRRL six-stroke roll around the kit",
+      "barCount": 1,
+      "bpm": 116,
+      "isFree": true,
+      "name": "Six-Stroke Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_L SNR_R / SNR_R SNR_L+ SNR_R SNR_L / SNR_L SNR_R+ TM1_R TM1_L / TM2_R+ TM2_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Funk — ghosted groove spilling onto the toms",
+      "barCount": 1,
+      "bpm": 108,
+      "isFree": true,
+      "name": "Sixteenth Funk Tom Spill",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- SNR_R- TM1_L / KCK_K SNR_R- TM2_L SNR_R- / SNR_L- KCK_K FTM_R SNR_L- / SNR_R+ SNR_L- KCK_K FTM_R"
+    },
+    {
+      "attribution": "Rock — building snare 16ths that resolve down the toms",
+      "barCount": 1,
+      "bpm": 119,
+      "isFree": true,
+      "name": "Sixteenth Snare Roll Out",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- SNR_L- SNR_R SNR_L / SNR_R SNR_L SNR_R+ SNR_L / SNR_R+ SNR_L TM1_R TM2_L / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Punk — flat-out 16th run around the whole kit",
+      "barCount": 1,
+      "bpm": 203,
+      "isFree": true,
+      "name": "Skate Punk Tom Run",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L TM1_R TM1_L / TM2_R TM2_L FTM_R FTM_L / SNR_R SNR_L TM1_R TM2_L / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Blues — sparse 12/8 triplet fill, wide and lazy",
+      "barCount": 1,
+      "bpm": 81,
+      "isFree": true,
+      "name": "Slow Blues Twelve-Eight",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ . TM1_L / . SNR_R- TM2_L / KCK_K . FTM_R / SNR_L+ . KCK_K"
+    },
+    {
+      "attribution": "Blues — sparse slow-blues triplets in 3/4",
+      "barCount": 1,
+      "bpm": 77,
+      "isFree": true,
+      "name": "Slow Blues Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ . TM1_L / . SNR_R- FTM_L / KCK_K SNR_L- SNR_R+"
+    },
+    {
+      "attribution": "Rock — two ghosted snare beats spilling into descending toms",
+      "barCount": 1,
+      "bpm": 121,
+      "isFree": true,
+      "name": "Snare Buzz Into Toms",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- SNR_R- SNR_L- / SNR_R+ SNR_L- SNR_R- SNR_L- / TM1_R+ TM1_L TM2_R TM2_L / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Metal — relentless snare/floor-tom 16th hammering",
+      "barCount": 1,
+      "bpm": 202,
+      "isFree": true,
+      "name": "Snare-Floor Hammer",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ FTM_L SNR_R FTM_L / SNR_R+ FTM_L SNR_R FTM_L / SNR_R+ FTM_L SNR_R FTM_L / SNR_R+ FTM_L SNR_R FTM_L"
+    },
+    {
+      "attribution": "Rock — snare/kick/tom triplet roll around the kit",
+      "barCount": 1,
+      "bpm": 126,
+      "isFree": true,
+      "name": "Snare-Kick Tom Triplets",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ KCK_K TM1_R / SNR_L+ KCK_K TM2_R / SNR_R+ KCK_K FTM_R / FTM_L+ KCK_K FTM_R"
+    },
+    {
+      "attribution": "Rock — 16th roll cascading snare→toms→floor",
+      "barCount": 1,
+      "bpm": 118,
+      "isFree": true,
+      "name": "Snare-to-Floor Builder",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ FTM_L SNR_R+ FTM_L"
+    },
+    {
+      "attribution": "Latin — Changuito-style songo: tom accents over a busy kick",
+      "barCount": 1,
+      "bpm": 117,
+      "isFree": true,
+      "name": "Songo",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- TM1_L+ KCK_K SNR_R- / SNR_L- TM2_R+ KCK_K SNR_L- / TM1_R- FTM_L+ KCK_K SNR_R- / FTM_R+ SNR_L- KCK_K KCK_K"
+    },
+    {
+      "attribution": "Funk — Latin-funk songo lean: tom accents over kick",
+      "barCount": 1,
+      "bpm": 100,
+      "isFree": true,
+      "name": "Songo Funk",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- TM1_L+ SNR_R- KCK_K / SNR_L- SNR_R- TM2_L+ KCK_K / SNR_R- FTM_L+ SNR_R- KCK_K / SNR_L- SNR_R+ SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Latin — songo tom accents over kick, 16ths in 3/4",
+      "barCount": 1,
+      "bpm": 112,
+      "isFree": true,
+      "name": "Songo Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R- TM1_L+ KCK_K SNR_R- / SNR_L- TM2_R+ KCK_K SNR_L- / FTM_R+ SNR_L- KCK_K KCK_K"
+    },
+    {
+      "attribution": "Funk — wide quarter-note backbeat with a ghost tag",
+      "barCount": 1,
+      "bpm": 101,
+      "isFree": true,
+      "name": "Sparse Funk Quarters",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / KCK_K / SNR_R+ / SNR_L-"
+    },
+    {
+      "attribution": "Metal — fast single-stroke tom-to-tom 16ths",
+      "barCount": 1,
+      "bpm": 214,
+      "isFree": true,
+      "name": "Speed Tom Singles",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ TM1_L TM2_R TM2_L / FTM_R FTM_L TM2_R TM2_L / TM1_R+ TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Rock — quarter-note stabs with rests between (stop-time feel)",
+      "barCount": 1,
+      "bpm": 106,
+      "isFree": true,
+      "name": "Stop-Time Punches",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ / FTM_R+ / TM1_R+ / KCK_K"
+    },
+    {
+      "attribution": "Metal — a full bar of blast resolving into a tom run",
+      "barCount": 2,
+      "bpm": 212,
+      "isFree": true,
+      "name": "Sustained Blast Two-Bar",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K | TM1_R+ KCK_K TM1_L KCK_K / TM2_R+ KCK_K TM2_L KCK_K / FTM_R+ KCK_K FTM_L KCK_K / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "RLK bursts separated by rests (uses rest token)",
+      "barCount": 1,
+      "bpm": 114,
+      "isFree": true,
+      "name": "Syncopated Bursts",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- KCK_K . / TM1_R+ SNR_L- KCK_K . / TM2_R+ SNR_L- KCK_K . / FTM_R+ SNR_L- KCK_K ."
+    },
+    {
+      "attribution": "Rock — snare accents answered by kick, 16th grid with rests",
+      "barCount": 1,
+      "bpm": 120,
+      "isFree": true,
+      "name": "Syncopated Kick-Snare",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ . KCK_K . / SNR_L+ . KCK_K KCK_K / SNR_R+ . TM1_L . / FTM_R+ FTM_L KCK_K ."
+    },
+    {
+      "attribution": "Blues — Texas shuffle rolling around the toms",
+      "barCount": 1,
+      "bpm": 101,
+      "isFree": true,
+      "name": "Texas Shuffle Toms",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L- TM1_R / SNR_L+ SNR_R- TM2_R / SNR_L+ SNR_R- FTM_R / FTM_L+ SNR_R- KCK_K"
+    },
+    {
+      "attribution": "Metal — snare/tom chop laced with kick, 16ths",
+      "barCount": 1,
+      "bpm": 208,
+      "isFree": true,
+      "name": "Thrash Chop",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ TM1_L KCK_K SNR_R / TM2_L KCK_K SNR_R FTM_L / KCK_K SNR_R TM1_L KCK_K / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Metal — descending toms hammered against double kick",
+      "barCount": 1,
+      "bpm": 208,
+      "isFree": true,
+      "name": "Thrash Tom Roll",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ TM1_L KCK_K KCK_K / TM2_R+ TM2_L KCK_K KCK_K / FTM_R+ FTM_L KCK_K KCK_K / FTM_R+ FTM_L KCK_K KCK_K"
+    },
+    {
+      "attribution": "Latin — timbale-style single-stroke roll around the kit",
+      "barCount": 1,
+      "bpm": 118,
+      "isFree": true,
+      "name": "Timbale Abanico",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM1_R TM1_L / TM2_R TM2_L FTM_R FTM_L / FTM_R+ FTM_L SNR_R+ SNR_L"
+    },
+    {
+      "attribution": "Rock — descending triplet tom cascade ending on the snare",
+      "barCount": 1,
+      "bpm": 118,
+      "isFree": true,
+      "name": "Tom Cascade Triplets",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ TM1_L TM1_R / TM2_L+ TM2_R TM2_L / FTM_R+ FTM_L FTM_R / SNR_L+ SNR_R SNR_L"
+    },
+    {
+      "attribution": "Two-per-drum eighth-note descent",
+      "barCount": 1,
+      "bpm": 110,
+      "isFree": true,
+      "name": "Tom Descent (8ths)",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L / TM1_R+ TM1_L / TM2_R+ TM2_L / FTM_R+ FTM_L"
+    },
+    {
+      "attribution": "Metal — descending tom stabs into a kick 16th burst",
+      "barCount": 1,
+      "bpm": 211,
+      "isFree": true,
+      "name": "Tom Drop Double-Kick",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ / TM2_R+ / FTM_R+ / KCK_K KCK_K KCK_K KCK_K"
+    },
+    {
+      "attribution": "Rock — galloping 8th/16th tom figure",
+      "barCount": 1,
+      "bpm": 125,
+      "isFree": true,
+      "name": "Tom Gallop",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ TM1_L / TM2_R+ TM2_L TM2_R TM2_L / FTM_R+ FTM_L / FTM_R+ FTM_L FTM_R FTM_L"
+    },
+    {
+      "attribution": "Country — train-beat 16ths shuffled into a 3/4 fill",
+      "barCount": 1,
+      "bpm": 115,
+      "isFree": true,
+      "name": "Train Waltz",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ SNR_L- SNR_R- SNR_L- / SNR_R+ SNR_L- TM1_R TM2_L / FTM_R+ FTM_L SNR_R+ KCK_K"
+    },
+    {
+      "attribution": "Hip-hop — stuttering kick 16ths answered by the snare",
+      "barCount": 1,
+      "bpm": 90,
+      "isFree": true,
+      "name": "Trap Kick Roll",
+      "timeSignature": "fourFour",
+      "tokens": "KCK_K KCK_K . SNR_R+ / . KCK_K KCK_K . / SNR_L- . KCK_K KCK_K / SNR_R+ . TM1_L FTM_R"
+    },
+    {
+      "attribution": "Hip-hop — trap snare roll accelerating into a burst",
+      "barCount": 1,
+      "bpm": 92,
+      "isFree": true,
+      "name": "Trap Snare Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R- . . SNR_L- / . . SNR_R+ . / SNR_L- SNR_R- SNR_L- SNR_R- / SNR_L SNR_R SNR_L SNR_R+"
+    },
+    {
+      "attribution": "Hip-hop — triplet trap roll blooming from silence",
+      "barCount": 1,
+      "bpm": 84,
+      "isFree": true,
+      "name": "Trap Triplet Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ . . / . SNR_L- SNR_R- / SNR_L SNR_R SNR_L / SNR_R SNR_L+ SNR_R+"
+    },
+    {
+      "attribution": "Metal — snare accent over kick triplets",
+      "barCount": 1,
+      "bpm": 213,
+      "isFree": true,
+      "name": "Triplet Blast",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ KCK_K KCK_K / SNR_L+ KCK_K KCK_K / SNR_R+ KCK_K KCK_K / SNR_L+ KCK_K KCK_K"
+    },
+    {
+      "attribution": "Linear RLK ×4 in eighth-note triplets",
+      "barCount": 1,
+      "bpm": 122,
+      "isFree": true,
+      "name": "Triplet RLK Roll",
+      "timeSignature": "fourFour",
+      "tokens": "TM1_R+ SNR_L- KCK_K / TM1_R+ SNR_L- KCK_K / TM2_R+ SNR_L- KCK_K / FTM_R+ SNR_L- KCK_K"
+    },
+    {
+      "attribution": "Three-per-drum descending triplet roll",
+      "barCount": 1,
+      "bpm": 121,
+      "isFree": true,
+      "name": "Triplet Tom Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R / TM1_L+ TM1_R TM1_L / TM2_R+ TM2_L TM2_R / FTM_L+ FTM_R FTM_L"
+    },
+    {
+      "attribution": "Funk — hand-to-hand 16ths threaded with kick",
+      "barCount": 1,
+      "bpm": 107,
+      "isFree": true,
+      "name": "Two-Handed Funk Roll",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / KCK_K SNR_L SNR_R+ SNR_L / SNR_R SNR_L KCK_K SNR_L / SNR_R+ SNR_L TM1_R FTM_L"
+    },
+    {
+      "attribution": "Jazz — sparse lilting waltz triplets with rests",
+      "barCount": 1,
+      "bpm": 82,
+      "isFree": true,
+      "name": "Viennese Lilt",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ . . / TM1_R . TM2_L / FTM_R+ . KCK_K"
     },
     {
       "attribution": "Four-per-drum sixteenth roll over three drums",
@@ -178,55 +1645,19 @@
       "isFree": true,
       "name": "Waltz Around the Kit",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM1_R TM1_L / FTM_R FTM_L FTM_R FTM_L"
+      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R+ TM1_L TM1_R TM1_L / FTM_R+ FTM_L FTM_R FTM_L"
     },
     {
-      "attribution": "Linear RLRLKK \u00d72 in 3/4",
+      "attribution": "Rock — one accented tom per beat of the bar",
       "barCount": 1,
-      "bpm": 152,
+      "bpm": 121,
       "isFree": true,
-      "name": "Waltz Group-of-Six",
+      "name": "Waltz Backbeat Toms",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K KCK_K TM2_R SNR_L- / FTM_R SNR_L- KCK_K KCK_K"
+      "tokens": "SNR_R+ / FTM_R+ / TM1_R+"
     },
     {
-      "attribution": "RLK + rest per beat across 3/4 (uses rest token)",
-      "barCount": 1,
-      "bpm": 154,
-      "isFree": true,
-      "name": "Waltz Bursts",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ TM1_L KCK_K . / TM2_R FTM_L KCK_K . / FTM_R SNR_L- KCK_K ."
-    },
-    {
-      "attribution": "Eighth-note tom descent in 3/4",
-      "barCount": 1,
-      "bpm": 149,
-      "isFree": true,
-      "name": "Waltz Tom Eighths",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ TM1_L / TM1_R TM2_L / FTM_R FTM_L"
-    },
-    {
-      "attribution": "Linear RLK \u00d72 in 3/4 eighths",
-      "barCount": 1,
-      "bpm": 150,
-      "isFree": true,
-      "name": "Waltz RLK Eighths",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ TM2_L / KCK_K FTM_R / SNR_L- KCK_K"
-    },
-    {
-      "attribution": "Linear RLK \u00d73, jazz-waltz feel",
-      "barCount": 1,
-      "bpm": 165,
-      "isFree": true,
-      "name": "Jazz Waltz Triplets",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ TM1_L KCK_K / SNR_R+ TM2_L KCK_K / SNR_R+ FTM_L KCK_K"
-    },
-    {
-      "attribution": "Snare / floor / kick triplet \u00d73 in 3/4",
+      "attribution": "Snare / floor / kick triplet ×3 in 3/4",
       "barCount": 1,
       "bpm": 129,
       "isFree": true,
@@ -235,31 +1666,40 @@
       "tokens": "SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K / SNR_R+ FTM_L KCK_K"
     },
     {
-      "attribution": "Three-per-drum triplet roll down the toms",
+      "attribution": "Hip-hop — sparse boom-bap kick/snare in 3/4",
+      "barCount": 1,
+      "bpm": 85,
+      "isFree": true,
+      "name": "Waltz Boom-Bap",
+      "timeSignature": "threeFour",
+      "tokens": "KCK_K . SNR_R+ . / . KCK_K SNR_L- . / SNR_R+ . KCK_K SNR_L-"
+    },
+    {
+      "attribution": "RLK + rest per beat across 3/4 (uses rest token)",
+      "barCount": 1,
+      "bpm": 154,
+      "isFree": true,
+      "name": "Waltz Bursts",
+      "timeSignature": "threeFour",
+      "tokens": "SNR_R+ TM1_L- KCK_K . / TM2_R+ FTM_L- KCK_K . / FTM_R+ SNR_L- KCK_K ."
+    },
+    {
+      "attribution": "Linear RLRLKK ×2 in 3/4",
       "barCount": 1,
       "bpm": 152,
       "isFree": true,
-      "name": "Waltz Triplet Roll",
+      "name": "Waltz Group-of-Six",
       "timeSignature": "threeFour",
-      "tokens": "TM1_R TM1_L TM1_R / TM2_L TM2_R TM2_L / FTM_R FTM_L FTM_R"
+      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K KCK_K TM2_R SNR_L- / FTM_R+ SNR_L- KCK_K KCK_K"
     },
     {
-      "attribution": "One hit per beat: snare, mid, floor",
+      "attribution": "Rock — snare downbeat, a kick 16th burst, then a tom tag (mixed grid)",
       "barCount": 1,
-      "bpm": 153,
+      "bpm": 122,
       "isFree": true,
-      "name": "Waltz Quarter March",
+      "name": "Waltz Kick Feature",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ / TM2_R / FTM_R"
-    },
-    {
-      "attribution": "Quarter-note descent high \u2192 mid \u2192 floor",
-      "barCount": 1,
-      "bpm": 153,
-      "isFree": true,
-      "name": "Waltz Quarter Toms",
-      "timeSignature": "threeFour",
-      "tokens": "TM1_R / TM2_R / FTM_R"
+      "tokens": "SNR_R+ / KCK_K KCK_K KCK_K KCK_K / FTM_R+ FTM_L"
     },
     {
       "attribution": "Snare / kick / snare across the bar",
@@ -271,1534 +1711,94 @@
       "tokens": "SNR_R+ / KCK_K / SNR_R+"
     },
     {
-      "attribution": "Rock \u2014 floor-to-high tom 16th climb",
+      "attribution": "One hit per beat: snare, mid, floor",
       "barCount": 1,
-      "bpm": 126,
+      "bpm": 153,
       "isFree": true,
-      "name": "Ascending Tom Climb",
-      "timeSignature": "fourFour",
-      "tokens": "FTM_R FTM_L FTM_R FTM_L / TM2_R TM2_L TM2_R TM2_L / TM1_R TM1_L TM1_R TM1_L / SNR_R+ SNR_L SNR_R SNR_L"
-    },
-    {
-      "attribution": "Rock \u2014 two ghosted snare beats spilling into descending toms",
-      "barCount": 1,
-      "bpm": 121,
-      "isFree": true,
-      "name": "Snare Buzz Into Toms",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- SNR_R- SNR_L- / SNR_R+ SNR_L- SNR_R- SNR_L- / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 snare/tom on the beat, kick on the &",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Backbeat Kick-Tom Eighths",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K / TM1_R KCK_K / TM2_R KCK_K / FTM_R KCK_K"
-    },
-    {
-      "attribution": "Rock \u2014 two beats groove, then an accelerating tom drop",
-      "barCount": 1,
-      "bpm": 123,
-      "isFree": true,
-      "name": "Half-Bar Tom Setup",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ / KCK_K / TM1_R TM2_L / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 kick-and-backbeat drive spilling around the toms",
-      "barCount": 1,
-      "bpm": 126,
-      "isFree": true,
-      "name": "Driving Snare-Tom Eighths",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R+ / TM1_L TM1_R / KCK_K SNR_R+ / TM2_L FTM_R"
-    },
-    {
-      "attribution": "Rock \u2014 building snare 16ths that resolve down the toms",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Sixteenth Snare Roll Out",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- SNR_L- SNR_R SNR_L / SNR_R SNR_L SNR_R+ SNR_L / SNR_R+ SNR_L TM1_R TM2_L / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 galloping 8th/16th tom figure",
-      "barCount": 1,
-      "bpm": 125,
-      "isFree": true,
-      "name": "Tom Gallop",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R TM1_L / TM2_R TM2_L TM2_R TM2_L / FTM_R FTM_L / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 one big accented tom per beat",
-      "barCount": 1,
-      "bpm": 121,
-      "isFree": true,
-      "name": "Quarter-Note Power Toms",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R / SNR_R+ / TM2_R / FTM_R"
-    },
-    {
-      "attribution": "Rock \u2014 snare/kick/tom triplet roll around the kit",
-      "barCount": 1,
-      "bpm": 126,
-      "isFree": true,
-      "name": "Snare-Kick Tom Triplets",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K TM1_R / SNR_L+ KCK_K TM2_R / SNR_R+ KCK_K FTM_R / FTM_L KCK_K FTM_R"
-    },
-    {
-      "attribution": "Rock \u2014 syncopated 16th fill with rests and kick punctuation",
-      "barCount": 1,
-      "bpm": 122,
-      "isFree": true,
-      "name": "Broken Sixteenth Fill",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ . SNR_L TM1_R / . TM2_L KCK_K . / FTM_R FTM_L . KCK_K / SNR_R+ . TM2_L FTM_R"
-    },
-    {
-      "attribution": "Rock \u2014 heavy floor-tom eighths with kick",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Floor Tom Thunder",
-      "timeSignature": "fourFour",
-      "tokens": "FTM_R FTM_L / FTM_R KCK_K / FTM_R FTM_L / SNR_R+ KCK_K"
-    },
-    {
-      "attribution": "Rock \u2014 a snare 16th figure with the accent walking forward",
-      "barCount": 1,
-      "bpm": 122,
-      "isFree": true,
-      "name": "Marching Snare Accents",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- SNR_R- SNR_L- / SNR_R- SNR_L+ SNR_R- SNR_L- / SNR_R- SNR_L- SNR_R+ SNR_L- / TM1_R TM2_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 one groove bar then a full 16th tom fill",
-      "barCount": 2,
-      "bpm": 122,
-      "isFree": true,
-      "name": "Anthem Two-Bar",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K / TM1_L SNR_R / KCK_K SNR_R+ / TM2_L KCK_K | SNR_R+ SNR_L TM1_R TM1_L / TM2_R TM2_L FTM_R FTM_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ TM1_L TM2_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 16th roll cascading snare\u2192toms\u2192floor",
-      "barCount": 1,
-      "bpm": 118,
-      "isFree": true,
-      "name": "Snare-to-Floor Builder",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ FTM_L SNR_R+ FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 snare accents answered by kick, 16th grid with rests",
-      "barCount": 1,
-      "bpm": 120,
-      "isFree": true,
-      "name": "Syncopated Kick-Snare",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ . KCK_K . / SNR_L+ . KCK_K KCK_K / SNR_R+ . TM1_L . / FTM_R FTM_L KCK_K ."
-    },
-    {
-      "attribution": "Rock \u2014 barking closed-hat + snare eighths into toms",
-      "barCount": 1,
-      "bpm": 123,
-      "isFree": true,
-      "name": "Hi-Hat Bark",
-      "timeSignature": "fourFour",
-      "tokens": "HHT_R+ SNR_L / HHT_R+ SNR_L / TM1_R TM2_L / FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 descending triplet tom cascade ending on the snare",
-      "barCount": 1,
-      "bpm": 118,
-      "isFree": true,
-      "name": "Tom Cascade Triplets",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R TM1_L TM1_R / TM2_L TM2_R TM2_L / FTM_R FTM_L FTM_R / SNR_L+ SNR_R SNR_L"
-    },
-    {
-      "attribution": "Rock \u2014 quarter-note stabs with rests between (stop-time feel)",
-      "barCount": 1,
-      "bpm": 106,
-      "isFree": true,
-      "name": "Stop-Time Punches",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ / FTM_R / TM1_R / KCK_K"
-    },
-    {
-      "attribution": "Rock \u2014 kick starts each beat, hands answer",
-      "barCount": 1,
-      "bpm": 120,
-      "isFree": true,
-      "name": "Kick-Led Sixteenths",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R SNR_L SNR_R+ / KCK_K TM1_L TM1_R TM1_L / KCK_K TM2_L TM2_R TM2_L / KCK_K FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 displaced snare backbeat resolving down the toms",
-      "barCount": 1,
-      "bpm": 126,
-      "isFree": true,
-      "name": "Backbeat Displaced",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L+ / TM2_R SNR_L+ / FTM_R SNR_L+ / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Rock \u2014 sparse half-time snare with a floor-tom answer",
-      "barCount": 1,
-      "bpm": 106,
-      "isFree": true,
-      "name": "Half-Time Crush",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K . / SNR_R+ . / KCK_K KCK_K / FTM_R SNR_L+"
-    },
-    {
-      "attribution": "Rock \u2014 accented triplet toms into a floor-tom landing",
-      "barCount": 1,
-      "bpm": 120,
-      "isFree": true,
-      "name": "Big Rock Ending",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ TM1_L TM2_R / SNR_L+ TM1_R TM2_L / FTM_R FTM_L FTM_R / FTM_R FTM_L FTM_R KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 alternating snare/kick 16ths (blast-beat feel)",
-      "barCount": 1,
-      "bpm": 210,
-      "isFree": true,
-      "name": "Single-Stroke Blast Run",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / SNR_R+ KCK_K SNR_L KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 three-kick bursts capped by a snare accent",
-      "barCount": 1,
-      "bpm": 208,
-      "isFree": true,
-      "name": "Double-Kick Sixteenths",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K KCK_K KCK_K SNR_R+ / KCK_K KCK_K KCK_K SNR_R+ / KCK_K KCK_K KCK_K SNR_R+ / KCK_K KCK_K KCK_K SNR_R+"
-    },
-    {
-      "attribution": "Metal \u2014 accented single-stroke snare 16ths (gravity-roll feel)",
-      "barCount": 1,
-      "bpm": 209,
-      "isFree": true,
-      "name": "Gravity Snare Buzz",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- SNR_R SNR_L / SNR_R+ SNR_L- SNR_R SNR_L / SNR_R+ SNR_L- SNR_R SNR_L / SNR_R+ SNR_L- SNR_R SNR_L"
-    },
-    {
-      "attribution": "Metal \u2014 descending toms hammered against double kick",
-      "barCount": 1,
-      "bpm": 208,
-      "isFree": true,
-      "name": "Thrash Tom Roll",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R TM1_L KCK_K KCK_K / TM2_R TM2_L KCK_K KCK_K / FTM_R FTM_L KCK_K KCK_K / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 kick-kick-tom triplet gallop around the kit",
-      "barCount": 1,
-      "bpm": 200,
-      "isFree": true,
-      "name": "Metal Gallop",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K KCK_K TM1_R / KCK_K KCK_K TM2_R / KCK_K KCK_K FTM_R / KCK_K KCK_K SNR_R+"
-    },
-    {
-      "attribution": "Metal \u2014 dense snare/kick machine-gun 16ths",
-      "barCount": 1,
-      "bpm": 214,
-      "isFree": true,
-      "name": "Machine-Gun Snare-Kick",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L KCK_K SNR_R / SNR_L KCK_K SNR_R SNR_L / KCK_K SNR_R SNR_L KCK_K / SNR_R+ SNR_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 heavy eighth-note tom march into the snare",
-      "barCount": 1,
-      "bpm": 204,
-      "isFree": true,
-      "name": "Metal Tom March",
-      "timeSignature": "fourFour",
-      "tokens": "FTM_R FTM_L / TM2_R TM2_L / TM1_R TM1_L / SNR_R+ KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 snare accent over kick triplets",
-      "barCount": 1,
-      "bpm": 213,
-      "isFree": true,
-      "name": "Triplet Blast",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K KCK_K / SNR_L+ KCK_K KCK_K / SNR_R+ KCK_K KCK_K / SNR_L+ KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 one voice per drum split by kick, 16ths",
-      "barCount": 1,
-      "bpm": 214,
-      "isFree": true,
-      "name": "Around-Kit Thrash",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K TM1_L KCK_K / TM1_R KCK_K TM2_L KCK_K / TM2_R KCK_K FTM_L KCK_K / FTM_R KCK_K FTM_L KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 a bar of gallop then a double-kick tom climb",
-      "barCount": 2,
-      "bpm": 212,
-      "isFree": true,
-      "name": "Double-Kick Tom Climb",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K KCK_K SNR_L / SNR_R+ KCK_K KCK_K SNR_L / SNR_R+ KCK_K KCK_K SNR_L / SNR_R+ KCK_K KCK_K SNR_L | FTM_R FTM_L KCK_K KCK_K / TM2_R TM2_L KCK_K KCK_K / TM1_R TM1_L KCK_K KCK_K / SNR_R+ SNR_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 relentless snare/floor-tom 16th hammering",
-      "barCount": 1,
-      "bpm": 202,
-      "isFree": true,
-      "name": "Snare-Floor Hammer",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ FTM_L SNR_R FTM_L / SNR_R+ FTM_L SNR_R FTM_L / SNR_R+ FTM_L SNR_R FTM_L / SNR_R+ FTM_L SNR_R FTM_L"
-    },
-    {
-      "attribution": "Metal \u2014 tom accents launched off kick triplets",
-      "barCount": 1,
-      "bpm": 208,
-      "isFree": true,
-      "name": "Kick-Machine Toms",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R KCK_K KCK_K / TM2_R KCK_K KCK_K / FTM_R KCK_K KCK_K / SNR_R+ KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 a five-note grouping displacing the accent (prog-metal)",
-      "barCount": 1,
-      "bpm": 202,
-      "isFree": true,
-      "name": "Groups of Five",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L KCK_K KCK_K / SNR_R SNR_L+ SNR_R KCK_K / KCK_K SNR_R SNR_L+ KCK_K / SNR_R FTM_L FTM_R KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 half-time breakdown: floor tom + double kick",
-      "barCount": 1,
-      "bpm": 183,
-      "isFree": true,
-      "name": "Floor-Kick Breakdown",
-      "timeSignature": "fourFour",
-      "tokens": "FTM_R . KCK_K KCK_K / SNR_R+ . KCK_K . / FTM_R . KCK_K KCK_K / SNR_R+ FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 fast single-stroke tom-to-tom 16ths",
-      "barCount": 1,
-      "bpm": 214,
-      "isFree": true,
-      "name": "Speed Tom Singles",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L TM2_R TM2_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Metal \u2014 snare on the beat, kick 16th bursts between",
-      "barCount": 1,
-      "bpm": 205,
-      "isFree": true,
-      "name": "Double Bass Under Snare",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ / KCK_K KCK_K KCK_K KCK_K / SNR_R+ / KCK_K KCK_K KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 snare/tom chop laced with kick, 16ths",
-      "barCount": 1,
-      "bpm": 208,
-      "isFree": true,
-      "name": "Thrash Chop",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ TM1_L KCK_K SNR_R / TM2_L KCK_K SNR_R FTM_L / KCK_K SNR_R TM1_L KCK_K / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 a full bar of blast resolving into a tom run",
-      "barCount": 2,
-      "bpm": 212,
-      "isFree": true,
-      "name": "Sustained Blast Two-Bar",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K | TM1_R KCK_K TM1_L KCK_K / TM2_R KCK_K TM2_L KCK_K / FTM_R KCK_K FTM_L KCK_K / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Metal \u2014 kick/snare/kick triplet gallop into the floor",
-      "barCount": 1,
-      "bpm": 203,
-      "isFree": true,
-      "name": "Kick-Snare Triplet Gallop",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R+ KCK_K / KCK_K SNR_L+ KCK_K / KCK_K SNR_R+ KCK_K / FTM_R FTM_L FTM_R"
-    },
-    {
-      "attribution": "Metal \u2014 descending tom stabs into a kick 16th burst",
-      "barCount": 1,
-      "bpm": 211,
-      "isFree": true,
-      "name": "Tom Drop Double-Kick",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R / TM2_R / FTM_R / KCK_K KCK_K KCK_K KCK_K"
-    },
-    {
-      "attribution": "Funk \u2014 linear ghost-note 16ths punctuated by kick (Garibaldi feel)",
-      "barCount": 1,
-      "bpm": 105,
-      "isFree": true,
-      "name": "Linear Ghost Sixteenths",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K SNR_R+ SNR_L- / KCK_K SNR_R- SNR_L- KCK_K / SNR_R+ SNR_L- KCK_K SNR_R-"
-    },
-    {
-      "attribution": "Funk \u2014 accents floating over a bed of ghosted snare 16ths",
-      "barCount": 1,
-      "bpm": 103,
-      "isFree": true,
-      "name": "Ghost-Note Snare Groove",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- SNR_L- SNR_R+ SNR_L- / KCK_K SNR_R- SNR_L+ SNR_R- / SNR_L- KCK_K SNR_R- SNR_L- / SNR_R+ SNR_L- KCK_K SNR_R-"
-    },
-    {
-      "attribution": "Funk \u2014 closed-hat lead with snare ghosts and kick",
-      "barCount": 1,
-      "bpm": 103,
-      "isFree": true,
-      "name": "Hi-Hat Funk Linear",
-      "timeSignature": "fourFour",
-      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- TM1_R SNR_L- / FTM_R SNR_L- KCK_K SNR_R-"
-    },
-    {
-      "attribution": "Funk \u2014 shuffled triplet with the classic ghosted snare",
-      "barCount": 1,
-      "bpm": 105,
-      "isFree": true,
-      "name": "Purdie Shuffle Ghosts",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- SNR_R- / KCK_K SNR_L- SNR_R- / SNR_L+ SNR_R- SNR_L- / KCK_K SNR_R- SNR_L-"
-    },
-    {
-      "attribution": "Funk \u2014 ghosted groove spilling onto the toms",
-      "barCount": 1,
-      "bpm": 108,
-      "isFree": true,
-      "name": "Sixteenth Funk Tom Spill",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- SNR_R- TM1_L / KCK_K SNR_R- TM2_L SNR_R- / SNR_L- KCK_K FTM_R SNR_L- / SNR_R+ SNR_L- KCK_K FTM_R"
-    },
-    {
-      "attribution": "Funk \u2014 kick shoved off the beat under snare accents",
-      "barCount": 1,
-      "bpm": 108,
-      "isFree": true,
-      "name": "Kick-Displaced Funk",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R+ SNR_L- KCK_K / SNR_R- KCK_K SNR_L+ SNR_R- / KCK_K SNR_L- SNR_R- KCK_K / SNR_L+ SNR_R- KCK_K SNR_L-"
-    },
-    {
-      "attribution": "Funk \u2014 hand-to-hand 16ths threaded with kick",
-      "barCount": 1,
-      "bpm": 107,
-      "isFree": true,
-      "name": "Two-Handed Funk Roll",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / KCK_K SNR_L SNR_R+ SNR_L / SNR_R SNR_L KCK_K SNR_L / SNR_R+ SNR_L TM1_R FTM_L"
-    },
-    {
-      "attribution": "Funk \u2014 backbeat accents surrounded by rests and ghosts",
-      "barCount": 1,
-      "bpm": 103,
-      "isFree": true,
-      "name": "Ghost-Accent Backbeat",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- SNR_L- SNR_R+ . / SNR_L- KCK_K SNR_R- SNR_L- / SNR_R+ . SNR_L- KCK_K / SNR_R- SNR_L- SNR_R+ SNR_L-"
-    },
-    {
-      "attribution": "Funk \u2014 RLRR-LRLL paradiddle spilling accents onto the toms",
-      "barCount": 1,
-      "bpm": 106,
-      "isFree": true,
-      "name": "Funk Paradiddle to Toms",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- SNR_L- SNR_R+ TM1_R / SNR_L- SNR_R- SNR_L+ TM2_L / SNR_R- SNR_L- SNR_R+ FTM_R / SNR_L- SNR_R- SNR_L+ FTM_L"
-    },
-    {
-      "attribution": "Funk \u2014 two groove beats then an accelerating tom spill",
-      "barCount": 1,
-      "bpm": 108,
-      "isFree": true,
-      "name": "Half-Bar Funk Drop",
-      "timeSignature": "fourFour",
-      "tokens": "HHT_R+ SNR_L- / KCK_K SNR_R+ / SNR_L- SNR_R- SNR_L- KCK_K / TM1_R TM2_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Funk \u2014 dense ghost-note 16ths with a shifting accent",
-      "barCount": 1,
-      "bpm": 112,
-      "isFree": true,
-      "name": "Ghosted Snare Machine",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- SNR_L- SNR_R- SNR_L+ / SNR_R- SNR_L- SNR_R+ SNR_L- / SNR_R- SNR_L+ SNR_R- SNR_L- / SNR_R+ SNR_L- KCK_K KCK_K"
-    },
-    {
-      "attribution": "Funk \u2014 tom ghosts riding a deep kick pocket",
-      "barCount": 1,
-      "bpm": 100,
-      "isFree": true,
-      "name": "Funk Tom Pocket",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K TM1_R SNR_L+ TM1_R / KCK_K TM2_R SNR_L+ FTM_R / KCK_K TM1_R SNR_L+ / FTM_R SNR_L- KCK_K SNR_R-"
-    },
-    {
-      "attribution": "Funk \u2014 snare accents displaced across a triplet grid",
-      "barCount": 1,
-      "bpm": 107,
-      "isFree": true,
-      "name": "Displaced Snare Triplets",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- KCK_K SNR_L+ / SNR_R- SNR_L- KCK_K / SNR_R+ SNR_L- SNR_R- / KCK_K SNR_L+ SNR_R-"
-    },
-    {
-      "attribution": "Funk \u2014 six-stroke groupings marching down the kit",
-      "barCount": 1,
-      "bpm": 108,
-      "isFree": true,
-      "name": "Funk Six-Stroke",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- SNR_L- KCK_K / SNR_R+ SNR_L- SNR_L- KCK_K / TM1_R TM1_L TM2_R KCK_K / FTM_R FTM_L SNR_R- KCK_K"
-    },
-    {
-      "attribution": "Funk \u2014 sparse, laid-back ghost figure with closed hat",
-      "barCount": 1,
-      "bpm": 84,
-      "isFree": true,
-      "name": "Neo-Soul Laid Back",
-      "timeSignature": "fourFour",
-      "tokens": "HHT_R+ . SNR_L- . / KCK_K SNR_R+ . SNR_L- / . HHT_R+ SNR_L- KCK_K / SNR_R+ . SNR_L- ."
-    },
-    {
-      "attribution": "Funk \u2014 conversational kick-and-snare 16ths",
-      "barCount": 1,
-      "bpm": 103,
-      "isFree": true,
-      "name": "Kick-Snare Interplay",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K KCK_K SNR_R+ SNR_L- / SNR_R- KCK_K SNR_L- KCK_K / SNR_R+ SNR_L- SNR_R- KCK_K / KCK_K SNR_L- SNR_R+ SNR_L-"
-    },
-    {
-      "attribution": "Funk \u2014 a bar of linear groove then a ghosted tom fill",
-      "barCount": 2,
-      "bpm": 108,
-      "isFree": true,
-      "name": "Funk Two-Bar Pocket",
-      "timeSignature": "fourFour",
-      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- KCK_K SNR_R- | SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K SNR_R- TM2_L SNR_R- / SNR_L- KCK_K FTM_R SNR_L- / FTM_R FTM_L SNR_R- KCK_K"
-    },
-    {
-      "attribution": "Funk \u2014 ghost 16ths swelling into an accented burst",
-      "barCount": 1,
-      "bpm": 100,
-      "isFree": true,
-      "name": "Ghost Roll Crescendo",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- SNR_L- SNR_R- SNR_L- / SNR_R- SNR_L- SNR_R SNR_L / SNR_R SNR_L SNR_R+ SNR_L / SNR_R+ SNR_L+ TM1_R FTM_R"
-    },
-    {
-      "attribution": "Funk \u2014 wide quarter-note backbeat with a ghost tag",
-      "barCount": 1,
-      "bpm": 101,
-      "isFree": true,
-      "name": "Sparse Funk Quarters",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ / KCK_K / SNR_R+ / SNR_L-"
-    },
-    {
-      "attribution": "Funk \u2014 Latin-funk songo lean: tom accents over kick",
-      "barCount": 1,
-      "bpm": 100,
-      "isFree": true,
-      "name": "Songo Funk",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- TM1_L SNR_R- KCK_K / SNR_L- SNR_R- TM2_L KCK_K / SNR_R- FTM_L SNR_R- KCK_K / SNR_L- SNR_R+ SNR_L- KCK_K"
-    },
-    {
-      "attribution": "Fusion \u2014 Gadd-style linear groupings threaded with kick",
-      "barCount": 1,
-      "bpm": 144,
-      "isFree": true,
-      "name": "Gadd Linear Sixteenths",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_L- SNR_R- TM1_R / SNR_L- KCK_K SNR_R- SNR_L- / TM2_R KCK_K SNR_L- SNR_R- / FTM_R KCK_K SNR_L- KCK_K"
-    },
-    {
-      "attribution": "Fusion \u2014 smooth Weckl-style tom-to-tom 16th weave",
-      "barCount": 1,
-      "bpm": 149,
-      "isFree": true,
-      "name": "Weckl Around the Kit",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ TM1_L SNR_R TM1_L / TM2_R FTM_L TM2_R FTM_L / SNR_R+ TM1_L TM2_R FTM_L / FTM_R TM2_L TM1_R SNR_L"
-    },
-    {
-      "attribution": "Fusion \u2014 triplet and 16th beats alternating (mixed grid)",
-      "barCount": 1,
-      "bpm": 151,
-      "isFree": true,
-      "name": "Mixed-Meter Fusion",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R SNR_L- TM2_R SNR_L- / KCK_K SNR_R- SNR_L- / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Fusion \u2014 five-note linear groupings around the kit",
-      "barCount": 1,
-      "bpm": 148,
-      "isFree": true,
-      "name": "Linear Group of Five",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R+ SNR_L- / TM2_R KCK_K SNR_L- SNR_R+ / SNR_L- KCK_K FTM_R FTM_L"
-    },
-    {
-      "attribution": "Fusion \u2014 accents displaced across a 16th snare bed",
-      "barCount": 1,
-      "bpm": 147,
-      "isFree": true,
-      "name": "Colaiuta Displacement",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- SNR_R- TM1_L / SNR_R+ SNR_L- TM2_R SNR_L- / SNR_R+ SNR_L- FTM_R SNR_L- / TM1_R TM2_L FTM_R KCK_K"
-    },
-    {
-      "attribution": "Fusion \u2014 snare/tom/kick triplets tumbling down the kit",
-      "barCount": 1,
-      "bpm": 152,
-      "isFree": true,
-      "name": "Fusion Triplet Sextet",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ TM1_L KCK_K / SNR_R+ TM2_L KCK_K / SNR_R+ FTM_L KCK_K / TM1_R FTM_L KCK_K"
-    },
-    {
-      "attribution": "Fusion \u2014 sparse linear phrase full of rests",
-      "barCount": 1,
-      "bpm": 149,
-      "isFree": true,
-      "name": "Broken Linear Fusion",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ . TM1_L KCK_K / . SNR_R- TM2_L . / KCK_K FTM_R . SNR_L- / TM1_R . KCK_K FTM_R"
-    },
-    {
-      "attribution": "Fusion \u2014 kick ostinato under 16th hand bursts (mixed grid)",
-      "barCount": 1,
-      "bpm": 145,
-      "isFree": true,
-      "name": "Fusion Kick Ostinato",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R+ / KCK_K TM1_R SNR_L- TM2_R / KCK_K SNR_R+ / KCK_K FTM_R SNR_L- FTM_R"
-    },
-    {
-      "attribution": "Fusion \u2014 a seven-note grouping over the 16th grid",
-      "barCount": 1,
-      "bpm": 151,
-      "isFree": true,
-      "name": "Odd Grouping Seven",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- SNR_R+ SNR_L- KCK_K / SNR_R- SNR_L- SNR_R+ SNR_L- / KCK_K SNR_R- TM1_L FTM_R"
-    },
-    {
-      "attribution": "Fusion \u2014 melodic tom line ghosted on the snare",
-      "barCount": 1,
-      "bpm": 147,
-      "isFree": true,
-      "name": "Fusion Tom Melody",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- TM2_R SNR_L- / FTM_R SNR_L- TM1_R / TM2_R SNR_L- FTM_R SNR_L- / TM1_R TM2_L FTM_R KCK_K"
-    },
-    {
-      "attribution": "Fusion \u2014 a linear phrase resolving into an around-the-kit bar",
-      "barCount": 2,
-      "bpm": 148,
-      "isFree": true,
-      "name": "Fusion Two-Bar Solo",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R- TM2_L / KCK_K SNR_R- SNR_L- FTM_R / SNR_L- KCK_K SNR_R+ SNR_L- | TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L SNR_R SNR_L / KCK_K TM1_R KCK_K TM2_R / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Fusion \u2014 two bars mixing triplet, 8th and 16th beats",
-      "barCount": 2,
-      "bpm": 148,
-      "isFree": true,
-      "name": "Fusion Mixed Two-Bar",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R TM2_L / KCK_K SNR_R- SNR_L- / FTM_R FTM_L FTM_R FTM_L | SNR_R+ KCK_K TM1_L / SNR_R+ KCK_K TM2_L / SNR_R+ KCK_K FTM_L / KCK_K FTM_R FTM_L KCK_K"
-    },
-    {
-      "attribution": "Latin \u2014 syncopated samba spread across snare, toms and kick",
-      "barCount": 1,
-      "bpm": 112,
-      "isFree": true,
-      "name": "Samba Batucada",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- TM1_R SNR_L- / KCK_K SNR_R- FTM_L SNR_R- / SNR_L- TM2_R SNR_L- KCK_K / FTM_R SNR_L- KCK_K SNR_R-"
-    },
-    {
-      "attribution": "Latin \u2014 Changuito-style songo: tom accents over a busy kick",
-      "barCount": 1,
-      "bpm": 117,
-      "isFree": true,
-      "name": "Songo",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- TM1_L KCK_K SNR_R- / SNR_L- TM2_R KCK_K SNR_L- / TM1_R FTM_L KCK_K SNR_R- / FTM_R SNR_L- KCK_K KCK_K"
-    },
-    {
-      "attribution": "Latin \u2014 Mozambique feel voiced around the toms",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Mozambique Toms",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- TM1_R KCK_K / TM2_R SNR_L- TM2_R KCK_K / FTM_R SNR_L- FTM_R KCK_K / SNR_R+ TM1_L TM2_R FTM_L"
-    },
-    {
-      "attribution": "Latin \u2014 sparse bossa: ghosted snare (cross-stick role) and kick",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Bossa Feel",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- . KCK_K SNR_L- / . SNR_R- KCK_K . / SNR_L- TM1_R . KCK_K / FTM_R SNR_L- KCK_K SNR_R-"
-    },
-    {
-      "attribution": "Latin \u2014 cascara rhythm running around the drums",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Cascara Around Kit",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R TM1_L SNR_R- TM1_R / TM2_R SNR_L- TM2_R TM2_L / FTM_R FTM_L SNR_R- FTM_R / SNR_R+ TM1_L TM2_R FTM_L"
-    },
-    {
-      "attribution": "Latin \u2014 rumba guaguanc\u00f3 snare/tom triplet phrase",
-      "barCount": 1,
-      "bpm": 112,
-      "isFree": true,
-      "name": "Guaguanco Triplets",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- TM1_R / KCK_K SNR_L- TM2_R / SNR_R- FTM_L KCK_K / SNR_R+ SNR_L- FTM_R"
-    },
-    {
-      "attribution": "Latin \u2014 6/8 bell feel as tom triplets over kick",
-      "barCount": 1,
-      "bpm": 115,
-      "isFree": true,
-      "name": "Afro Six-Eight Feel",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- TM2_R / KCK_K TM1_L SNR_R / TM2_R SNR_L- FTM_R / KCK_K SNR_L- FTM_R"
-    },
-    {
-      "attribution": "Latin \u2014 Brazilian bai\u00e3o kick pattern under a linear fill",
-      "barCount": 1,
-      "bpm": 115,
-      "isFree": true,
-      "name": "Baiao Kick",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R+ SNR_L- KCK_K / SNR_R- KCK_K TM1_L SNR_R- / KCK_K SNR_L- FTM_R KCK_K / SNR_R+ SNR_L- KCK_K SNR_R-"
-    },
-    {
-      "attribution": "Latin \u2014 Columbia-style tom accents over ghosted 16ths",
-      "barCount": 1,
-      "bpm": 118,
-      "isFree": true,
-      "name": "Rumba Columbia",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- SNR_R- TM2_L / FTM_R SNR_L- SNR_R- TM1_L / TM2_R SNR_L- FTM_R / SNR_R+ TM1_L FTM_R KCK_K"
-    },
-    {
-      "attribution": "Latin \u2014 timbale-style single-stroke roll around the kit",
-      "barCount": 1,
-      "bpm": 118,
-      "isFree": true,
-      "name": "Timbale Abanico",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM1_R TM1_L / TM2_R TM2_L FTM_R FTM_L / FTM_R FTM_L SNR_R+ SNR_L"
-    },
-    {
-      "attribution": "Latin \u2014 a clave-driven groove bar into a tom melody",
-      "barCount": 2,
-      "bpm": 115,
-      "isFree": true,
-      "name": "Latin Two-Bar Clave",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- TM1_L KCK_K SNR_R- / SNR_L- KCK_K TM2_R SNR_L- / SNR_R- FTM_L KCK_K SNR_R- / SNR_L- KCK_K SNR_R+ SNR_L- | TM1_R SNR_L- TM2_R SNR_L- / FTM_R SNR_L- TM1_R SNR_L- / TM2_R FTM_L SNR_R- KCK_K / FTM_R FTM_L KCK_K SNR_R+"
-    },
-    {
-      "attribution": "Latin \u2014 mambo tom melody with a 16th kick answer (mixed grid)",
-      "barCount": 1,
-      "bpm": 114,
-      "isFree": true,
-      "name": "Mambo Tom Melody",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R SNR_L- / TM2_R SNR_L- FTM_R KCK_K / FTM_R SNR_L- / SNR_R+ TM1_L TM2_R FTM_L"
-    },
-    {
-      "attribution": "Gospel \u2014 linear chop tumbling around the kit",
-      "barCount": 1,
-      "bpm": 107,
-      "isFree": true,
-      "name": "Gospel Chop Sixteenths",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R- TM2_L / KCK_K SNR_R- SNR_L- FTM_R / SNR_L- SNR_R+ KCK_K KCK_K"
-    },
-    {
-      "attribution": "Gospel \u2014 snare/tom/kick triplet chop descending the toms",
-      "barCount": 1,
-      "bpm": 109,
-      "isFree": true,
-      "name": "Gospel Triplet Chop",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R SNR_L- KCK_K / TM2_R SNR_L- KCK_K / FTM_R SNR_L- KCK_K"
-    },
-    {
-      "attribution": "Gospel \u2014 six-stroke roll opening onto the toms",
-      "barCount": 1,
-      "bpm": 108,
-      "isFree": true,
-      "name": "Gospel Six-Stroke Roll",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / SNR_R SNR_L SNR_R+ SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Gospel \u2014 kick-led five-note groupings around the kit",
-      "barCount": 1,
-      "bpm": 107,
-      "isFree": true,
-      "name": "Gospel Linear Five",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R- SNR_L- TM1_R / KCK_K SNR_L- SNR_R- TM2_L / KCK_K SNR_R- SNR_L- FTM_R / KCK_K SNR_L- SNR_R+ SNR_L+"
-    },
-    {
-      "attribution": "Gospel \u2014 rapid hand-to-foot 16ths around the drums",
-      "barCount": 1,
-      "bpm": 108,
-      "isFree": true,
-      "name": "Gospel Hand-Foot",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K SNR_L- KCK_K / SNR_R- KCK_K SNR_L+ KCK_K / TM1_R KCK_K TM2_L KCK_K / FTM_R KCK_K FTM_L KCK_K"
-    },
-    {
-      "attribution": "Gospel \u2014 accented triplet shout down to the floor tom",
-      "barCount": 1,
-      "bpm": 104,
-      "isFree": true,
-      "name": "Gospel Shout Fill",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ TM1_L SNR_R / SNR_L+ TM2_R SNR_L / SNR_R+ FTM_L SNR_R / FTM_L FTM_R KCK_K KCK_K"
-    },
-    {
-      "attribution": "Gospel \u2014 a linear chop bar resolving into a full roll",
-      "barCount": 2,
-      "bpm": 104,
-      "isFree": true,
-      "name": "Gospel Two-Bar Chop",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K SNR_R- TM1_L / KCK_K SNR_R- SNR_L- TM2_R / SNR_L- KCK_K FTM_R KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L SNR_R SNR_L / KCK_K FTM_R KCK_K SNR_R+"
-    },
-    {
-      "attribution": "Gospel \u2014 a triplet-and-16th chop (mixed grid)",
-      "barCount": 1,
-      "bpm": 106,
-      "isFree": true,
-      "name": "Gospel Mixed Chop",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K / SNR_R- SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R- / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Hip-hop \u2014 hard, sparse boom-bap snare with kick punctuation",
-      "barCount": 1,
-      "bpm": 90,
-      "isFree": true,
-      "name": "Boom-Bap Fill",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K . SNR_R+ . / . KCK_K . SNR_L- / KCK_K KCK_K SNR_R+ . / . SNR_L- TM1_R FTM_R"
-    },
-    {
-      "attribution": "Hip-hop \u2014 trap snare roll accelerating into a burst",
-      "barCount": 1,
-      "bpm": 92,
-      "isFree": true,
-      "name": "Trap Snare Roll",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- . . SNR_L- / . . SNR_R+ . / SNR_L- SNR_R- SNR_L- SNR_R- / SNR_L SNR_R SNR_L SNR_R+"
-    },
-    {
-      "attribution": "Hip-hop \u2014 triplet trap roll blooming from silence",
-      "barCount": 1,
-      "bpm": 84,
-      "isFree": true,
-      "name": "Trap Triplet Roll",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ . . / . SNR_L- SNR_R- / SNR_L SNR_R SNR_L / SNR_R SNR_L+ SNR_R+"
-    },
-    {
-      "attribution": "Hip-hop \u2014 laid-back neo-soul ghosts under a closed hat",
-      "barCount": 1,
-      "bpm": 83,
-      "isFree": true,
-      "name": "Neo-Soul Ghost Fill",
-      "timeSignature": "fourFour",
-      "tokens": "HHT_R+ SNR_L- . SNR_R- / KCK_K . SNR_L+ . / SNR_R- . KCK_K SNR_L- / SNR_R+ . TM1_L FTM_R"
-    },
-    {
-      "attribution": "Hip-hop \u2014 off-kilter, drunk-feel snare and kick",
-      "barCount": 1,
-      "bpm": 85,
-      "isFree": true,
-      "name": "Dilla Wonky",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R+ . SNR_L- / . KCK_K SNR_R- . / SNR_L+ . KCK_K SNR_R- / . SNR_L- TM1_R KCK_K"
-    },
-    {
-      "attribution": "Hip-hop \u2014 dragged R&B ghosts spilling onto the toms",
-      "barCount": 1,
-      "bpm": 87,
-      "isFree": true,
-      "name": "R&B Snare Drag",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R- SNR_L- SNR_R+ . / SNR_L- . SNR_R- SNR_L+ / SNR_R- SNR_L- KCK_K / SNR_R+ TM1_L TM2_R FTM_L"
-    },
-    {
-      "attribution": "Hip-hop \u2014 wide half-time backbeat with a ghost tail",
-      "barCount": 1,
-      "bpm": 76,
-      "isFree": true,
-      "name": "Half-Time Hip-Hop",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K . / SNR_R+ . / . KCK_K / SNR_R+ SNR_L-"
-    },
-    {
-      "attribution": "Hip-hop \u2014 stuttering kick 16ths answered by the snare",
-      "barCount": 1,
-      "bpm": 90,
-      "isFree": true,
-      "name": "Trap Kick Roll",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K KCK_K . SNR_R+ / . KCK_K KCK_K . / SNR_L- . KCK_K KCK_K / SNR_R+ . TM1_L FTM_R"
-    },
-    {
-      "attribution": "Hip-hop \u2014 a boom-bap bar into a tom-tag fill",
-      "barCount": 2,
-      "bpm": 92,
-      "isFree": true,
-      "name": "Boom-Bap Two-Bar",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K . SNR_R+ . / KCK_K KCK_K SNR_L- . / . KCK_K SNR_R+ . / SNR_L- . KCK_K SNR_R- | KCK_K SNR_R+ . SNR_L- / . KCK_K SNR_R- . / SNR_L+ TM1_R TM2_L FTM_R / FTM_L FTM_R KCK_K SNR_R+"
-    },
-    {
-      "attribution": "Blues \u2014 skip-note shuffle triplets down the kit",
-      "barCount": 1,
-      "bpm": 98,
-      "isFree": true,
-      "name": "Shuffle Triplet Fill",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ . SNR_L- / KCK_K . SNR_R- / SNR_L+ . TM1_R / TM2_R . FTM_R"
-    },
-    {
-      "attribution": "Blues \u2014 Texas shuffle rolling around the toms",
-      "barCount": 1,
-      "bpm": 101,
-      "isFree": true,
-      "name": "Texas Shuffle Toms",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- TM1_R / SNR_L+ SNR_R- TM2_R / SNR_L+ SNR_R- FTM_R / FTM_L SNR_R- KCK_K"
-    },
-    {
-      "attribution": "Blues \u2014 sparse 12/8 triplet fill, wide and lazy",
-      "barCount": 1,
-      "bpm": 81,
-      "isFree": true,
-      "name": "Slow Blues Twelve-Eight",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ . TM1_L / . SNR_R- TM2_L / KCK_K . FTM_R / SNR_L+ . KCK_K"
-    },
-    {
-      "attribution": "Blues \u2014 rolling shuffle triplets spilling to the toms",
-      "barCount": 1,
-      "bpm": 97,
-      "isFree": true,
-      "name": "Shuffle Snare Roll",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R / SNR_L SNR_R SNR_L / TM1_R TM2_L FTM_R / FTM_L SNR_R+ KCK_K"
-    },
-    {
-      "attribution": "Blues \u2014 a 3/4 blues waltz around snare and toms",
-      "barCount": 1,
-      "bpm": 101,
-      "isFree": true,
-      "name": "Blues Waltz",
+      "name": "Waltz Quarter March",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L- TM1_R / TM2_R SNR_L- FTM_R / KCK_K SNR_L- SNR_R+"
+      "tokens": "SNR_R+ / TM2_R+ / FTM_R+"
     },
     {
-      "attribution": "Blues \u2014 sparse slow-blues triplets in 3/4",
+      "attribution": "Quarter-note descent high → mid → floor",
       "barCount": 1,
-      "bpm": 77,
+      "bpm": 153,
       "isFree": true,
-      "name": "Slow Blues Waltz",
+      "name": "Waltz Quarter Toms",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ . TM1_L / . SNR_R- FTM_L / KCK_K SNR_L- SNR_R+"
+      "tokens": "TM1_R+ / TM2_R+ / FTM_R+"
     },
     {
-      "attribution": "Blues \u2014 half-time shuffle answering floor tom and snare",
-      "barCount": 1,
-      "bpm": 95,
-      "isFree": true,
-      "name": "Shuffle Two-Feel",
-      "timeSignature": "fourFour",
-      "tokens": "FTM_R . SNR_L- / TM2_R . SNR_L- / TM1_R . SNR_L- / SNR_R+ . KCK_K"
-    },
-    {
-      "attribution": "Blues \u2014 boogie shuffle driven by the kick",
-      "barCount": 1,
-      "bpm": 94,
-      "isFree": true,
-      "name": "Boogie Kick Shuffle",
-      "timeSignature": "fourFour",
-      "tokens": "KCK_K SNR_R+ SNR_L- / KCK_K SNR_R- TM1_L / KCK_K SNR_R- TM2_L / KCK_K FTM_R FTM_L"
-    },
-    {
-      "attribution": "Punk \u2014 driving d-beat kick/snare spilling to the toms",
-      "barCount": 1,
-      "bpm": 203,
-      "isFree": true,
-      "name": "D-Beat Fill",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K / SNR_L+ KCK_K / TM1_R TM2_L / FTM_R KCK_K"
-    },
-    {
-      "attribution": "Punk \u2014 flat-out 16th run around the whole kit",
-      "barCount": 1,
-      "bpm": 203,
-      "isFree": true,
-      "name": "Skate Punk Tom Run",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L TM1_R TM1_L / TM2_R TM2_L FTM_R FTM_L / SNR_R SNR_L TM1_R TM2_L / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Punk \u2014 eighth-note snare crescendo into a floor hit",
-      "barCount": 1,
-      "bpm": 188,
-      "isFree": true,
-      "name": "Pop-Punk Snare Build",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L / SNR_R+ SNR_L / SNR_R+ SNR_L / TM1_R FTM_R"
-    },
-    {
-      "attribution": "Punk \u2014 big quarter-note tom slams into snare + kick",
-      "barCount": 1,
-      "bpm": 188,
-      "isFree": true,
-      "name": "Punk Tom Slam",
-      "timeSignature": "fourFour",
-      "tokens": "TM1_R / TM2_R / FTM_R / SNR_R+ KCK_K"
-    },
-    {
-      "attribution": "Punk \u2014 half-time breakdown with double kick and floor tom",
-      "barCount": 1,
-      "bpm": 175,
-      "isFree": true,
-      "name": "Punk Breakdown",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ . SNR_L . / KCK_K KCK_K SNR_R+ . / . SNR_L- FTM_R . / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Punk \u2014 a bar of gallop into a full 16th tom charge",
-      "barCount": 2,
-      "bpm": 196,
-      "isFree": true,
-      "name": "Punk Two-Bar Charge",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R+ KCK_K SNR_L KCK_K / SNR_R+ KCK_K SNR_L KCK_K / TM1_R TM2_L FTM_R FTM_L | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Rudimental \u2014 RLRR-LRLL paradiddle, accents on each primary",
-      "barCount": 1,
-      "bpm": 118,
-      "isFree": true,
-      "name": "Single Paradiddle",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_R / SNR_L+ SNR_R SNR_L SNR_L / SNR_R+ SNR_L SNR_R SNR_R / SNR_L+ SNR_R SNR_L SNR_L"
-    },
-    {
-      "attribution": "Rudimental \u2014 RLRLRR double paradiddle over a triplet grid",
-      "barCount": 1,
-      "bpm": 120,
-      "isFree": true,
-      "name": "Double Paradiddle",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R / SNR_L SNR_R SNR_R / SNR_L+ SNR_R SNR_L / SNR_R SNR_L SNR_L"
-    },
-    {
-      "attribution": "Rudimental \u2014 RRLL double-stroke roll with pulsed accents",
-      "barCount": 1,
-      "bpm": 114,
-      "isFree": true,
-      "name": "Double-Stroke Roll",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_R SNR_L SNR_L / SNR_R+ SNR_R SNR_L SNR_L / SNR_R+ SNR_R SNR_L SNR_L / SNR_R+ SNR_R SNR_L SNR_L"
-    },
-    {
-      "attribution": "Rudimental \u2014 five-stroke rolls opening onto the toms",
-      "barCount": 1,
-      "bpm": 112,
-      "isFree": true,
-      "name": "Five-Stroke Roll",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R SNR_R SNR_L SNR_L / TM1_R TM1_R TM1_L TM1_L / TM2_R TM2_R TM2_L TM2_L / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rudimental \u2014 RLLRRL six-stroke roll around the kit",
-      "barCount": 1,
-      "bpm": 116,
-      "isFree": true,
-      "name": "Six-Stroke Roll",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_L SNR_R / SNR_R SNR_L+ SNR_R SNR_L / SNR_L SNR_R+ TM1_R TM1_L / TM2_R TM2_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rudimental \u2014 flam accents (ghost grace) over a triplet grid",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Flam Accent",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_L- SNR_R+ SNR_L / SNR_R- SNR_L+ SNR_R / SNR_L- SNR_R+ TM1_L / TM2_R FTM_L FTM_R"
-    },
-    {
-      "attribution": "Rudimental \u2014 flam taps (ghost-then-accent pairs) down the kit",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Flam Tap",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_L- SNR_R+ SNR_R- SNR_L+ / SNR_R- SNR_L+ SNR_L- SNR_R+ / TM1_L TM1_R TM2_L TM2_R / FTM_L FTM_R FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rudimental \u2014 RLRRLL paradiddle-diddle over triplets, onto toms",
-      "barCount": 1,
-      "bpm": 112,
-      "isFree": true,
-      "name": "Paradiddle-Diddle",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R / SNR_R SNR_L SNR_L / TM1_R TM2_L FTM_R / FTM_R SNR_L SNR_L"
-    },
-    {
-      "attribution": "Prog \u2014 a five-note grouping accenting across the 16th grid",
-      "barCount": 1,
-      "bpm": 137,
-      "isFree": true,
-      "name": "Five-Over-Four",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / SNR_R+ TM1_L TM1_R TM1_L / TM2_R TM2_L FTM_R FTM_L / FTM_R SNR_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Prog \u2014 a seven-note phrase tumbling down the kit",
-      "barCount": 1,
-      "bpm": 136,
-      "isFree": true,
-      "name": "Seven Grouping",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / SNR_R SNR_L SNR_R+ TM1_L / TM1_R TM2_L TM2_R FTM_L / FTM_R FTM_L KCK_K SNR_R+"
-    },
-    {
-      "attribution": "Prog \u2014 displaced accents over two bars into a tom cadence",
-      "barCount": 2,
-      "bpm": 135,
-      "isFree": true,
-      "name": "Prog Two-Bar Odd",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L KCK_K SNR_R / SNR_L SNR_R+ SNR_L KCK_K / TM1_R SNR_L SNR_R+ SNR_L / TM2_R KCK_K FTM_R FTM_L | SNR_R+ TM1_L TM2_R FTM_L / SNR_R+ TM1_L TM2_R FTM_L / KCK_K SNR_R SNR_L KCK_K / FTM_R FTM_L SNR_R+ KCK_K"
-    },
-    {
-      "attribution": "Prog \u2014 two bars mixing triplet, 8th and 16th beats",
-      "barCount": 2,
-      "bpm": 134,
-      "isFree": true,
-      "name": "Prog Mixed Two-Bar",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R TM2_L / KCK_K SNR_R SNR_L / FTM_R FTM_L FTM_R FTM_L | TM1_R TM1_L TM1_R / TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ KCK_K"
-    },
-    {
-      "attribution": "Prog \u2014 a three-bar linear journey around the kit",
-      "barCount": 3,
-      "bpm": 137,
-      "isFree": true,
-      "name": "Prog Three-Bar Journey",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K SNR_R- TM1_L / KCK_K SNR_R- SNR_L- TM2_R / SNR_L- KCK_K FTM_R KCK_K | TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L SNR_R SNR_L / TM1_R TM2_L FTM_R SNR_L / KCK_K SNR_R KCK_K SNR_L | SNR_R+ TM1_L KCK_K TM1_R / SNR_L- TM2_R KCK_K TM2_L / FTM_R KCK_K FTM_L KCK_K / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Prog \u2014 three bars escalating quarter -> 8th -> 16th (mixed grid)",
-      "barCount": 3,
-      "bpm": 137,
-      "isFree": true,
-      "name": "Prog Three-Bar Build",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ / TM1_R / TM2_R / FTM_R | SNR_R+ SNR_L / TM1_R TM2_L / FTM_R FTM_L / SNR_R+ KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ TM1_L TM2_R FTM_L"
-    },
-    {
-      "attribution": "Prog \u2014 a four-bar linear solo phrase across the kit",
-      "barCount": 4,
-      "bpm": 141,
-      "isFree": true,
-      "name": "Prog Four-Bar Epic",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K TM1_R SNR_L- / KCK_K SNR_R- TM2_L SNR_R- / SNR_L- KCK_K FTM_R KCK_K | TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L SNR_R SNR_L / KCK_K TM1_R KCK_K TM2_R / FTM_R FTM_L KCK_K KCK_K | SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / TM1_R KCK_K TM2_L KCK_K / FTM_R KCK_K FTM_L KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / SNR_R+ TM1_L FTM_R KCK_K"
-    },
-    {
-      "attribution": "Prog \u2014 four bars escalating quarter -> 8th -> triplet -> 16th (mixed grid)",
-      "barCount": 4,
-      "bpm": 135,
-      "isFree": true,
-      "name": "Prog Four-Bar Build",
-      "timeSignature": "fourFour",
-      "tokens": "SNR_R+ / FTM_R / SNR_R+ / FTM_R | SNR_R+ TM1_L / TM2_R FTM_L / SNR_R+ TM1_L / TM2_R FTM_L | SNR_R+ SNR_L KCK_K / TM1_R SNR_L KCK_K / TM2_R SNR_L KCK_K / FTM_R SNR_L KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM1_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L / FTM_R SNR_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Jazz \u2014 comping jazz-waltz triplets, snare/tom over kick",
-      "barCount": 1,
-      "bpm": 172,
-      "isFree": true,
-      "name": "Jazz Waltz Comp",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R- TM1_L KCK_K / SNR_R- TM2_L KCK_K / SNR_R+ FTM_L KCK_K"
-    },
-    {
-      "attribution": "Jazz \u2014 spang-a-lang waltz phrase around snare and toms",
-      "barCount": 1,
-      "bpm": 170,
-      "isFree": true,
-      "name": "Jazz Waltz Spang",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L- TM1_R / TM2_R SNR_L- FTM_R / SNR_R+ SNR_L- KCK_K"
-    },
-    {
-      "attribution": "Jazz \u2014 soft ghosted waltz triplets (brush feel on snare)",
-      "barCount": 1,
-      "bpm": 172,
-      "isFree": true,
-      "name": "Jazz Waltz Brushes",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R- SNR_L- SNR_R+ / SNR_L- SNR_R- TM1_L / TM2_R SNR_L- FTM_R"
-    },
-    {
-      "attribution": "Rock \u2014 a straight-eighth 3/4 tom fill",
-      "barCount": 1,
-      "bpm": 126,
-      "isFree": true,
-      "name": "Rock Waltz Toms",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ KCK_K / TM1_R TM2_L / FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 a driving 16th waltz roll down to the floor",
-      "barCount": 1,
-      "bpm": 121,
-      "isFree": true,
-      "name": "Rock Waltz Sixteenths",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM2_L FTM_R FTM_L / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Rock \u2014 one accented tom per beat of the bar",
-      "barCount": 1,
-      "bpm": 121,
-      "isFree": true,
-      "name": "Waltz Backbeat Toms",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ / FTM_R / TM1_R"
-    },
-    {
-      "attribution": "Metal \u2014 alternating snare/kick blast in 3/4",
-      "barCount": 1,
-      "bpm": 210,
-      "isFree": true,
-      "name": "Metal Waltz Blast",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / FTM_R FTM_L KCK_K KCK_K"
-    },
-    {
-      "attribution": "Metal \u2014 double-kick 16ths under a tom melody in 3/4",
-      "barCount": 1,
-      "bpm": 207,
-      "isFree": true,
-      "name": "Double-Kick Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "KCK_K KCK_K SNR_R+ SNR_L / KCK_K KCK_K TM1_R TM2_L / KCK_K KCK_K FTM_R FTM_L"
-    },
-    {
-      "attribution": "Funk \u2014 ghosted linear 16ths in 3/4",
-      "barCount": 1,
-      "bpm": 101,
-      "isFree": true,
-      "name": "Funk Waltz Ghosts",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K SNR_R- / SNR_L- KCK_K SNR_R- SNR_L- / SNR_R+ SNR_L- KCK_K KCK_K"
-    },
-    {
-      "attribution": "Funk \u2014 closed-hat lead waltz with snare ghosts",
-      "barCount": 1,
-      "bpm": 101,
-      "isFree": true,
-      "name": "Funk Waltz Pocket",
-      "timeSignature": "threeFour",
-      "tokens": "HHT_R+ SNR_L- KCK_K SNR_R- / HHT_R+ SNR_L- TM1_R SNR_L- / FTM_R SNR_L- KCK_K SNR_R-"
-    },
-    {
-      "attribution": "Gospel \u2014 a linear chop tumbling through 3/4",
-      "barCount": 1,
-      "bpm": 106,
-      "isFree": true,
-      "name": "Gospel Waltz Chop",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K SNR_R- TM2_L / KCK_K SNR_R- FTM_R FTM_L"
-    },
-    {
-      "attribution": "Latin \u2014 6/8 bell feel voiced as tom triplets in 3/4",
-      "barCount": 1,
-      "bpm": 112,
-      "isFree": true,
-      "name": "Afro Waltz Six-Eight",
-      "timeSignature": "threeFour",
-      "tokens": "TM1_R SNR_L- TM2_R / KCK_K SNR_L- FTM_R / TM1_R SNR_L- KCK_K"
-    },
-    {
-      "attribution": "Latin \u2014 samba-lean waltz, tom accents over kick",
-      "barCount": 1,
-      "bpm": 115,
-      "isFree": true,
-      "name": "Jazz-Samba Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R- TM1_L KCK_K / SNR_R- TM2_L KCK_K / FTM_R SNR_L- KCK_K"
-    },
-    {
-      "attribution": "Blues \u2014 skip-note shuffle triplets in 3/4",
-      "barCount": 1,
-      "bpm": 95,
-      "isFree": true,
-      "name": "Shuffle Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ . TM1_L / TM2_R . FTM_L / KCK_K . SNR_R+"
-    },
-    {
-      "attribution": "Country \u2014 gentle 3/4 country waltz (brush feel on snare)",
-      "barCount": 1,
-      "bpm": 117,
-      "isFree": true,
-      "name": "Country Waltz Brush",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L / TM1_R FTM_L / SNR_R+ KCK_K"
-    },
-    {
-      "attribution": "Country \u2014 train-beat 16ths shuffled into a 3/4 fill",
-      "barCount": 1,
-      "bpm": 115,
-      "isFree": true,
-      "name": "Train Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L- SNR_R- SNR_L- / SNR_R+ SNR_L- TM1_R TM2_L / FTM_R FTM_L SNR_R+ KCK_K"
-    },
-    {
-      "attribution": "Fusion \u2014 a 3/4 fill mixing triplet, 16th and triplet beats",
+      "attribution": "Linear RLK ×2 in 3/4 eighths",
       "barCount": 1,
       "bpm": 150,
       "isFree": true,
-      "name": "Fusion Waltz Mixed",
+      "name": "Waltz RLK Eighths",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R TM2_L FTM_R FTM_L / KCK_K SNR_R- SNR_L-"
+      "tokens": "SNR_R+ TM2_L / KCK_K FTM_R / SNR_L- KCK_K"
     },
     {
-      "attribution": "Jazz \u2014 a comping waltz bar answered by a tom melody",
-      "barCount": 2,
-      "bpm": 175,
-      "isFree": true,
-      "name": "Jazz Waltz Two-Bar",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R- TM1_L KCK_K / SNR_R- TM2_L KCK_K / SNR_R- FTM_L KCK_K | SNR_R+ SNR_L- TM1_R / TM2_R SNR_L- FTM_R / FTM_L SNR_R- KCK_K"
-    },
-    {
-      "attribution": "Prog \u2014 five-note groupings displacing the accent in 3/4",
+      "attribution": "Linear RLK ×4 across 3/4",
       "barCount": 1,
-      "bpm": 141,
+      "bpm": 148,
       "isFree": true,
-      "name": "Odd Waltz Five",
+      "name": "Waltz RLK Run",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L KCK_K SNR_R / SNR_L SNR_R+ TM1_L TM2_R / FTM_R FTM_L KCK_K KCK_K"
+      "tokens": "TM1_R+ SNR_L- KCK_K TM1_R / SNR_L- KCK_K TM2_R SNR_L- / KCK_K FTM_R SNR_L- KCK_K"
     },
     {
-      "attribution": "Prog \u2014 a shifting accent over waltz triplets",
-      "barCount": 1,
-      "bpm": 134,
-      "isFree": true,
-      "name": "Prog Waltz Grouping",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L SNR_R / SNR_L SNR_R+ SNR_L / TM1_R TM2_L FTM_R"
-    },
-    {
-      "attribution": "Rudimental \u2014 RLRR-LRLL paradiddle spilling to the toms, 3/4",
-      "barCount": 1,
-      "bpm": 119,
-      "isFree": true,
-      "name": "Paradiddle Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L SNR_R SNR_R / SNR_L+ SNR_R SNR_L SNR_L / TM1_R TM2_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rudimental \u2014 double-stroke roll-off resolving on the toms, 3/4",
-      "barCount": 1,
-      "bpm": 115,
-      "isFree": true,
-      "name": "Roll-Off Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_R SNR_L SNR_L / SNR_R SNR_R SNR_L SNR_L / TM1_R TM2_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Hip-hop \u2014 sparse boom-bap kick/snare in 3/4",
-      "barCount": 1,
-      "bpm": 85,
-      "isFree": true,
-      "name": "Waltz Boom-Bap",
-      "timeSignature": "threeFour",
-      "tokens": "KCK_K . SNR_R+ . / . KCK_K SNR_L- . / SNR_R+ . KCK_K SNR_L-"
-    },
-    {
-      "attribution": "Hip-hop \u2014 laid-back neo-soul waltz triplets with hat",
-      "barCount": 1,
-      "bpm": 78,
-      "isFree": true,
-      "name": "Neo-Soul Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "HHT_R+ SNR_L- KCK_K / KCK_K SNR_R+ SNR_L- / SNR_R- TM1_R KCK_K"
-    },
-    {
-      "attribution": "Reggae \u2014 one-drop feel adapted to 3/4",
-      "barCount": 1,
-      "bpm": 78,
-      "isFree": true,
-      "name": "One-Drop Waltz",
-      "timeSignature": "threeFour",
-      "tokens": ". SNR_R+ . / KCK_K . SNR_L- / . FTM_R KCK_K"
-    },
-    {
-      "attribution": "World \u2014 Afrobeat tom accents over a busy kick, 3/4",
-      "barCount": 1,
-      "bpm": 115,
-      "isFree": true,
-      "name": "Afrobeat Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R- TM1_L SNR_R- KCK_K / SNR_L- TM2_R SNR_L- KCK_K / FTM_R SNR_L- KCK_K KCK_K"
-    },
-    {
-      "attribution": "World \u2014 West-African highlife tom melody in 3/4",
-      "barCount": 1,
-      "bpm": 111,
-      "isFree": true,
-      "name": "Highlife Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ TM1_L TM2_R / SNR_L+ FTM_R TM1_L / FTM_R SNR_L- KCK_K"
-    },
-    {
-      "attribution": "Latin \u2014 sparse bossa waltz (ghosted cross-stick role)",
-      "barCount": 1,
-      "bpm": 116,
-      "isFree": true,
-      "name": "Bossa Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R- . KCK_K / . SNR_L- . / KCK_K TM1_R SNR_L+"
-    },
-    {
-      "attribution": "Latin \u2014 songo tom accents over kick, 16ths in 3/4",
-      "barCount": 1,
-      "bpm": 112,
-      "isFree": true,
-      "name": "Songo Waltz",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R- TM1_L KCK_K SNR_R- / SNR_L- TM2_R KCK_K SNR_L- / FTM_R SNR_L- KCK_K KCK_K"
-    },
-    {
-      "attribution": "Rock \u2014 four-per-drum 16th tom roll in 3/4",
-      "barCount": 1,
-      "bpm": 120,
-      "isFree": true,
-      "name": "Waltz Tom Roll",
-      "timeSignature": "threeFour",
-      "tokens": "TM1_R TM1_L TM1_R TM1_L / TM2_R TM2_L TM2_R TM2_L / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Rock \u2014 an eighth-note snare march into a floor accent",
+      "attribution": "Rock — an eighth-note snare march into a floor accent",
       "barCount": 1,
       "bpm": 124,
       "isFree": true,
       "name": "Waltz Snare March",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L / SNR_R+ SNR_L / TM1_R FTM_R"
+      "tokens": "SNR_R+ SNR_L / SNR_R+ SNR_L / TM1_R FTM_R+"
     },
     {
-      "attribution": "Jazz \u2014 sparse lilting waltz triplets with rests",
+      "attribution": "Eighth-note tom descent in 3/4",
       "barCount": 1,
-      "bpm": 82,
+      "bpm": 149,
       "isFree": true,
-      "name": "Viennese Lilt",
+      "name": "Waltz Tom Eighths",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ . . / TM1_R . TM2_L / FTM_R . KCK_K"
+      "tokens": "SNR_R+ TM1_L / TM1_R+ TM2_L / FTM_R+ FTM_L"
     },
     {
-      "attribution": "Rock \u2014 snare downbeat, a kick 16th burst, then a tom tag (mixed grid)",
+      "attribution": "Rock — four-per-drum 16th tom roll in 3/4",
       "barCount": 1,
-      "bpm": 122,
+      "bpm": 120,
       "isFree": true,
-      "name": "Waltz Kick Feature",
+      "name": "Waltz Tom Roll",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ / KCK_K KCK_K KCK_K KCK_K / FTM_R FTM_L"
+      "tokens": "TM1_R+ TM1_L TM1_R TM1_L / TM2_R+ TM2_L TM2_R TM2_L / FTM_R+ FTM_L FTM_R FTM_L"
     },
     {
-      "attribution": "Jazz \u2014 descending tom triplets ghosted on the snare",
+      "attribution": "Jazz — descending tom triplets ghosted on the snare",
       "barCount": 1,
       "bpm": 171,
       "isFree": true,
       "name": "Waltz Triplet Cascade",
       "timeSignature": "threeFour",
-      "tokens": "TM1_R SNR_L- TM1_R / TM2_R SNR_L- TM2_R / FTM_R SNR_L- FTM_R"
+      "tokens": "TM1_R+ SNR_L- TM1_R / TM2_R+ SNR_L- TM2_R / FTM_R+ SNR_L- FTM_R"
     },
     {
-      "attribution": "Rock \u2014 a groove bar then a 16th tom roll, 3/4",
-      "barCount": 2,
-      "bpm": 118,
+      "attribution": "Three-per-drum triplet roll down the toms",
+      "barCount": 1,
+      "bpm": 152,
       "isFree": true,
-      "name": "Rock Waltz Two-Bar",
+      "name": "Waltz Triplet Roll",
       "timeSignature": "threeFour",
-      "tokens": "SNR_R+ KCK_K / TM1_R SNR_L / FTM_R KCK_K | SNR_R+ SNR_L SNR_R SNR_L / TM1_R TM2_L FTM_R FTM_L / FTM_R FTM_L KCK_K KCK_K"
+      "tokens": "TM1_R+ TM1_L TM1_R / TM2_L+ TM2_R TM2_L / FTM_R+ FTM_L FTM_R"
     },
     {
-      "attribution": "Metal \u2014 a bar of blast into a double-kick tom run, 3/4",
-      "barCount": 2,
-      "bpm": 217,
+      "attribution": "Fusion — smooth Weckl-style tom-to-tom 16th weave",
+      "barCount": 1,
+      "bpm": 149,
       "isFree": true,
-      "name": "Metal Waltz Two-Bar",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ KCK_K SNR_L KCK_K / SNR_R KCK_K SNR_L KCK_K / FTM_R FTM_L KCK_K KCK_K | TM1_R KCK_K TM1_L KCK_K / TM2_R KCK_K TM2_L KCK_K / FTM_R FTM_L FTM_R FTM_L"
-    },
-    {
-      "attribution": "Fusion \u2014 a mixed-grid waltz phrase into an around-the-kit bar",
-      "barCount": 2,
-      "bpm": 148,
-      "isFree": true,
-      "name": "Fusion Waltz Two-Bar",
-      "timeSignature": "threeFour",
-      "tokens": "SNR_R+ SNR_L- KCK_K / TM1_R TM2_L / KCK_K SNR_R- SNR_L- | TM1_R SNR_L- TM2_R SNR_L- / FTM_R SNR_L- TM1_R SNR_L- / FTM_R FTM_L KCK_K KCK_K"
+      "name": "Weckl Around the Kit",
+      "timeSignature": "fourFour",
+      "tokens": "SNR_R+ TM1_L SNR_R TM1_L / TM2_R+ FTM_L TM2_R FTM_L / SNR_R+ TM1_L TM2_R FTM_L / FTM_R+ TM2_L TM1_R SNR_L"
     }
   ],
   "schemaVersion": 2
