@@ -171,6 +171,7 @@
     <ul>
       <li><b>Account and Subscription Data:</b> Since we utilize third-party SDKs for subscription handling (such as Adapty), anonymized transaction identifiers, purchase history, subscription status (Free Tier vs. Premium), and platform identifiers (Apple App Store ID) are processed to manage your access levels.</li>
       <li><b>Device and Technical Data:</b> We may collect pseudonymous technical logs, including device model, iOS operating system version, app version, and basic performance telemetry. This data is critical for ensuring jitter-free audio performance and app stability.</li>
+      <li><b>Waitlist Contact Data:</b> If you submit your email address through the Site's "Notify me" or "Join waitlist" forms, we store that email address together with the signup source, submission time, and page path used for the request.</li>
       <li><b>Audio and Microphone Data (Future Stages):</b> The current version of the App operates strictly offline using preloaded audio samples. The App does not record, stream, or store ambient audio files.</li>
     </ul>
 
@@ -179,24 +180,27 @@
     <ul>
       <li>Validate and maintain your Premium Active subscription state.</li>
       <li>Optimize the layout responsiveness and performance of the audio engine (AVAudioEngine).</li>
+      <li>Send a one-time launch notification or closely related release updates to people who explicitly joined the waitlist.</li>
       <li>Comply with global financial, taxation, and legal regulations (including EU Digital Services Act and Apple App Store policies).</li>
     </ul>
 
     <h2>3. Data Sharing and Third-Party Services</h2>
-    <p>We do not sell, rent, or lease your personal data. To facilitate seamless in-app purchases and performance metrics, we securely share minimal pseudonymous data with the following trusted providers:</p>
+    <p>We do not sell, rent, or lease your personal data. To facilitate seamless in-app purchases, performance metrics, and waitlist management, we securely share minimal data with the following trusted providers:</p>
     <ul>
       <li><b>Apple Inc. (App Store Connect):</b> For core payment processing, standard regional tax administration (VAT/Sales Tax), and secure user authentication.</li>
       <li><b>Adapty (Adapty Tech Inc.):</b> For server-side purchase validation, managing subscription access levels, and dynamic paywall configurations.</li>
+      <li><b>Supabase, Inc.:</b> For securely storing waitlist email submissions and related metadata used for launch notifications.</li>
     </ul>
 
     <h2>4. International Data Transfers (US, EU, Ukraine, China)</h2>
-    <p>Your technical and transactional data may be stored and processed on secure cloud servers operated by our third-party infrastructure providers. We ensure that all transfers comply with prevailing framework regulations, including the GDPR (for EU users) and local privacy acts.</p>
+    <p>Your technical, transactional, and waitlist contact data may be stored and processed on secure cloud servers operated by our third-party infrastructure providers. We ensure that all transfers comply with prevailing framework regulations, including the GDPR (for EU users) and local privacy acts.</p>
 
     <h2>5. Your Rights and Choices</h2>
     <p>Depending on your geographic location, you may possess the right to:</p>
     <ul>
       <li>Request access to the data we hold about you.</li>
       <li>Request the rectification or deletion of your data.</li>
+      <li>Opt out of waitlist emails by contacting us and requesting removal of your submitted address.</li>
       <li>Manage or cancel your auto-renewable subscriptions directly via your native Apple ID settings.</li>
     </ul>
 

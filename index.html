@@ -10,6 +10,7 @@
 <meta property="og:title" content="DrumFillGenerator — real drum fills, generated">
 <meta property="og:description" content="Practice real drum fills, not random noise. Sample-accurate, zero-latency, with grid and notation views. Coming soon to iOS.">
 <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect x="1" y="17" width="5" height="8" rx="1.4" fill="%232E7DF5"/><rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="%232ED4B0"/><rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="%23A352E8"/><rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="%23E8943B"/></svg>'>
+<script src="waitlist-config.js"></script>
 </head>
 <body>
 <style>
@@ -282,7 +283,7 @@
       <a href="#how">How it works</a>
       <a href="#specs">Specs</a>
     </div>
-    <a class="btn btn-primary btn-sm" href="#join">Join waitlist</a>
+    <a class="btn btn-primary btn-sm" href="#join" data-focus-waitlist>Join waitlist</a>
   </div>
 </nav>
 
@@ -295,7 +296,7 @@
       <p class="hero-sub">DrumFillGenerator builds linear fills from a library of hand-transcribed patterns — then shows you each one as a color-coded step grid <em>and</em> on a classical staff. Sample-accurate, zero-latency, built for the music stand.</p>
 
       <div class="waitlist" id="join">
-        <form class="waitlist-form" novalidate>
+        <form class="waitlist-form" data-source="hero-notify" novalidate>
           <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" autocomplete="email" required />
           <button class="btn btn-primary" type="submit">
             <svg class="play-tri" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0l10 6-10 6z" fill="#06270f"/></svg>
@@ -505,11 +506,11 @@
         <h2 style="margin-top:14px">Get notified when it ships.</h2>
         <p>One email when DrumFillGenerator hits the App Store. No spam, no drip campaign — just the launch.</p>
         <div class="waitlist">
-          <form class="waitlist-form" novalidate>
+          <form class="waitlist-form" data-source="cta-join-waitlist" novalidate>
             <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" autocomplete="email" required />
             <button class="btn btn-primary" type="submit">
               <svg class="play-tri" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0l10 6-10 6z" fill="#06270f"/></svg>
-              Notify me
+              Join waitlist
             </button>
           </form>
           <p class="form-status" role="status" aria-live="polite"></p>
@@ -531,10 +532,11 @@
       </svg>
       <span>DrumFillGenerator</span>
     </a>
-    <p class="foot-note">Built with Spec-Driven Development for iOS. This is a preview page — the waitlist form is a demo and doesn't send your email anywhere.</p>
+    <p class="foot-note">Built with Spec-Driven Development for iOS. Once Supabase is configured, waitlist signups are stored for the launch notification.</p>
     <div class="foot-links">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
+      <a href="waitlist-admin.html">Waitlist Admin</a>
     </div>
   </div>
 </footer>
@@ -624,24 +626,91 @@
 
     // --- Waitlist forms ---
     var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    function getWaitlistConfig() {
+      var cfg = window.WAITLIST_CONFIG || {};
+      return {
+        supabaseUrl: typeof cfg.supabaseUrl === 'string' ? cfg.supabaseUrl.replace(/\/+$/, '') : '',
+        supabaseAnonKey: typeof cfg.supabaseAnonKey === 'string' ? cfg.supabaseAnonKey.trim() : '',
+        table: typeof cfg.table === 'string' && cfg.table.trim() ? cfg.table.trim() : 'waitlist_signups'
+      };
+    }
+    function submitWaitlistEmail(email, source) {
+      var cfg = getWaitlistConfig();
+      if (!cfg.supabaseUrl || !cfg.supabaseAnonKey) {
+        return Promise.reject(new Error('Waitlist storage is not configured. Update waitlist-config.js with your Supabase project values.'));
+      }
+      return fetch(cfg.supabaseUrl + '/rest/v1/' + encodeURIComponent(cfg.table) + '?on_conflict=email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          apikey: cfg.supabaseAnonKey,
+          Authorization: 'Bearer ' + cfg.supabaseAnonKey,
+          Prefer: 'resolution=ignore-duplicates,return=representation'
+        },
+        body: JSON.stringify([{
+          email: email,
+          source: source,
+          page_path: window.location.pathname,
+          user_agent: navigator.userAgent
+        }])
+      }).then(function (response) {
+        if (!response.ok) {
+          return response.text().then(function (message) {
+            throw new Error(message || 'Failed to save your email.');
+          });
+        }
+        return response.json();
+      });
+    }
+    document.querySelectorAll('[data-focus-waitlist]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var target = document.getElementById('join');
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.setTimeout(function () {
+          var field = target.querySelector('input[type=email]');
+          if (field) field.focus();
+        }, 250);
+      });
+    });
     document.querySelectorAll('.waitlist-form').forEach(function (form) {
       var input = form.querySelector('input[type=email]');
       var status = form.parentElement.querySelector('.form-status');
+      var btn = form.querySelector('button');
+      var defaultButtonHtml = btn ? btn.innerHTML : '';
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-        var email = input.value.trim();
+        var email = input.value.trim().toLowerCase();
         if (!EMAIL_RE.test(email)) {
           status.textContent = '↳ Enter a valid email — like you@example.com';
           status.className = 'form-status err';
           input.focus();
           return;
         }
-        status.textContent = "✓ You're on the list. We'll email " + email + " the moment it ships.";
-        status.className = 'form-status ok';
-        input.value = '';
-        input.setAttribute('disabled', 'disabled');
-        var btn = form.querySelector('button');
-        if (btn) { btn.setAttribute('disabled', 'disabled'); btn.style.opacity = '.6'; }
+        status.textContent = 'Saving your email...';
+        status.className = 'form-status';
+        if (btn) {
+          btn.setAttribute('disabled', 'disabled');
+          btn.style.opacity = '.6';
+          btn.textContent = 'Saving...';
+        }
+        submitWaitlistEmail(email, form.getAttribute('data-source') || 'site-waitlist')
+          .then(function () {
+            status.textContent = "✓ You're on the list. We'll email " + email + " the moment it ships.";
+            status.className = 'form-status ok';
+            input.value = '';
+          })
+          .catch(function (error) {
+            status.textContent = '↳ ' + (error && error.message ? error.message : 'Unable to save your email right now.');
+            status.className = 'form-status err';
+          })
+          .finally(function () {
+            if (!btn) return;
+            btn.removeAttribute('disabled');
+            btn.style.opacity = '';
+            btn.innerHTML = defaultButtonHtml;
+          });
       });
       input.addEventListener('input', function () {
         if (status.classList.contains('err')) { status.textContent = ''; status.className = 'form-status'; }
