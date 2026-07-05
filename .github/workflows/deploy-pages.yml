@@ -10,6 +10,10 @@ on:
       - "CNAME"
       - "*.html"
       - "*.js"
+      - "*.txt"
+      - "*.xml"
+      - "*.svg"
+      - "*.png"
       - "fills/**"
   workflow_dispatch:
 
@@ -40,7 +44,7 @@ jobs:
           rm -rf _site
           mkdir -p _site
           shopt -s nullglob
-          files=( *.html *.js .nojekyll CNAME )
+          files=( *.html *.js *.txt *.xml *.svg *.png .nojekyll CNAME )
           if ((${#files[@]})); then
             cp -- "${files[@]}" _site/
           fi

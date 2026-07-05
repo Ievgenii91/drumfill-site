@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" rx="48" fill="#0B0D12"/>
+  <rect x="88" y="88" width="1024" height="454" rx="36" fill="#12141C" stroke="#2A2C34"/>
+  <rect x="144" y="165" width="108" height="212" rx="20" fill="#2E7DF5"/>
+  <rect x="282" y="124" width="108" height="253" rx="20" fill="#2ED4B0"/>
+  <rect x="420" y="202" width="108" height="175" rx="20" fill="#A352E8"/>
+  <rect x="558" y="96" width="108" height="281" rx="20" fill="#E8943B"/>
+  <text x="736" y="214" fill="#F6F7FB" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">DrumFillGenerator</text>
+  <text x="736" y="288" fill="#9FA5B4" font-family="Arial, Helvetica, sans-serif" font-size="32">Real drum fills, generated.</text>
+  <text x="736" y="344" fill="#9FA5B4" font-family="Arial, Helvetica, sans-serif" font-size="32">Practice curated fills with grid and notation views.</text>
+</svg>
