@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D79FNVPJES"></script>
 <script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
-
- gtag('config', 'G-D79FNVPJES');
+  window.DRUMFILL_GA_ID = 'G-D79FNVPJES';
+  window['ga-disable-' + window.DRUMFILL_GA_ID] = true;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  gtag('set', 'ads_data_redaction', true);
 </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D79FNVPJES"></script>
+<script src="consent-manager.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — DrumFillGenerator</title>
@@ -166,7 +173,7 @@
   <div class="wrap">
     <p class="eyebrow">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective date: June 30, 2026</p>
+    <p class="updated">Effective date: July 5, 2026</p>
   </div>
 </header>
 
@@ -182,6 +189,7 @@
       <li><b>Account and Subscription Data:</b> Since we utilize third-party SDKs for subscription handling (such as Adapty), anonymized transaction identifiers, purchase history, subscription status (Free Tier vs. Premium), and platform identifiers (Apple App Store ID) are processed to manage your access levels.</li>
       <li><b>Device and Technical Data:</b> We may collect pseudonymous technical logs, including device model, iOS operating system version, app version, and basic performance telemetry. This data is critical for ensuring jitter-free audio performance and app stability.</li>
       <li><b>Waitlist Contact Data:</b> If you submit your email address through the Site's "Notify me" or "Join waitlist" forms, we store that email address together with the signup source, submission time, and page path used for the request.</li>
+      <li><b>Website Analytics Data (Optional):</b> If you allow analytics on the Site, Google Analytics may process pseudonymous page-view and device/browser metadata so we can understand overall traffic patterns and improve the website.</li>
       <li><b>Audio and Microphone Data (Future Stages):</b> The current version of the App operates strictly offline using preloaded audio samples. The App does not record, stream, or store ambient audio files.</li>
     </ul>
 
@@ -191,6 +199,7 @@
       <li>Validate and maintain your Premium Active subscription state.</li>
       <li>Optimize the layout responsiveness and performance of the audio engine (AVAudioEngine).</li>
       <li>Send a one-time launch notification or closely related release updates to people who explicitly joined the waitlist.</li>
+      <li>Measure aggregate website usage only when you have granted analytics consent on the Site.</li>
       <li>Comply with global financial, taxation, and legal regulations (including EU Digital Services Act and Apple App Store policies).</li>
     </ul>
 
@@ -199,6 +208,7 @@
     <ul>
       <li><b>Apple Inc. (App Store Connect):</b> For core payment processing, standard regional tax administration (VAT/Sales Tax), and secure user authentication.</li>
       <li><b>Adapty (Adapty Tech Inc.):</b> For server-side purchase validation, managing subscription access levels, and dynamic paywall configurations.</li>
+      <li><b>Google LLC (Google Analytics):</b> For privacy-aware website traffic measurement, and only after you opt in through our analytics consent prompt.</li>
       <li><b>Supabase, Inc.:</b> For securely storing waitlist email submissions and related metadata used for launch notifications.</li>
     </ul>
 
@@ -210,6 +220,7 @@
     <ul>
       <li>Request access to the data we hold about you.</li>
       <li>Request the rectification or deletion of your data.</li>
+      <li>Accept or decline website analytics through the consent prompt, then revisit that choice at any time through the "Cookie settings" button shown on the Site.</li>
       <li>Opt out of waitlist emails by contacting us and requesting removal of your submitted address.</li>
       <li>Manage or cancel your auto-renewable subscriptions directly via your native Apple ID settings.</li>
     </ul>
