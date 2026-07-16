@@ -27,12 +27,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DrumFillGenerator — real drum fills, generated</title>
-<meta name="description" content="A free iOS drum-fill generator and rhythm trainer. Practice real linear fills from a hand-transcribed library, read them as a color-coded step grid or a classical staff, and loop at any tempo — zero-latency, 10 languages, freemium.">
+<meta name="description" content="A free iOS drum-fill generator, rhythm trainer and tracking tool. Practice ~200 real linear fills, play along with mic or MIDI tracking, read each fill as a color-coded grid or classical staff, and loop at any tempo — zero-latency, 10 languages, freemium.">
 <link rel="canonical" href="https://drumfillgenerator.com/">
 <meta name="theme-color" content="#0B0D12">
 <meta property="og:type" content="website">
 <meta property="og:title" content="DrumFillGenerator — real drum fills, generated">
-<meta property="og:description" content="Practice real drum fills, not random noise. A generous free tier with the full curated library, sample-accurate playback, grid and notation views. Coming soon to iOS.">
+<meta property="og:description" content="Practice real drum fills, not random noise. ~200 curated fills, real-time rhythmic tracking via mic or MIDI, sample-accurate playback, grid and notation views. Coming soon to iOS.">
 <meta property="og:url" content="https://drumfillgenerator.com/">
 <meta property="og:image" content="https://drumfillgenerator.com/og-image.png">
 <meta property="og:image:type" content="image/png">
@@ -40,14 +40,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DrumFillGenerator — real drum fills, generated">
-<meta name="twitter:description" content="Practice real drum fills, not random noise. A generous free tier with the full curated library, sample-accurate playback, grid and notation views. Coming soon to iOS.">
+<meta name="twitter:description" content="Practice real drum fills, not random noise. ~200 curated fills, real-time rhythmic tracking via mic or MIDI, sample-accurate playback, grid and notation views. Coming soon to iOS.">
 <meta name="twitter:image" content="https://drumfillgenerator.com/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "DrumFillGenerator",
-  "description": "A free iOS drum-fill generator and rhythm trainer.",
+  "description": "A free iOS drum-fill generator, rhythm trainer and tracking tool with ~200 curated fills.",
   "applicationCategory": "MusicApplication",
   "operatingSystem": "iOS",
   "url": "https://drumfillgenerator.com/"
@@ -265,13 +265,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .panel svg { width: 100%; height: auto; display: block; }
 
   /* ---------- SPECS ---------- */
-  .specs { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; border: 1px solid var(--hairline); border-radius: var(--r); overflow: hidden; background: var(--surface); }
-  .spec { padding: 30px 22px; border-right: 1px solid var(--hairline); }
-  .spec:last-child { border-right: 0; }
+  .specs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--hairline); border-radius: var(--r); overflow: hidden; background: var(--surface); }
+  .spec { padding: 30px 22px; border-right: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+  .spec:nth-child(4n) { border-right: 0; }
+  .spec:nth-child(n+5) { border-bottom: 0; }
   .spec .num { font-size: 30px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
   .spec .lbl { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-top: 8px; }
-  @media (max-width: 860px) { .specs { grid-template-columns: repeat(3, 1fr); } .spec:nth-child(3n) { border-right: 0; } .spec:nth-child(-n+3) { border-bottom: 1px solid var(--hairline); } }
-  @media (max-width: 480px) { .specs { grid-template-columns: repeat(2, 1fr); } .spec { border-right: 1px solid var(--hairline); } .spec:nth-child(2n) { border-right: 0; } .spec:nth-child(-n+4) { border-bottom: 1px solid var(--hairline); } }
+  @media (max-width: 860px) { .specs { grid-template-columns: repeat(2, 1fr); } .spec { border-bottom: 1px solid var(--hairline); } .spec:nth-child(2n) { border-right: 0; } .spec:nth-child(n+7) { border-bottom: 0; } }
+  @media (max-width: 480px) { .specs { grid-template-columns: repeat(2, 1fr); } }
 
   /* ---------- FINAL CTA ---------- */
   .cta-band { background: var(--stage); color: #fff; border-radius: 24px; padding: 64px 40px; text-align: center; position: relative; overflow: hidden; }
@@ -339,9 +340,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">iOS · MVP · Coming soon</p>
+      <p class="eyebrow">iOS · Feature-complete · Coming with iOS 26.5</p>
       <h1>Practice <span class="c-snare">real</span> drum fills, not <span class="c-kick">random</span> noise.</h1>
-      <p class="hero-sub">DrumFillGenerator picks from a bank of hand-transcribed linear fills — or generates a fresh one when nothing fits your grid. Every curated fill is free. Read each one as a color-coded step grid <em>or</em> on a classical staff. Sample-accurate, zero-latency, built for the music stand.</p>
+      <p class="hero-sub">DrumFillGenerator picks from a bank of ~200 hand-transcribed linear fills — or generates a fresh one when nothing fits your grid. Play along with real-time rhythmic tracking via mic or MIDI, read each fill on a color-coded step grid <em>or</em> a classical staff, and practice with humanized playback feel. Sample-accurate, zero-latency, built for the music stand.</p>
 
       <div class="waitlist" id="join">
         <form class="waitlist-form" data-source="hero-notify" novalidate>
@@ -355,9 +356,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="hero-tags">
-        <span><i class="dot" style="background:var(--snare)"></i>~30 curated fills · all free</span>
+        <span><i class="dot" style="background:var(--snare)"></i>~200 curated fills · all free</span>
+        <span><i class="dot" style="background:var(--green)"></i>Mic + MIDI tracking</span>
         <span><i class="dot" style="background:var(--tom)"></i>Grid + notation</span>
-        <span><i class="dot" style="background:var(--green)"></i>10 languages</span>
+        <span><i class="dot" style="background:var(--hihat)"></i>10 languages</span>
       </div>
     </div>
 
@@ -388,7 +390,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="section-head reveal">
       <p class="eyebrow">What it does</p>
       <h2>Everything you need to drill a fill — and nothing you don't.</h2>
-      <p>A read-only generator and trainer with a generous free tier: the full curated library, a rock-solid audio engine, and two ways to read every pattern.</p>
+      <p>A generator, trainer and real-time tracking tool with a generous free tier: ~200 curated fills, mic &amp; MIDI tracking, humanized playback, a rock-solid audio engine, and two ways to read every pattern.</p>
     </div>
     <div class="features">
       <div class="card reveal">
@@ -396,48 +398,72 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="3" width="16" height="14" rx="3" stroke="#2E7DF5" stroke-width="1.7"/><path d="M6 10h8M10 6v8" stroke="#2E7DF5" stroke-width="1.7" stroke-linecap="round"/></svg>
         </div>
         <span class="tag" style="color:var(--kick)">Curated library</span>
-        <h3>Real fills, hand-transcribed</h3>
-        <p>~30 named linear fills covering every grid — 4/4 and 3/4 across quarter, eighth, sixteenth and triplet feels. All curated fills are free. The library updates remotely without an app release.</p>
+        <h3>~200 real fills, hand-transcribed</h3>
+        <p>A professionally-authored bank of linear fills across genres — 4/4 and 3/4 across quarter, eighth, sixteenth and triplet subdivisions. All curated fills are free. The library updates remotely without an app release.</p>
       </div>
       <div class="card reveal">
         <div class="icon" style="background:color-mix(in srgb,var(--green) 18%,transparent)">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 11l3-6 3 11 3-13 3 9 2-4h2" stroke="#1f9a53" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <span class="tag" style="color:var(--green-deep)">Audio engine</span>
-        <h3>Sample-accurate, zero latency</h3>
-        <p>AVAudioEngine with an optimized AVAudioUnitSampler node, driven by a dedicated audio-thread clock. Notes fire with no main-thread hop and three velocity tiers (accent, base, ghost) stay tight at any tempo.</p>
+        <span class="tag" style="color:var(--green-deep)">Rhythmic tracking</span>
+        <h3>Play along, get scored</h3>
+        <p>Real-time onset detection via mic (practice pad) or MIDI (e-drum kit). Hit timing is scored against the grid — green for on-time, amber for early, red for late. Visual feedback per step, timeline markers, and loop cycle history.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon" style="background:color-mix(in srgb,var(--snare) 16%,transparent)">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 16V9M8 16V4M13 16v-5M17 16V7" stroke="#E8943B" stroke-width="1.9" stroke-linecap="round"/></svg>
+        </div>
+        <span class="tag" style="color:var(--snare)">Playback feel</span>
+        <h3>Four levels of humanization</h3>
+        <p>Robot, Tight, Natural, or Loose — inject micro-timing slop and velocity swing into audio playback only. Visuals and metronome stay on the mathematical grid. Responds live mid-playback, no restart needed.</p>
       </div>
       <div class="card reveal">
         <div class="icon" style="background:color-mix(in srgb,var(--tom) 16%,transparent)">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="3" width="7" height="14" rx="2" stroke="#A352E8" stroke-width="1.7"/><path d="M12 5h6M12 10h6M12 15h6" stroke="#A352E8" stroke-width="1.7" stroke-linecap="round"/></svg>
         </div>
         <span class="tag" style="color:var(--tom)">Dual view</span>
-        <h3>Two views, one pattern</h3>
+        <h3>Grid + notation, one pattern</h3>
         <p>Read every fill as a chunky color-coded step grid (free) or a traditional 5-line drum staff (premium) — both render from the same source. Tap a step to cue, drag to scrub or seek live.</p>
       </div>
       <div class="card reveal">
-        <div class="icon" style="background:color-mix(in srgb,var(--snare) 16%,transparent)">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 16V9M8 16V4M13 16v-5M17 16V7" stroke="#E8943B" stroke-width="1.9" stroke-linecap="round"/></svg>
-        </div>
-        <span class="tag" style="color:var(--snare)">Dynamics</span>
-        <h3>Accents you can see</h3>
-        <p>Accents, body strokes and ghost notes show up as bar height and a neon glow — so you read the <em>feel</em> of a fill at a glance, not just the notes.</p>
-      </div>
-      <div class="card reveal">
         <div class="icon" style="background:color-mix(in srgb,var(--hihat) 16%,transparent)">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 6c4-3 8-3 12 0M4 14c4 3 8 3 12 0" stroke="#1f9c81" stroke-width="1.7" stroke-linecap="round"/><circle cx="10" cy="10" r="1.6" fill="#1f9c81"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2v5M10 13v5M2 10h5M13 10h5" stroke="#1f9c81" stroke-width="1.7" stroke-linecap="round"/><circle cx="10" cy="10" r="3" stroke="#1f9c81" stroke-width="1.7"/></svg>
         </div>
-        <span class="tag" style="color:var(--hihat)">Sticking</span>
-        <h3>Rudiment detection</h3>
-        <p>Paradiddles, paradiddle-diddles, five-stroke and double-stroke rolls are spotted in the sticking and bracketed right under the bars.</p>
+        <span class="tag" style="color:var(--hihat)">Favorites &amp; Progress</span>
+        <h3>Save, track, improve</h3>
+        <p>Bookmark fills you love with a single tap, rename and organize them. Track your practice in the Progress Hub — see your timing accuracy improve across sessions.</p>
       </div>
       <div class="card reveal">
         <div class="icon" style="background:color-mix(in srgb,var(--kick) 16%,transparent)">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3l5 13H5z" stroke="#2E7DF5" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 7v5" stroke="#2E7DF5" stroke-width="1.7" stroke-linecap="round"/></svg>
         </div>
-        <span class="tag" style="color:var(--kick)">Tempo + click</span>
-        <h3>Metronome &amp; prefill groove</h3>
-        <p>A synced click that accents the downbeat, live retempo via a swipeable ruler, plus an optional prefill groove that wraps your fill with a backbeat bar — so you hear it in full-song context.</p>
+        <span class="tag" style="color:var(--kick)">Audio engine</span>
+        <h3>Sample-accurate, zero latency</h3>
+        <p>AVAudioEngine with per-instrument voice pooling, three velocity tiers, ergonomic hand orchestration via DP-based spatial search, metronome, and a prefill groove that wraps your fill in full-song context.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon" style="background:color-mix(in srgb,var(--snare) 16%,transparent)">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="12" rx="2" stroke="#E8943B" stroke-width="1.7"/><path d="M7 9h6M7 12h4" stroke="#E8943B" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </div>
+        <span class="tag" style="color:var(--snare)">Generation</span>
+        <h3>1–4 bars, mixed subdivisions</h3>
+        <p>Multi-bar fills with mixed subdivision support. Select instruments, time signature, and feel — the engine finds a curated match or generates one with ergonomic hand orchestration that minimizes hand travel.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon" style="background:color-mix(in srgb,var(--tom) 16%,transparent)">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="2" width="12" height="16" rx="3" stroke="#A352E8" stroke-width="1.7"/><path d="M8 7h4M8 10.5h4M8 14h2" stroke="#A352E8" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </div>
+        <span class="tag" style="color:var(--tom)">Dynamic Island</span>
+        <h3>Live Activity on the Lock Screen</h3>
+        <p>An always-visible indicator during active playback via Dynamic Island and the Lock Screen — see your fill status even when the app is in the background.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon" style="background:color-mix(in srgb,var(--green) 18%,transparent)">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 6c4-3 8-3 12 0M4 14c4 3 8 3 12 0" stroke="#1f9c81" stroke-width="1.7" stroke-linecap="round"/><circle cx="10" cy="10" r="1.6" fill="#1f9c81"/></svg>
+        </div>
+        <span class="tag" style="color:var(--hihat)">Practice tools</span>
+        <h3>Metronome, prefill &amp; per-voice gain</h3>
+        <p>A synced click with accent on the downbeat, prefill/afterfill groove for full-song context, per-instrument gain control, rudiment detection, and tap-to-cue transport. Built for serious practice.</p>
       </div>
     </div>
   </div>
@@ -449,28 +475,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="reveal">
       <div class="section-head" style="margin-bottom:28px">
         <p class="eyebrow">How it works</p>
-        <h2>Set a grid, generate, practice.</h2>
+        <h2>Generate, practice, track, improve.</h2>
       </div>
       <div class="steps">
         <div class="step-row">
           <div class="step-num">1</div>
           <div>
             <h3>Set your grid</h3>
-            <p>Pick a time signature (4/4 or 3/4), a subdivision from quarters to triplets, and 1–4 bars. Toggle which of the six voices play — snare, three toms, hi-hat, and bass drum.</p>
+            <p>Pick a time signature (4/4 or 3/4), subdivisions from quarters to triplets (multi-select supported), 1–4 bars, and toggle which of the six voices play.</p>
           </div>
         </div>
         <div class="step-row">
           <div class="step-num">2</div>
           <div>
-            <h3>Generate</h3>
-            <p>A matching curated fill is preferred — chosen only when every voice it strikes is in your instrument pool. When none fits, the linear randomizer builds one that honors the same pool — one voice per step, hands cleanly alternated.</p>
+            <h3>Generate or browse</h3>
+            <p>A matching curated fill is preferred from the ~200 library. When none fits your instrument pool, the linear randomizer builds one with ergonomic hand orchestration — minimizing hand travel via DP-based spatial search.</p>
           </div>
         </div>
         <div class="step-row">
           <div class="step-num">3</div>
           <div>
-            <h3>Practice</h3>
-            <p>Tap a step to cue it, drag to scrub or seek the live playhead. Flip between grid and staff, loop at any tempo with the click on, and toggle the prefill groove for full-song context.</p>
+            <h3>Practice with feel</h3>
+            <p>Loop at any tempo with the click on, toggle the prefill groove for full-song context, and dial in your Playback Feel — from robotic to loose. Flip between grid and notation, tap to cue, drag to scrub.</p>
+          </div>
+        </div>
+        <div class="step-row">
+          <div class="step-num">4</div>
+          <div>
+            <h3>Track your playing</h3>
+            <p>Connect headphones (mic mode) or a MIDI e-kit, enable tracking, and play along. Each hit is scored green/amber/red against the grid. Review per-cycle results, save favorites, and watch your timing improve in the Progress Hub.</p>
           </div>
         </div>
       </div>
@@ -534,11 +567,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>The numbers that matter.</h2>
     </div>
     <div class="specs reveal">
+      <div class="spec"><div class="num">~200</div><div class="lbl">Curated fills</div></div>
       <div class="spec"><div class="num">2</div><div class="lbl">Time sigs · 4/4 &amp; 3/4</div></div>
       <div class="spec"><div class="num">4</div><div class="lbl">Subdivisions · ♩→trip</div></div>
       <div class="spec"><div class="num">1–4</div><div class="lbl">Bars per fill</div></div>
-      <div class="spec"><div class="num">3</div><div class="lbl">Velocity tiers</div></div>
       <div class="spec"><div class="num">6</div><div class="lbl">Drum voices</div></div>
+      <div class="spec"><div class="num">4</div><div class="lbl">Humanize levels</div></div>
+      <div class="spec"><div class="num">2</div><div class="lbl">Tracking inputs · mic + MIDI</div></div>
       <div class="spec"><div class="num">10</div><div class="lbl">Languages</div></div>
     </div>
   </div>
@@ -580,7 +615,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </svg>
       <span>DrumFillGenerator</span>
     </a>
-    <p class="foot-note">Built with Spec-Driven Development for iOS. Once Supabase is configured, waitlist signups are stored for the launch notification.</p>
+    <p class="foot-note">Built with Spec-Driven Development for iOS 26.5+. Feature-complete and awaiting platform launch. Waitlist signups stored via Supabase for the launch notification.</p>
     <div class="foot-links">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
