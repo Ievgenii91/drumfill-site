@@ -26,13 +26,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="consent-manager.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DrumFillGenerator for iOS — a drum fill engine that fits your hands</title>
-<meta name="description" content="DrumFillGenerator for iPhone and iPad: an ergonomic linear drum fill generator that solves the sticking for your kit, plus real-time MIDI timing feedback scored to the millisecond. 200 curated fills included.">
+<title>DrumFillGenerator for iPhone &amp; iPad — features, pricing &amp; requirements</title>
+<meta name="description" content="Everything DrumFillGenerator does on iPhone and iPad: the linear fill generator, MIDI rhythmic tracking, 200 curated fills, what's free vs Premium, and what you need to run it.">
 <link rel="canonical" href="https://drumfillgenerator.com/app.html">
 <meta name="theme-color" content="#0B0D12">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="DrumFillGenerator for iOS — a drum fill engine that fits your hands">
+<meta property="og:title" content="DrumFillGenerator for iPhone &amp; iPad — features, pricing &amp; requirements">
 <meta property="og:description" content="An ergonomic linear fill generator that solves the sticking for your kit, and MIDI timing feedback scored to the millisecond. 200 curated fills along for the ride. iPhone and iPad.">
 <meta property="og:url" content="https://drumfillgenerator.com/app.html">
 <meta property="og:image" content="https://drumfillgenerator.com/og-image.png">
@@ -40,10 +40,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DrumFillGenerator for iOS — a drum fill engine that fits your hands">
+<meta name="twitter:title" content="DrumFillGenerator for iPhone &amp; iPad — features, pricing &amp; requirements">
 <meta name="twitter:description" content="An ergonomic linear fill generator that solves the sticking for your kit, and MIDI timing feedback scored to the millisecond.">
 <meta name="twitter:image" content="https://drumfillgenerator.com/og-image.png">
 <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect x="1" y="17" width="5" height="8" rx="1.4" fill="%232E7DF5"/><rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="%232ED4B0"/><rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="%23A352E8"/><rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="%23E8943B"/></svg>'>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -57,197 +58,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   Apple ID, replace the href on each of them with the canonical product URL:
       https://apps.apple.com/app/drumfillgenerator/id<APPLE_ID>
   Until then they point at an App Store search, which resolves rather than 404s.
+  Pre-launch the waitlist is the primary (green) button and the store link is the
+  ghost one; at launch, swap btn-primary / btn-ghost back on both CTA pairs.
 -->
 
 <style>
-  :root {
-    --ground: #FBFBFD;
-    --surface: #FFFFFF;
-    --ink: #12141C;
-    --muted: #5B6172;
-    --hairline: #E7E9F0;
-    --hairline-strong: #D6D9E4;
-    --stage: #0B0D12;
-
-    --green: #2ECC70;
-    --green-deep: #25a85c;
-    --blue: #2E7DF5;
-    --teal: #2ED4B0;
-    --purple: #A352E8;
-    --amber: #E8943B;
-
-    --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-    --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Menlo", "Cascadia Code", monospace;
-
-    --maxw: 1140px;
-    --r: 16px;
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    background: var(--ground);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
-  a { color: inherit; }
-
-  .eyebrow {
-    font-family: var(--mono); font-size: 12px; font-weight: 600;
-    letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin: 0;
-  }
-
-  h1, h2, h3 { margin: 0; text-wrap: balance; letter-spacing: -0.02em; line-height: 1.12; }
-
-  /* ---------- NAV ---------- */
-  .nav {
-    position: sticky; top: 0; z-index: 50;
-    background: color-mix(in srgb, var(--ground) 86%, transparent);
-    backdrop-filter: saturate(1.4) blur(12px);
-    -webkit-backdrop-filter: saturate(1.4) blur(12px);
-    border-bottom: 1px solid var(--hairline);
-  }
-  .nav-inner { display: flex; align-items: center; gap: 24px; height: 64px; }
-  .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 700; letter-spacing: -0.02em; font-size: 16px; }
-  .brand svg { display: block; }
-  .nav-links { display: flex; gap: 26px; margin-left: auto; align-items: center; }
-  .nav-links a {
-    font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase;
-    color: var(--muted); text-decoration: none; transition: color .18s ease;
-  }
-  .nav-links a:hover { color: var(--ink); }
-  @media (max-width: 760px) { .nav-links { display: none; } }
-
-  /* ---------- BUTTONS ---------- */
-  .btn {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 14px 24px; border-radius: 12px; text-decoration: none;
-    font-weight: 700; font-size: 16px; letter-spacing: -0.01em;
-    background: var(--ink); color: #fff; border: 1px solid var(--ink);
-    transition: transform .16s ease, opacity .16s ease;
-  }
-  .btn:hover { transform: translateY(-1px); opacity: .92; }
-  .btn.ghost { background: transparent; color: var(--ink); border-color: var(--hairline-strong); }
-  .btn svg { display: block; }
-
   /* ---------- HERO ---------- */
-  .hero { padding: 76px 0 8px; }
-  .hero h1 { font-size: clamp(38px, 6vw, 66px); font-weight: 900; margin: 18px 0 0; }
+  .hero { padding: 72px 0 0; overflow: hidden; }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; align-items: center; }
+  .hero h1 { font-size: clamp(40px, 4.6vw, 54px); font-weight: 850; margin: 18px 0 0; line-height: 1.02; }
   .hero h1 .accent { color: var(--green-deep); }
-  .hero .lede { font-size: clamp(18px, 2.1vw, 21px); color: var(--muted); max-width: 660px; margin: 22px 0 0; }
-  .hero .cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 32px 0 0; }
-  .hero .fine { font-family: var(--mono); font-size: 12.5px; color: var(--muted); margin: 18px 0 0; letter-spacing: 0.02em; }
-
-  /* ---------- STAT STRIP ---------- */
-  .stats {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
-    background: var(--hairline); border: 1px solid var(--hairline);
-    border-radius: var(--r); overflow: hidden; margin: 56px 0 0;
-  }
-  .stats .cell { background: var(--surface); padding: 22px 20px; }
-  .stats .n { font-size: 30px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; }
-  .stats .l {
-    font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--muted); margin-top: 8px;
-  }
-  @media (max-width: 860px) { .stats { grid-template-columns: repeat(2, 1fr); } }
-
-  /* ---------- SECTIONS ---------- */
-  section { padding: 84px 0 0; }
-  .sec-head { max-width: 700px; margin-bottom: 36px; }
-  .sec-head h2 { font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; margin-top: 14px; }
-  .sec-head p { color: var(--muted); font-size: 18px; margin: 16px 0 0; }
-
-  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  @media (max-width: 980px) { .cards { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 620px) { .cards { grid-template-columns: 1fr; } }
-  .card {
-    background: var(--surface); border: 1px solid var(--hairline);
-    border-radius: var(--r); padding: 26px 24px;
-  }
-  .card .tag {
-    font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--muted); display: flex; align-items: center; gap: 8px;
-  }
-  .card .tag::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
-  .card.b .tag::before { background: var(--blue); }
-  .card.t .tag::before { background: var(--teal); }
-  .card.p .tag::before { background: var(--purple); }
-  .card.a .tag::before { background: var(--amber); }
-  .card h3 { font-size: 19px; font-weight: 800; margin: 14px 0 10px; }
-  .card p { color: #2c2f3a; margin: 0; font-size: 15.5px; line-height: 1.62; }
-
-  /* ---------- STEPS ---------- */
-  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-  @media (max-width: 900px) { .steps { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
-  .step { border-top: 2px solid var(--ink); padding-top: 18px; }
-  .step .n { font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; color: var(--muted); }
-  .step h3 { font-size: 17px; font-weight: 800; margin: 10px 0 8px; }
-  .step p { color: #2c2f3a; font-size: 15px; margin: 0; }
-
-  /* ---------- PRICING ---------- */
-  .tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  @media (max-width: 760px) { .tiers { grid-template-columns: 1fr; } }
-  .tier {
-    background: var(--surface); border: 1px solid var(--hairline);
-    border-radius: var(--r); padding: 30px 28px;
-  }
-  .tier.pro { background: var(--stage); border-color: var(--stage); color: #fff; }
-  .tier .name {
-    font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
-  }
-  .tier.pro .name { color: #8f96ab; }
-  .tier h3 { font-size: 24px; font-weight: 800; margin: 12px 0 6px; }
-  .tier .sub { color: var(--muted); font-size: 15px; margin: 0 0 18px; }
-  .tier.pro .sub { color: #a8aec2; }
-  .tier ul { list-style: none; margin: 0; padding: 0; }
-  .tier li { position: relative; padding-left: 26px; margin: 11px 0; font-size: 15.5px; color: #2c2f3a; }
-  .tier.pro li { color: #dfe3ee; }
-  .tier li::before {
-    content: ""; position: absolute; left: 3px; top: 9px;
-    width: 8px; height: 8px; border-radius: 50%; background: var(--green);
+  .hero .lede { font-size: clamp(18px, 2.1vw, 21px); color: var(--muted); max-width: 30em; margin: 22px 0 0; }
+  .hero .cta { display: flex; gap: 12px; flex-wrap: wrap; margin: 32px 0 0; }
+  .hero .fine { font-size: 14px; color: var(--muted); margin: 18px 0 0; }
+  .hero-media { display: flex; justify-content: center; --glow: color-mix(in srgb, var(--green) 26%, transparent); }
+  .hero .stats { margin: 72px 0 0; grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 860px) {
+    .hero { padding: 48px 0 0; }
+    .hero-grid { grid-template-columns: 1fr; gap: 56px; }
+    .hero .stats { grid-template-columns: repeat(2, 1fr); }
   }
 
-  /* ---------- SPEC ---------- */
+
+  /* ---------- REQUIREMENTS ---------- */
   .spec { border: 1px solid var(--hairline); border-radius: var(--r); overflow: hidden; background: var(--surface); }
   .spec .r { display: flex; gap: 16px; padding: 14px 22px; border-top: 1px solid var(--hairline); flex-wrap: wrap; }
   .spec .r:first-child { border-top: 0; }
-  .spec .k {
-    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
-    color: var(--muted); min-width: 210px;
-  }
-  .spec .v { color: #2c2f3a; flex: 1; min-width: 220px; }
+  .spec .k { font-weight: 650; font-size: 15px; min-width: 200px; }
+  .spec .v { color: var(--body); flex: 1; min-width: 220px; }
 
-  /* ---------- CLOSER ---------- */
-  .closer {
-    margin: 90px 0 0; background: var(--stage); color: #fff;
-    border-radius: 24px; padding: clamp(40px, 6vw, 72px);
-  }
-  .closer h2 { font-size: clamp(28px, 4vw, 44px); font-weight: 900; }
-  .closer p { color: #a8aec2; font-size: 18px; max-width: 560px; margin: 18px 0 0; }
-  .closer .btn { background: #fff; color: var(--ink); border-color: #fff; margin-top: 30px; }
-
-  /* ---------- FOOTER ---------- */
-  .foot { padding: 56px 0 60px; margin-top: 80px; border-top: 1px solid var(--hairline); }
-  .foot-inner { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
-  .foot .brand { font-size: 15px; }
-  .foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
-  .foot-links a {
-    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
-    color: var(--muted); text-decoration: none; transition: color .18s ease;
-  }
-  .foot-links a:hover { color: var(--ink); }
-  .foot .legal { font-size: 13px; color: var(--muted); margin: 22px 0 0; }
-
-  :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px; }
+  .closer-wrap { padding-top: 0; }
+  .cta-band .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+  .cta-band .btn-ghost { color: #fff; border-color: #3A3D47; }
 </style>
 
 <!-- NAV -->
@@ -264,8 +106,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
     <div class="nav-links">
       <a href="#features">Features</a>
-      <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
+      <a href="#requirements">Requirements</a>
       <a href="support.html">Support</a>
     </div>
   </div>
@@ -274,116 +116,138 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- HERO -->
 <header class="hero">
   <div class="wrap">
-    <p class="eyebrow">iPhone &amp; iPad · iOS 26.5+</p>
-    <h1>Fills that fit<br>your hands.<br><span class="accent">Timing that can't lie.</span></h1>
-    <p class="lede">DrumFillGenerator writes strictly linear drum fills — one voice per step, never two — then solves the sticking with a search that refuses to cross your hands, lunge across the kit, or park you on a single drum. Plug in a MIDI kit and every hit you play is measured against the grid to the millisecond. A bank of 200 hand-transcribed fills rides along for the days you want someone else's ideas.</p>
-    <div class="cta">
-      <a class="btn js-store-cta" href="https://apps.apple.com/search?term=drumfillgenerator">
-        <svg width="18" height="21" viewBox="0 0 17 20" fill="currentColor" aria-hidden="true"><path d="M14.1 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .7 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.2 1.2-2.5 1.2-2.5 0-.1-2.3-.9-2.3-3.5zM11.9 3.8c.6-.8 1-1.8.9-2.9-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.8 1 .1 2-.5 2.7-1.3z"/></svg>
-        Get it on the App Store
-      </a>
-      <a class="btn ghost" href="#features">See what it does</a>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">iPhone &amp; iPad · iOS 26.5+</p>
+        <h1>Fills that fit your hands.<br><span class="accent">Timing that can't lie.</span></h1>
+        <p class="lede">A drum practice app that writes new fills for your kit, works out the sticking, and scores every hit you play on a MIDI e-kit to the millisecond.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="index.html#join">Join the launch waitlist</a>
+          <a class="btn btn-ghost js-store-cta" href="https://apps.apple.com/search?term=drumfillgenerator">
+            <svg width="16" height="19" viewBox="0 0 17 20" fill="currentColor" aria-hidden="true"><path d="M14.1 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .7 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.2 1.2-2.5 1.2-2.5 0-.1-2.3-.9-2.3-3.5zM11.9 3.8c.6-.8 1-1.8.9-2.9-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.8 1 .1 2-.5 2.7-1.3z"/></svg>
+            Get it on the App Store
+          </a>
+        </div>
+        <p class="fine">Generator, tracking and all 200 fills are free · No account · No ads · Works offline</p>
+      </div>
+      <div class="hero-media">
+        <div class="phone-glow">
+          <div class="phone">
+            <img src="assets/screens/practice.jpg" width="600" height="1304" alt="DrumFillGenerator practice screen: a one-bar 16th-note fill shown as colour-coded bars with R, L and K sticking under each step, plus Play, Generate and a 106 BPM tempo control." fetchpriority="high">
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="fine">Generator and MIDI tracking are free · No account · No ads · Works offline</p>
 
     <div class="stats">
       <div class="cell"><div class="n">∞</div><div class="l">Fills the generator can write</div></div>
-      <div class="cell"><div class="n">±25<span style="font-size:18px">ms</span></div><div class="l">On-time scoring window</div></div>
-      <div class="cell"><div class="n">64</div><div class="l">Steps in a 4-bar 16th fill</div></div>
+      <div class="cell"><div class="n">±25<small>ms</small></div><div class="l">Window for an on-time hit</div></div>
+      <div class="cell"><div class="n">10</div><div class="l">Languages</div></div>
       <div class="cell"><div class="n">200</div><div class="l">Curated fills, all free</div></div>
     </div>
   </div>
 </header>
 
 <!-- FEATURES -->
-<section id="features">
+<section class="section" id="features">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="section-head">
       <p class="eyebrow">What it does</p>
-      <h2>Two engines, and a bank of fills along for the ride.</h2>
+      <h2>Two engines and a library, in one practice app.</h2>
       <p>One writes fills your hands can play. The other tells you, to the millisecond, whether you played them.</p>
     </div>
 
-    <div class="cards">
-      <div class="card">
-        <div class="tag">The generator</div>
-        <h3>Ergonomic by construction</h3>
-        <p>Every generated fill goes through a dynamic-programming search over your kit's geometry. It costs out hand travel, refuses to cross your right hand under your left, penalises direction reversals, and won't ask for a leap the note spacing can't carry. What comes out is sticking a drummer would actually have written.</p>
+    <div class="feature-rows">
+      <div class="feature-row">
+        <div class="feature-copy">
+          <span class="tag" style="color:var(--snare)"><i class="dot" style="background:var(--snare)"></i>The generator</span>
+          <h3>Never the same fill twice.</h3>
+          <p>Set the grid and the engine writes a fill to it — 4/4 or 3/4, quarter notes to triplets, one bar free or up to four with Premium. Pick more than one subdivision and it changes resolution beat by beat. Press again for another; it never runs dry.</p>
+          <ul class="checks">
+            <li>Strictly linear: one drum per step, never two at once</li>
+            <li>Sticking a drummer would write — no crossed hands, no lunges across the kit</li>
+            <li>No limb three times in a row, and loops without a stutter</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone-glow" style="--glow: color-mix(in srgb, var(--snare) 30%, transparent)">
+            <div class="phone">
+              <img src="assets/screens/generator.jpg" width="600" height="1304" loading="lazy" alt="Generator Setup screen: time signature 4/4 or 3/4, subdivision from quarter notes to triplets, bar count from 1 to 4, and which drums to include.">
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="card b">
-        <div class="tag">The generator</div>
-        <h3>Strictly linear, guaranteed</h3>
-        <p>One voice per step, never two — the defining constraint of the linear vocabulary, enforced while the pattern is built rather than filtered out afterwards. No limb three times in a row. The kick stays on your foot. The final two steps are never both kicks, so looping never turns your fill into a stutter.</p>
+      <div class="feature-row flip">
+        <div class="feature-copy">
+          <span class="tag" style="color:var(--green-deep)"><i class="dot" style="background:var(--green)"></i>Rhythmic tracking</span>
+          <h3>Train the tempo, not just the pattern.</h3>
+          <p>Connect a USB-C MIDI kit and every hit is matched to the grid as you play. Scoring always uses the exact grid — never the humanised playback — so what you see is the truth about your timing.</p>
+          <ul class="checks">
+            <li>Green inside ±25 ms, amber out to 80 ms, red beyond that</li>
+            <li>A live timeline of every hit, and a history of each loop</li>
+            <li>Drop the tempo until the bar is all green, then climb</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <figure class="track-shot" style="margin:0">
+            <img src="assets/screens/tracking.jpg" width="720" height="621" loading="lazy" alt="Pattern card while tracking: the steps just played are outlined in green as on-time hits, with a LISTENING indicator.">
+            <div class="timeline">
+              <img src="assets/screens/timeline.jpg" width="720" height="71" loading="lazy" alt="Hit timeline: a row of coloured ticks, mostly green with a few amber, red and blue.">
+            </div>
+            <figcaption class="hit-legend">
+              <span><i style="background:var(--green)"></i>On time</span>
+              <span><i style="background:#F5B800"></i>Early / late</span>
+              <span><i style="background:var(--red)"></i>Miss</span>
+              <span><i style="background:var(--kick)"></i>Wrong drum</span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="card t">
-        <div class="tag">The generator</div>
-        <h3>Never the same fill twice</h3>
-        <p>Set the grid and the engine writes to it — 4/4 or 3/4, quarters through triplets, one to four bars, up to 64 sequential steps. Select more than one subdivision and it changes resolution beat by beat. Press again and it writes another. The well does not run dry.</p>
+<!-- AND ALSO -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">And also</p>
+      <h2>Built for serious practice.</h2>
+    </div>
+    <div class="minis">
+      <div class="mini">
+        <div class="ico" style="background:color-mix(in srgb,var(--tom) 16%,transparent)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4" y="2" width="12" height="16" rx="3" stroke="#A352E8" stroke-width="1.7"/><path d="M8 7h4M8 10.5h4M8 14h2" stroke="#A352E8" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <div><h3>200 curated fills</h3><p>Hand-transcribed across genres, all free, and updated over the air without an app release.</p></div>
       </div>
-
-      <div class="card p">
-        <div class="tag">Rhythmic tracking</div>
-        <h3>Scored to the millisecond</h3>
-        <p>Connect a USB-C MIDI kit and every Note On is timestamped and matched to the grid as you play. Inside 25 ms is a hit, out to 80 ms reads early or late, past that is a miss — green, amber, red, flashing on the step you actually struck.</p>
+      <div class="mini">
+        <div class="ico" style="background:color-mix(in srgb,var(--kick) 16%,transparent)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3l5 13H5z" stroke="#2E7DF5" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 7v5" stroke="#2E7DF5" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <div><h3>Low-latency audio</h3><p>Real drum samples with accent, normal and ghost dynamics, and a metronome on the same clock.</p></div>
       </div>
-
-      <div class="card a">
-        <div class="tag">Rhythmic tracking</div>
-        <h3>Train the tempo, not just the pattern</h3>
-        <p>The reference never moves: scoring is measured against the mathematical grid and deliberately ignores the humanisation applied to playback. Loop a fill, watch your hits drift on the timeline, review each cycle after it ends. Drop the tempo until the whole bar is green, then climb.</p>
+      <div class="mini">
+        <div class="ico" style="background:color-mix(in srgb,var(--tom) 16%,transparent)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="3" width="7" height="14" rx="2" stroke="#A352E8" stroke-width="1.7"/><path d="M12 5h6M12 10h6M12 15h6" stroke="#A352E8" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <div><h3>Grid or sheet music</h3><p>Colour-coded steps with R / L / K sticking, or a five-line drum staff <span class="pro-chip">Premium</span>. Tap to cue, drag to scrub.</p></div>
       </div>
-
-      <div class="card">
-        <div class="tag">Audio engine</div>
-        <h3>Sample-accurate, low latency</h3>
-        <p>A dedicated high-priority audio clock with per-instrument voice pooling, so a fast retrigger never chokes the previous note's tail. Three velocity tiers — accent, body, ghost — per-voice gain control, and a metronome locked to the same clock.</p>
+      <div class="mini">
+        <div class="ico" style="background:color-mix(in srgb,var(--snare) 16%,transparent)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 16V9M8 16V4M13 16v-5M17 16V7" stroke="#E8943B" stroke-width="1.9" stroke-linecap="round"/></svg></div>
+        <div><h3>Robot to Loose</h3><p>Four playback feels add human timing to the audio; visuals and scoring stay exact.</p></div>
       </div>
-
-      <div class="card b">
-        <div class="tag">Dual view</div>
-        <h3>Grid and notation</h3>
-        <p>Read the same pattern as a chunky colour-coded step grid with R/L/K sticking, or as a traditional five-line drum staff. Tap any step to cue there, drag to scrub or seek while it plays. Notation is a premium view; the grid is always free.</p>
+      <div class="mini">
+        <div class="ico" style="background:color-mix(in srgb,var(--hihat) 16%,transparent)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 6c4-3 8-3 12 0M4 14c4 3 8 3 12 0" stroke="#1F9C81" stroke-width="1.7" stroke-linecap="round"/><circle cx="10" cy="10" r="1.6" fill="#1F9C81"/></svg></div>
+        <div><h3>Groove &amp; favorites</h3><p>Wrap the fill in a groove bar to hear it in context <span class="pro-chip">Premium</span>, and star the ones worth keeping.</p></div>
       </div>
-
-      <div class="card t">
-        <div class="tag">Playback feel</div>
-        <h3>Robot to Loose</h3>
-        <p>Four humanisation levels inject micro-timing slop and velocity swing into the audio only — the visuals, the metronome and the tracking grid stay mathematically exact. Change it mid-playback; nothing restarts.</p>
-      </div>
-
-      <div class="card p">
-        <div class="tag">The bank · bonus</div>
-        <h3>200 fills, for the days you want ideas</h3>
-        <p>Alongside the generator sits a bank of 200 hand-transcribed linear fills across genres, including ones that switch subdivision mid-bar. Generate presses alternate between the two sources, so at least half of what you get is freshly written. All 200 are free, and the bank updates over the air without an app release.</p>
-      </div>
-
-      <div class="card a">
-        <div class="tag">Practice tools</div>
-        <h3>Groove context and favorites</h3>
-        <p>Wrap the fill in a one-bar prefill/afterfill groove so you hear it the way it lands in a song (premium). Star the fills you want to keep, then rename or delete them in the Favorites tab.</p>
-      </div>
-
-      <div class="card">
-        <div class="tag">Localisation</div>
-        <h3>Ten languages, switchable in-app</h3>
-        <p>English, Ukrainian, German, Spanish, French, Portuguese, Polish, Czech, Japanese and Simplified Chinese — changed from the app's own settings, independent of your system language.</p>
-      </div>
-
-      <div class="card b">
-        <div class="tag">Offline first</div>
-        <h3>No account, no network</h3>
-        <p>Generation, playback, notation and tracking run entirely on-device from bundled samples. There is nothing to sign up for and nothing to sign in to.</p>
+      <div class="mini">
+        <div class="ico" style="background:color-mix(in srgb,var(--green) 18%,transparent)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.5" stroke="#1F9A53" stroke-width="1.7"/><path d="M2.5 10h15M10 2.5c2.2 2.3 2.2 12.7 0 15M10 2.5c-2.2 2.3-2.2 12.7 0 15" stroke="#1F9A53" stroke-width="1.5"/></svg></div>
+        <div><h3>10 languages, offline</h3><p>Switch language in the app. No account and no network needed to practise.</p></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- HOW -->
-<section id="how">
+<section class="section" id="how">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="section-head">
       <p class="eyebrow">How it works</p>
       <h2>Set the grid. Generate. Play it. Prove it.</h2>
     </div>
@@ -391,31 +255,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="step">
         <div class="n">01</div>
         <h3>Set your grid</h3>
-        <p>Pick 4/4 or 3/4, select one or more subdivisions from quarters to triplets, choose 1–4 bars, and toggle which of the six voices the engine is allowed to use.</p>
+        <p>Pick 4/4 or 3/4, one or more subdivisions, the bar count, and which of the six drums to use.</p>
       </div>
       <div class="step">
         <div class="n">02</div>
         <h3>Let it write one</h3>
-        <p>The generator builds a linear fill inside exactly those constraints and solves the sticking for your kit. Don't like it? Press again. Every other press pulls from the curated bank instead, so ideas arrive from both directions.</p>
+        <p>Get a linear fill with the sticking worked out. Every other press pulls from the curated library.</p>
       </div>
       <div class="step">
         <div class="n">03</div>
         <h3>Learn it</h3>
-        <p>Loop at any tempo with the click on, add the prefill groove for song context, dial in the playback feel, and flip between grid and staff. Tap to cue, drag to scrub.</p>
+        <p>Loop at any tempo with the click; add the groove and staff view with Premium.</p>
       </div>
       <div class="step">
         <div class="n">04</div>
         <h3>Prove you have it</h3>
-        <p>Connect a MIDI e-kit, enable tracking, and play along. Every hit lands on the timeline against where it should have been, scored to the millisecond, with a per-cycle history waiting when the loop comes round.</p>
+        <p>Connect a MIDI e-kit, turn on tracking, and watch every hit land against the grid.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- PRICING -->
-<section id="pricing">
+<section class="section alt" id="pricing">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="section-head">
       <p class="eyebrow">Pricing</p>
       <h2>The free tier is the whole instrument.</h2>
       <p>Premium adds range, not access. Nothing is time-limited and nothing is metered.</p>
@@ -426,11 +290,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3>Everything to start</h3>
         <p class="sub">No account, no ads, no trial clock.</p>
         <ul>
-          <li><b>The full generator</b>, unlimited, on single-bar grids</li>
+          <li><b>The full generator</b>, unlimited, on one-bar fills</li>
           <li><b>Rhythmic tracking</b> with a MIDI kit — every millisecond of it</li>
           <li>All six drum voices, both time signatures, every subdivision</li>
           <li>Colour-coded grid view with R / L / K sticking</li>
-          <li>Metronome, transport, tap-to-cue, per-voice gain</li>
+          <li>Metronome, transport, tap-to-cue, per-drum volume</li>
           <li>All 200 curated fills</li>
           <li>Favorites and all ten languages</li>
         </ul>
@@ -441,34 +305,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="sub">Auto-renewable, monthly or annual, via the App Store.</p>
         <ul>
           <li><b>Multi-bar fills</b> — 2, 3 and 4-bar phrases</li>
-          <li><b>Notation view</b> — the classical five-line drum staff</li>
-          <li><b>Prefill groove</b> — a one-bar groove wrapping the fill for full-song context</li>
+          <li><b>Notation view</b> — the classic five-line drum staff</li>
+          <li><b>Groove context</b> — a one-bar groove before and after the fill</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SPECS -->
-<section id="specs">
+<!-- REQUIREMENTS -->
+<section class="section" id="requirements">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="section-head">
       <p class="eyebrow">Requirements</p>
       <h2>Before you download.</h2>
     </div>
     <div class="spec">
       <div class="r"><div class="k">Platform</div><div class="v">iPhone and iPad, iOS 26.5 or later</div></div>
-      <div class="r"><div class="k">Account</div><div class="v">None — the app opens straight into the practice workspace</div></div>
-      <div class="r"><div class="k">Network</div><div class="v">Optional; used only to refresh the curated catalog and load the subscription screen</div></div>
-      <div class="r"><div class="k">Rhythmic tracking</div><div class="v">Requires a connected USB-C MIDI drum kit or pad, on single-bar patterns</div></div>
-      <div class="r"><div class="k">Microphone tracking</div><div class="v">In development — shown as "SOON" and not selectable in this version</div></div>
+      <div class="r"><div class="k">Account</div><div class="v">None — the app opens straight into practice</div></div>
+      <div class="r"><div class="k">Network</div><div class="v">Optional; only used to refresh the fill library and load the subscription screen</div></div>
+      <div class="r"><div class="k">Rhythmic tracking</div><div class="v">A USB-C MIDI drum kit or pad, on one-bar fills</div></div>
+      <div class="r"><div class="k">Microphone tracking</div><div class="v">In development — shown as "Soon" and not selectable yet</div></div>
       <div class="r"><div class="k">Languages</div><div class="v">English, Ukrainian, German, Spanish, French, Portuguese, Polish, Czech, Japanese, Simplified Chinese</div></div>
     </div>
+  </div>
+</section>
 
-    <div class="closer">
+<!-- CLOSER -->
+<section class="section closer-wrap">
+  <div class="wrap">
+    <div class="cta-band">
       <h2>You've been playing the same four fills for years.</h2>
-      <p>An engine that writes new ones your hands can actually reach, and a kit that tells you the truth about your timing. On the device already sitting on your music stand.</p>
-      <a class="btn js-store-cta" href="https://apps.apple.com/search?term=drumfillgenerator">Get it on the App Store</a>
+      <p>An engine that writes new ones your hands can reach, and a kit that tells you the truth about your timing — on the device already on your music stand.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="index.html#join">Join the waitlist</a>
+        <a class="btn btn-ghost js-store-cta" href="https://apps.apple.com/search?term=drumfillgenerator">Get it on the App Store</a>
+      </div>
     </div>
   </div>
 </section>
@@ -493,7 +365,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="terms.html">Terms</a>
       </div>
     </div>
-    <p class="legal">Premium is an auto-renewable subscription billed through your Apple ID. It renews automatically unless cancelled at least 24 hours before the end of the current period; manage or cancel it in iOS Settings → your name → Subscriptions.</p>
+    <p class="foot-note">Premium is an auto-renewable subscription billed through your Apple ID. It renews automatically unless cancelled at least 24 hours before the end of the current period; manage or cancel it in iOS Settings → your name → Subscriptions.</p>
   </div>
 </footer>
 </body>
