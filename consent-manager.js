@@ -236,11 +236,12 @@
     banner.hidden = true;
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Analytics preferences');
+    banner.setAttribute('data-i18n-attr', 'aria-label:consent.aria');
     banner.innerHTML =
-      '<p>We use Google Analytics only if you agree. It helps us understand which pages people use so we can improve the site. You can change this choice any time or read more in our <a href="privacy.html">Privacy Policy</a>.</p>' +
+      '<p data-i18n="consent.text">We use Google Analytics only if you agree. It helps us understand which pages people use so we can improve the site. You can change this choice any time or read more in our <a href="privacy.html">Privacy Policy</a>.</p>' +
       '<div class="df-consent-actions">' +
-        '<button class="df-consent-decline" type="button">Decline</button>' +
-        '<button class="df-consent-accept" type="button">Allow analytics</button>' +
+        '<button class="df-consent-decline" type="button" data-i18n="consent.decline">Decline</button>' +
+        '<button class="df-consent-accept" type="button" data-i18n="consent.accept">Allow analytics</button>' +
       '</div>';
 
     var declineButton = banner.querySelector('.df-consent-decline');
@@ -253,6 +254,9 @@
     });
 
     document.body.appendChild(banner);
+    if (window.dfI18n) {
+      window.dfI18n.apply(banner);
+    }
   }
 
   function createManageButton() {
@@ -265,8 +269,12 @@
     button.type = 'button';
     button.hidden = true;
     button.textContent = 'Cookie settings';
+    button.setAttribute('data-i18n', 'consent.manage');
     button.addEventListener('click', showBanner);
     document.body.appendChild(button);
+    if (window.dfI18n) {
+      window.dfI18n.apply(button);
+    }
   }
 
   function initUi() {
