@@ -32,6 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="theme-color" content="#0B0D12">
 <meta name="robots" content="index, follow">
 <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><rect x="1" y="17" width="5" height="8" rx="1.4" fill="%232E7DF5"/><rect x="7.6" y="12.5" width="5" height="12.5" rx="1.4" fill="%232ED4B0"/><rect x="14.2" y="7.5" width="5" height="17.5" rx="1.4" fill="%23A352E8"/><rect x="20.8" y="1.5" width="5" height="23.5" rx="1.4" fill="%23E8943B"/></svg>'>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -39,73 +40,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <style>
-  :root {
-    --ground: #FBFBFD;
-    --surface: #FFFFFF;
-    --ink: #12141C;
-    --muted: #5B6172;
-    --hairline: #E7E9F0;
-    --hairline-strong: #D6D9E4;
-    --stage: #0B0D12;
-
-    --green: #2ECC70;
-    --green-deep: #25a85c;
-
-    --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-    --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Menlo", "Cascadia Code", monospace;
-
-    --maxw: 1140px;
-    --r: 16px;
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    background: var(--ground);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
-
-  a { color: inherit; }
-
-  .eyebrow {
-    font-family: var(--mono);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0;
-  }
-
-  h1, h2, h3 { margin: 0; text-wrap: balance; letter-spacing: -0.02em; line-height: 1.12; }
-
-  /* ---------- NAV ---------- */
-  .nav {
-    position: sticky; top: 0; z-index: 50;
-    background: color-mix(in srgb, var(--ground) 86%, transparent);
-    backdrop-filter: saturate(1.4) blur(12px);
-    -webkit-backdrop-filter: saturate(1.4) blur(12px);
-    border-bottom: 1px solid var(--hairline);
-  }
-  .nav-inner { display: flex; align-items: center; gap: 24px; height: 64px; }
-  .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; font-weight: 700; letter-spacing: -0.02em; font-size: 16px; }
-  .brand svg { display: block; }
-  .nav-links { display: flex; gap: 26px; margin-left: auto; }
-  .nav-links a {
-    font-family: var(--mono); font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase;
-    color: var(--muted); text-decoration: none; transition: color .18s ease;
-  }
-  .nav-links a:hover { color: var(--ink); }
-  @media (max-width: 760px) { .nav-links { display: none; } }
-
   /* ---------- DOC HEADER ---------- */
   .doc-head { padding: 64px 0 28px; }
   .doc-head h1 { font-size: clamp(32px, 4.6vw, 48px); font-weight: 800; }
@@ -127,10 +61,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     padding-top: 28px; border-top: 1px solid var(--hairline);
   }
   .prose h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 36px; }
-  .prose p { margin: 14px 0; color: #2c2f3a; }
+  .prose p { margin: 14px 0; color: var(--body); }
   .prose ul { margin: 16px 0; padding-left: 0; list-style: none; }
   .prose li {
-    position: relative; padding: 0 0 0 26px; margin: 12px 0; color: #2c2f3a;
+    position: relative; padding: 0 0 0 26px; margin: 12px 0; color: var(--body);
   }
   .prose li::before {
     content: ""; position: absolute; left: 4px; top: 12px;
@@ -142,21 +76,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     margin-top: 18px; padding: 20px 22px;
     background: var(--ground); border: 1px solid var(--hairline); border-radius: 12px;
   }
-  .contact-card .row { font-family: var(--mono); font-size: 14px; margin: 8px 0; color: #2c2f3a; }
+  .contact-card .row { font-family: var(--mono); font-size: 14px; margin: 8px 0; color: var(--body); }
   .contact-card .row b { color: var(--ink); }
 
-  /* ---------- FOOTER ---------- */
-  .foot { padding: 48px 0 60px; border-top: 1px solid var(--hairline); }
-  .foot-inner { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
-  .foot .brand { font-size: 15px; }
-  .foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
-  .foot-links a {
-    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
-    color: var(--muted); text-decoration: none; transition: color .18s ease;
-  }
-  .foot-links a:hover { color: var(--ink); }
 
-  :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px; }
 </style>
 
 <!-- NAV -->
