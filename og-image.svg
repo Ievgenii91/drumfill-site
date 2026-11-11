@@ -5,7 +5,7 @@
   <rect x="282" y="124" width="108" height="253" rx="20" fill="#2ED4B0"/>
   <rect x="420" y="202" width="108" height="175" rx="20" fill="#A352E8"/>
   <rect x="558" y="96" width="108" height="281" rx="20" fill="#E8943B"/>
-  <text x="736" y="214" fill="#F6F7FB" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">DrumFillGenerator</text>
+  <text x="736" y="214" fill="#F6F7FB" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">Drum Chops</text>
   <text x="736" y="288" fill="#9FA5B4" font-family="Arial, Helvetica, sans-serif" font-size="32">Real drum fills, generated.</text>
   <text x="736" y="344" fill="#9FA5B4" font-family="Arial, Helvetica, sans-serif" font-size="32">Practice curated fills with grid and notation views.</text>
 </svg>
