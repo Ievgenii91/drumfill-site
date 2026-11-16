@@ -50,8 +50,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   /* ---------- PROSE ---------- */
   .prose {
-    background: var(--surface);
-    border: 1px solid var(--hairline);
     border-radius: var(--r);
     padding: 40px clamp(24px, 4vw, 52px);
     margin: 0 0 72px;
@@ -77,7 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .prose a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
   .contact-card {
     margin-top: 18px; padding: 20px 22px;
-    background: var(--ground); border: 1px solid var(--hairline); border-radius: 12px;
+    background: color-mix(in srgb, var(--surface) 50%, transparent); border: 1px solid var(--glass-hairline); border-radius: 12px;
   }
   .contact-card .row { font-family: var(--mono); font-size: 14px; margin: 8px 0; color: var(--body); }
   .contact-card .row b { color: var(--ink); }
@@ -85,8 +83,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   /* ---------- FAQ ---------- */
   .faq { margin: 20px 0 0; }
   .faq details {
-    border: 1px solid var(--hairline); border-radius: 12px;
-    background: var(--ground); margin: 10px 0; overflow: hidden;
+    background: color-mix(in srgb, var(--surface) 50%, transparent); border: 1px solid var(--glass-hairline); border-radius: 12px;
+    box-shadow: none; margin: 10px 0; overflow: hidden;
   }
   .faq summary {
     cursor: pointer; list-style: none; padding: 16px 20px;
@@ -98,14 +96,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     font-family: var(--mono); font-size: 20px; color: var(--muted); line-height: 1;
   }
   .faq details[open] summary::after { content: "–"; }
-  .faq details[open] summary { border-bottom: 1px solid var(--hairline); }
+  .faq details[open] summary { border-bottom: 1px solid var(--glass-hairline); }
   .faq .answer { padding: 4px 20px 18px; }
   .faq .answer p { margin: 12px 0; }
   .faq .answer ul { margin: 12px 0; }
   .faq .answer li { margin: 8px 0; }
 
   /* ---------- SPEC TABLE ---------- */
-  .spec { margin-top: 18px; border: 1px solid var(--hairline); border-radius: 12px; overflow: hidden; }
+  .spec { margin-top: 18px; box-shadow: none; background: color-mix(in srgb, var(--surface) 50%, transparent); border: 1px solid var(--glass-hairline); border-radius: 12px; overflow: hidden; }
   .spec .r { display: flex; gap: 16px; padding: 12px 20px; border-top: 1px solid var(--hairline); flex-wrap: wrap; }
   .spec .r:first-child { border-top: 0; }
   .spec .k {

@@ -145,9 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   /* ---------- STAGE (animated linear fill) ---------- */
   .stage {
     width: 100%; max-width: 520px;
-    background: var(--stage); border-radius: 22px; padding: 22px 22px 18px;
-    box-shadow: 0 40px 80px -40px rgba(8,10,20,.55);
-    border: 1px solid var(--stage-line);
+    border-radius: 22px; padding: 22px 22px 18px;
   }
   .stage-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
   .stage-chip { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #8E8E93; }
@@ -157,14 +155,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .seq { position: relative; }
   .seq-track { position: relative; display: grid; grid-template-columns: repeat(16, 1fr); gap: 5px; height: 188px; align-items: end; padding-bottom: 2px; }
   .seq-track .step { position: relative; height: 100%; display: flex; align-items: flex-end; justify-content: center; border: 0; padding: 0; }
-  .seq-track .lane { position: absolute; inset: 0; background: #131419; border-radius: 6px; border: 1px solid #202229; }
-  .seq-track .step.beat .lane { border-color: #2C2F39; }
-  .seq-track .bar { position: relative; width: 100%; border-radius: 5px; display: flex; align-items: flex-start; justify-content: center; padding-top: 5px; font-family: var(--mono); font-size: 11px; font-weight: 700; color: #06080D; }
+  .seq-track .lane { position: absolute; inset: 0; background: rgba(255,255,255,.025); border-radius: 6px; border: 1px solid rgba(255,255,255,.05); }
+  .seq-track .step.beat .lane { border-color: rgba(255,255,255,.1); }
+  .seq-track .bar { position: relative; width: 100%; border-radius: 5px; display: flex; align-items: flex-start; justify-content: center; padding-top: 5px; font-family: var(--mono); font-size: 11px; font-weight: 700; color: #06080D; overflow: hidden; }
+  /* Specular sheen + hairline rim over each bar (the bar colour itself is set inline by JS). */
+  .seq-track .bar::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,.34), rgba(255,255,255,0) 46%); box-shadow: inset 0 0 0 1px rgba(255,255,255,.2); }
   .seq-track .bar.ghost { color: rgba(255,255,255,.78); }
   .seq-beats { display: grid; grid-template-columns: repeat(16, 1fr); gap: 5px; margin-top: 9px; }
   .seq-beats span { text-align: center; font-family: var(--mono); font-size: 10px; color: #5A5D68; }
   .seq-beats span.on { color: #C3C6CF; }
-  .playhead { position: absolute; top: -3px; bottom: -3px; width: 2px; left: 0; background: #fff; box-shadow: 0 0 12px 2px rgba(255,255,255,.75); border-radius: 2px; will-change: left; animation: sweep 2.8s linear infinite; }
+  .playhead { position: absolute; top: -3px; bottom: -3px; width: 2px; left: 0; background: var(--green); box-shadow: 0 0 12px 2px color-mix(in srgb, var(--green) 75%, transparent); border-radius: 2px; will-change: left; animation: sweep 2.8s linear infinite; }
   @keyframes sweep { from { left: 0; } to { left: calc(100% - 2px); } }
   .stage-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 18px; padding-top: 14px; border-top: 1px solid #2A2C33; }
   .stage-legend span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #9B9EA8; display: inline-flex; align-items: center; gap: 7px; }
@@ -277,7 +277,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </ul>
         </div>
         <div class="feature-media">
-          <div class="stage" aria-hidden="true">
+          <div class="stage glass-stage" aria-hidden="true">
             <div class="stage-bar">
               <span data-i18n="index.linear_fill_4_4_16th" class="stage-chip">Linear fill · <b>4/4</b> · 16th</span>
               <span data-i18n="index.120_bpm" class="stage-bpm"><i class="pulse"></i>120 BPM</span>
