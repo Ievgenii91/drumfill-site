@@ -28,14 +28,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="app.drumfillgenerator_for_iphone_ipad_fe">Drum Chops for iPhone &amp; iPad — features, pricing &amp; requirements</title>
-<meta data-i18n-attr="content:app.everything_drumfillgenerator_does_on" name="description" content="Everything Drum Chops does on iPhone and iPad: the linear fill generator, MIDI rhythmic tracking, 200 curated fills, what's free vs Premium, and what you need to run it.">
+<meta data-i18n-attr="content:app.everything_drumfillgenerator_does_on_v2" name="description" content="Everything Drum Chops does on iPhone and iPad: the linear fill generator, MIDI rhythmic tracking, what's free vs Premium, and what you need to run it.">
 <meta name="apple-itunes-app" content="app-id=6785203081">
 <link rel="canonical" href="https://drumfillgenerator.com/app.html">
 <meta name="theme-color" content="#0B0D12">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta data-i18n-attr="content:app.drumfillgenerator_for_iphone_ipad_fe" property="og:title" content="Drum Chops for iPhone &amp; iPad — features, pricing &amp; requirements">
-<meta data-i18n-attr="content:app.an_ergonomic_linear_fill_generator" property="og:description" content="An ergonomic linear fill generator that solves the sticking for your kit, and MIDI timing feedback scored to the millisecond. 200 curated fills along for the ride. iPhone and iPad.">
+<meta data-i18n-attr="content:common.og_description_v2" property="og:description" content="An ergonomic linear fill generator that solves the sticking for your kit, and MIDI timing feedback scored to the millisecond. Free on iPhone and iPad.">
 <meta property="og:url" content="https://drumfillgenerator.com/app.html">
 <meta property="og:image" content="https://drumfillgenerator.com/og-image.png">
 <meta property="og:image:type" content="image/png">
@@ -73,15 +73,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
   /* ---------- REQUIREMENTS ---------- */
-  .spec { border: 1px solid var(--hairline); border-radius: var(--r); overflow: hidden; background: var(--surface); }
-  .spec .r { display: flex; gap: 16px; padding: 14px 22px; border-top: 1px solid var(--hairline); flex-wrap: wrap; }
+  .spec { border-radius: var(--r); overflow: hidden; }
+  .spec .r { display: flex; gap: 16px; padding: 14px 22px; border-top: 1px solid var(--glass-hairline); flex-wrap: wrap; }
   .spec .r:first-child { border-top: 0; }
   .spec .k { font-weight: 650; font-size: 15px; min-width: 200px; }
   .spec .v { color: var(--body); flex: 1; min-width: 220px; }
 
   .closer-wrap { padding-top: 0; }
   .cta-band .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
-  .cta-band .btn-ghost { color: #fff; border-color: #3A3D47; }
+  .cta-band .btn-ghost {
+    color: #fff; box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+    background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.03)) padding-box, linear-gradient(135deg, rgba(255,255,255,.4), rgba(255,255,255,.08)) border-box;
+  }
 </style>
 
 <!-- NAV -->
@@ -119,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             Get it on the App Store
           </a>
         </div>
-        <p data-i18n="app.generator_tracking_and_all_200" class="fine">Generator, tracking and all 200 fills are free · No account · No ads · Works offline</p>
+        <p data-i18n="app.generator_and_tracking_are_free" class="fine">Generator and tracking are free · No account · No ads · Works offline</p>
       </div>
       <div class="hero-media">
         <div class="phone-glow">
@@ -134,7 +137,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cell"><div class="n">∞</div><div data-i18n="common.fills_the_generator_can_write" class="l">Fills the generator can write</div></div>
       <div class="cell"><div class="n">±25<small>ms</small></div><div data-i18n="common.window_for_an_on_time" class="l">Window for an on-time hit</div></div>
       <div class="cell"><div class="n">10</div><div data-i18n="common.languages" class="l">Languages</div></div>
-      <div class="cell"><div class="n">200</div><div data-i18n="common.curated_fills_all_free" class="l">Curated fills, all free</div></div>
+      <div class="cell"><div class="n">8</div><div data-i18n="common.note_grids_from_1_4_to_1_32" class="l">Note grids, from 1/4 to 1/32</div></div>
     </div>
   </div>
 </header>
@@ -144,7 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="section-head">
       <p data-i18n="common.what_it_does" class="eyebrow">What it does</p>
-      <h2 data-i18n="common.two_engines_and_a_library">Two engines and a library, in one practice app.</h2>
+      <h2 data-i18n="common.two_engines_one_practice_app">Two engines, one practice app.</h2>
       <p data-i18n="app.one_writes_fills_your_hands">One writes fills your hands can play. The other tells you, to the millisecond, whether you played them.</p>
     </div>
 
@@ -153,7 +156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="feature-copy">
           <span data-i18n="common.the_generator" class="tag" style="color:var(--snare)"><i class="dot" style="background:var(--snare)"></i>The generator</span>
           <h3 data-i18n="app.never_the_same_fill_twice">Never the same fill twice.</h3>
-          <p data-i18n="app.set_the_grid_and_the">Set the grid and the engine writes a fill to it — 4/4 or 3/4, quarter notes to triplets, one bar free or up to four with Premium. Pick more than one subdivision and it changes resolution beat by beat. Press again for another; it never runs dry.</p>
+          <p data-i18n="app.set_the_grid_and_the_v2">Set the grid and the engine writes a fill to it — 4/4 or 3/4, quarter notes to 32nds and septuplets, one bar free or up to four with Premium. One-bar 4/4 fills are planned as a whole phrase, not hit by hit. Press again for another; it never runs dry.</p>
           <ul class="checks">
             <li data-i18n="app.strictly_linear_one_drum_per">Strictly linear: one drum per step, never two at once</li>
             <li data-i18n="app.sticking_a_drummer_would_write">Sticking a drummer would write — no crossed hands, no lunges across the kit</li>
@@ -209,7 +212,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="minis">
       <div class="mini">
         <div class="ico" style="background:color-mix(in srgb,var(--tom) 16%,transparent)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4" y="2" width="12" height="16" rx="3" stroke="#A352E8" stroke-width="1.7"/><path d="M8 7h4M8 10.5h4M8 14h2" stroke="#A352E8" stroke-width="1.7" stroke-linecap="round"/></svg></div>
-        <div><h3 data-i18n="app.200_curated_fills">200 curated fills</h3><p data-i18n="app.hand_transcribed_across_genres_all">Hand-transcribed across genres, all free, and updated over the air without an app release.</p></div>
+        <div><h3 data-i18n="app.whole_phrase_engine">Whole-phrase engine</h3><p data-i18n="app.every_fill_is_planned_as">One-bar 4/4 fills are planned as a phrase — groupings, kick placement, orchestration and accents — then checked for comfort and flow.</p></div>
       </div>
       <div class="mini">
         <div class="ico" style="background:color-mix(in srgb,var(--kick) 16%,transparent)"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3l5 13H5z" stroke="#2E7DF5" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 7v5" stroke="#2E7DF5" stroke-width="1.7" stroke-linecap="round"/></svg></div>
@@ -251,7 +254,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="step">
         <div class="n">02</div>
         <h3 data-i18n="app.let_it_write_one">Let it write one</h3>
-        <p data-i18n="app.get_a_linear_fill_with">Get a linear fill with the sticking worked out. Every other press pulls from the curated library.</p>
+        <p data-i18n="index.get_a_fill_with_the">Get a fill with the sticking already worked out. Don't like it? Press again.</p>
       </div>
       <div class="step">
         <div class="n">03</div>
@@ -286,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li data-i18n="app.all_six_drum_voices_both">All six drum voices, both time signatures, every subdivision</li>
           <li data-i18n="app.colour_coded_grid_view_with">Colour-coded grid view with R / L / K sticking</li>
           <li data-i18n="app.metronome_transport_tap_to_cue">Metronome, transport, tap-to-cue, per-drum volume</li>
-          <li data-i18n="common.all_200_curated_fills">All 200 curated fills</li>
+          <li data-i18n="common.every_subdivision_quarter_to_32nd">Every subdivision: quarter notes to 32nds, triplets to septuplets</li>
           <li data-i18n="app.favorites_and_all_ten_languages">Favorites and all ten languages</li>
         </ul>
       </div>
@@ -314,9 +317,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="spec">
       <div class="r"><div data-i18n="common.platform" class="k">Platform</div><div data-i18n="app.iphone_and_ipad_ios_26" class="v">iPhone and iPad, iOS 26.5 or later</div></div>
       <div class="r"><div data-i18n="common.account" class="k">Account</div><div data-i18n="app.none_the_app_opens_straight" class="v">None — the app opens straight into practice</div></div>
-      <div class="r"><div data-i18n="common.network" class="k">Network</div><div data-i18n="app.optional_only_used_to_refresh" class="v">Optional; only used to refresh the fill library and load the subscription screen</div></div>
+      <div class="r"><div data-i18n="common.network" class="k">Network</div><div data-i18n="common.network_background_updates_only" class="v">Optional; only used for background content updates and the subscription screen</div></div>
       <div class="r"><div data-i18n="common.rhythmic_tracking_2" class="k">Rhythmic tracking</div><div data-i18n="app.a_usb_c_midi_drum" class="v">A USB-C MIDI drum kit or pad, on one-bar fills</div></div>
-      <div class="r"><div data-i18n="app.microphone_tracking" class="k">Microphone tracking</div><div data-i18n="app.in_development_shown_as_soon" class="v">In development — shown as "Soon" and not selectable yet</div></div>
+      <div class="r"><div data-i18n="app.microphone_tracking" class="k">Microphone tracking</div><div data-i18n="common.in_development_not_available" class="v">In development — not available in this version</div></div>
       <div class="r"><div data-i18n="common.languages" class="k">Languages</div><div data-i18n="app.english_ukrainian_german_spanish_fre" class="v">English, Ukrainian, German, Spanish, French, Portuguese, Polish, Czech, Japanese, Simplified Chinese</div></div>
     </div>
   </div>

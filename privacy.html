@@ -50,8 +50,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   /* ---------- PROSE ---------- */
   .prose {
-    background: var(--surface);
-    border: 1px solid var(--hairline);
     border-radius: var(--r);
     padding: 40px clamp(24px, 4vw, 52px);
     margin: 0 0 72px;
@@ -76,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .prose a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
   .contact-card {
     margin-top: 18px; padding: 20px 22px;
-    background: var(--ground); border: 1px solid var(--hairline); border-radius: 12px;
+    background: color-mix(in srgb, var(--surface) 50%, transparent); border: 1px solid var(--glass-hairline); border-radius: 12px;
   }
   .contact-card .row { font-family: var(--mono); font-size: 14px; margin: 8px 0; color: var(--body); }
   .contact-card .row b { color: var(--ink); }
