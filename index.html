@@ -28,13 +28,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="index.drumfillgenerator_a_drum_fill_engine">Drum Chops — a drum fill engine that fits your hands</title>
-<meta data-i18n-attr="content:index.a_free_ios_drum_fill" name="description" content="A free iOS drum-fill engine and rhythm trainer. An ergonomic linear generator solves the sticking for your kit, MIDI tracking scores every hit to the millisecond, and 200 curated fills come along free. Grid or classical staff, any tempo, 10 languages.">
+<meta data-i18n-attr="content:index.a_free_ios_drum_fill_v2" name="description" content="A free iOS drum-fill engine and rhythm trainer. An ergonomic linear generator solves the sticking for your kit, and MIDI tracking scores every hit to the millisecond. Grid or classical staff, any tempo, 10 languages.">
 <meta name="apple-itunes-app" content="app-id=6785203081">
 <link rel="canonical" href="https://drumfillgenerator.com/">
 <meta name="theme-color" content="#0B0D12">
 <meta property="og:type" content="website">
 <meta data-i18n-attr="content:index.drumfillgenerator_a_drum_fill_engine" property="og:title" content="Drum Chops — a drum fill engine that fits your hands">
-<meta data-i18n-attr="content:index.an_ergonomic_linear_fill_generator" property="og:description" content="An ergonomic linear fill generator that solves the sticking for your kit, and MIDI timing feedback scored to the millisecond. 200 curated fills along for the ride. Coming soon to iOS.">
+<meta data-i18n-attr="content:common.og_description_v2" property="og:description" content="An ergonomic linear fill generator that solves the sticking for your kit, and MIDI timing feedback scored to the millisecond. Free on iPhone and iPad.">
 <meta property="og:url" content="https://drumfillgenerator.com/">
 <meta property="og:image" content="https://drumfillgenerator.com/og-image.png">
 <meta property="og:image:type" content="image/png">
@@ -42,14 +42,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta data-i18n-attr="content:index.drumfillgenerator_a_drum_fill_engine" name="twitter:title" content="Drum Chops — a drum fill engine that fits your hands">
-<meta data-i18n-attr="content:index.an_ergonomic_linear_fill_generator" name="twitter:description" content="An ergonomic linear fill generator that solves the sticking for your kit, and MIDI timing feedback scored to the millisecond. 200 curated fills along for the ride. Coming soon to iOS.">
+<meta data-i18n-attr="content:common.og_description_v2" name="twitter:description" content="An ergonomic linear fill generator that solves the sticking for your kit, and MIDI timing feedback scored to the millisecond. Free on iPhone and iPad.">
 <meta name="twitter:image" content="https://drumfillgenerator.com/og-image.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Drum Chops",
-  "description": "A free iOS drum-fill engine and rhythm trainer: an ergonomic linear fill generator and MIDI timing feedback, plus 200 curated fills.",
+  "description": "A free iOS drum-fill engine and rhythm trainer: an ergonomic linear fill generator and MIDI timing feedback.",
   "applicationCategory": "MusicApplication",
   "operatingSystem": "iOS",
   "alternateName": "DrumFillGenerator",
@@ -87,7 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Can it listen through the microphone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not yet. Microphone tracking for acoustic kits is in development and shows as \"Soon\" in the app."
+        "text": "Not yet. Tracking works with a MIDI e-kit or pad for now; microphone tracking for acoustic kits is still in development."
       }
     },
     {
@@ -95,7 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "Does it work on iPad? Offline?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes to both. It runs on iPhone and iPad with iOS 26.5 or later, and everything works without a connection. The network is only used to refresh the fill library and show the subscription screen."
+        "text": "Yes to both. It runs on iPhone and iPad with iOS 26.5 or later, and everything works without a connection. The network is only used for background content updates and the subscription screen."
       }
     },
     {
@@ -103,7 +103,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "How much does it cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The app is free, including the generator, tracking and all 200 curated fills. An optional Premium subscription unlocks multi-bar fills, sheet music and groove context."
+        "text": "The app is free, including the generator and tracking. An optional Premium subscription unlocks multi-bar fills, sheet music and groove context."
       }
     },
     {
@@ -170,23 +170,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .stage-legend span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #9B9EA8; display: inline-flex; align-items: center; gap: 7px; }
   @media (max-width: 480px) { .seq-track { height: 140px; gap: 3px; } .seq-beats { gap: 3px; } .seq-track .bar { font-size: 9px; } }
 
-  /* ---------- LIBRARY VISUAL ---------- */
-  .library {
-    width: 100%; max-width: 520px; background: var(--stage); color: #fff; border: 1px solid var(--stage-line);
-    border-radius: 22px; padding: 22px; box-shadow: 0 40px 80px -40px rgba(8,10,20,.55);
-  }
-  .library .lib-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
-  .library .lib-head b { font-size: 15px; }
-  .library .lib-head span { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; color: #8E8E93; text-transform: uppercase; }
-  .genres { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
-  .genres span { font-size: 12.5px; padding: 5px 10px; border-radius: 999px; background: #1A1C23; color: #C9CDD8; border: 1px solid #262933; }
-  .genres span em { font-style: normal; color: #8E8E93; margin-left: 4px; }
-  .fill-row { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid #22252D; }
-  .fill-row .sw { width: 34px; height: 34px; border-radius: 9px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; padding: 6px; align-items: end; background: #15171E; }
-  .fill-row .sw i { display: block; border-radius: 1.5px; }
-  .fill-row b { font-size: 15px; font-weight: 650; display: block; }
-  .fill-row small { font-size: 13px; color: #8E95A8; }
-  .fill-row .bpm { font-family: var(--mono); font-size: 12px; color: #8E8E93; }
 
   /* ---------- HOW (with phone) ---------- */
   .how { display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; align-items: center; }
@@ -276,7 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="section-head reveal">
       <p data-i18n="common.what_it_does" class="eyebrow">What it does</p>
-      <h2 data-i18n="common.two_engines_and_a_library">Two engines and a library, in one practice app.</h2>
+      <h2 data-i18n="common.two_engines_one_practice_app">Two engines, one practice app.</h2>
     </div>
 
     <div class="feature-rows">
@@ -288,6 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p data-i18n="index.press_generate_and_get_a">Press Generate and get a brand-new linear fill — one drum at a time, in the classic linear style. The app also works out the sticking, so you never end up with crossed hands or a lunge across the kit.</p>
           <ul class="checks">
             <li data-i18n="index.unlimited_fills_written_to_your">Unlimited fills, written to your time signature and subdivision — multi-bar phrases <span class="pro-chip">Premium</span></li>
+            <li data-i18n="index.built_as_a_whole_phrase">One-bar 4/4 fills are built as a whole phrase — groupings, kick, toms and accents — and checked for flow</li>
             <li data-i18n="index.r_l_k_sticking_under">R / L / K sticking under every note, ready to play</li>
             <li data-i18n="index.loops_cleanly_no_stutter_when">Loops cleanly — no stutter when the bar comes round</li>
           </ul>
@@ -341,31 +325,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <!-- Library -->
-      <div class="feature-row reveal">
-        <div class="feature-copy">
-          <span data-i18n="index.the_fill_library" class="tag" style="color:var(--tom)"><i class="dot" style="background:var(--tom)"></i>The fill library</span>
-          <h3 data-i18n="index.200_hand_picked_fills_free">200 hand-picked fills, free.</h3>
-          <p data-i18n="index.when_you_want_someone_else">When you want someone else's ideas, there's a library of fills transcribed by hand across rock, metal, funk, Latin, fusion, gospel and more. Generate alternates between new fills and the library, so you get both.</p>
-          <ul class="checks">
-            <li data-i18n="index.4_4_and_3_4">4/4 and 3/4, from quarter notes to triplets</li>
-            <li data-i18n="index.includes_fills_that_switch_subdivisi">Includes fills that switch subdivision mid-bar</li>
-            <li data-i18n="index.new_fills_arrive_over_the">New fills arrive over the air — no app update needed</li>
-          </ul>
-        </div>
-        <div class="feature-media">
-          <div class="library" aria-hidden="true">
-            <div class="lib-head"><b data-i18n="index.curated_fills">Curated fills</b><span data-i18n="index.200_total">200 total</span></div>
-            <div class="genres">
-              <span data-i18n="index.rock29">Rock<em>29</em></span><span data-i18n="index.metal23">Metal<em>23</em></span><span data-i18n="index.funk22">Funk<em>22</em></span><span data-i18n="index.latin16">Latin<em>16</em></span><span data-i18n="index.fusion14">Fusion<em>14</em></span><span data-i18n="index.hip_hop11">Hip-hop<em>11</em></span><span data-i18n="index.gospel9">Gospel<em>9</em></span><span data-i18n="index.jazz6">Jazz<em>6</em></span><span data-i18n="index.more">+ more</span>
-            </div>
-            <div class="fill-row"><span class="sw"><i style="height:60%;background:var(--snare)"></i><i style="height:90%;background:var(--tom)"></i><i style="height:45%;background:var(--snare)"></i><i style="height:75%;background:var(--kick)"></i></span><div><b>Half-Bar Funk Drop</b><small>Funk · accelerating tom spill</small></div><span class="bpm">108</span></div>
-            <div class="fill-row"><span class="sw"><i style="height:80%;background:var(--tom)"></i><i style="height:50%;background:var(--kick)"></i><i style="height:95%;background:var(--tom)"></i><i style="height:60%;background:var(--snare)"></i></span><div><b>Afro Six-Eight Feel</b><small>Latin · tom triplets over kick</small></div><span class="bpm">115</span></div>
-            <div class="fill-row"><span class="sw"><i style="height:50%;background:var(--snare)"></i><i style="height:70%;background:var(--snare)"></i><i style="height:85%;background:var(--snare)"></i><i style="height:100%;background:var(--kick)"></i></span><div><b>Trap Snare Roll</b><small>Hip-hop · accelerating snare burst</small></div><span class="bpm">92</span></div>
-            <div class="fill-row"><span class="sw"><i style="height:65%;background:var(--snare)"></i><i style="height:95%;background:var(--tom)"></i><i style="height:55%;background:var(--snare)"></i><i style="height:80%;background:var(--tom)"></i></span><div><b>Fusion Tom Melody</b><small>Fusion · melodic toms, ghosted snare</small></div><span class="bpm">147</span></div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -453,7 +412,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="stats reveal">
       <div class="cell"><div class="n">∞</div><div data-i18n="common.fills_the_generator_can_write" class="l">Fills the generator can write</div></div>
       <div class="cell"><div class="n">±25<small>ms</small></div><div data-i18n="common.window_for_an_on_time" class="l">Window for an on-time hit</div></div>
-      <div class="cell"><div class="n">200</div><div data-i18n="common.curated_fills_all_free" class="l">Curated fills, all free</div></div>
+      <div class="cell"><div class="n">8</div><div data-i18n="common.note_grids_from_1_4_to_1_32" class="l">Note grids, from 1/4 to 1/32</div></div>
       <div class="cell"><div class="n">6</div><div data-i18n="index.drum_voices" class="l">Drum voices</div></div>
       <div class="cell"><div class="n">4</div><div data-i18n="index.playback_feels" class="l">Playback feels</div></div>
       <div class="cell"><div class="n">10</div><div data-i18n="common.languages" class="l">Languages</div></div>
@@ -467,7 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="section-head reveal">
       <p data-i18n="common.pricing" class="eyebrow">Pricing</p>
       <h2 data-i18n="index.free_to_practise_premium_for">Free to practise. Premium for more range.</h2>
-      <p data-i18n="index.the_generator_tracking_and_all">The generator, tracking and all 200 fills are free — nothing is time-limited. Premium adds longer phrases and sheet music.</p>
+      <p data-i18n="index.the_generator_and_tracking_are_free">The generator and tracking are free — nothing is time-limited. Premium adds longer phrases and sheet music.</p>
     </div>
     <div class="tiers reveal">
       <div class="tier">
@@ -477,7 +436,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul>
           <li data-i18n="index.unlimited_one_bar_fills_from"><b>Unlimited one-bar fills</b> from the generator</li>
           <li data-i18n="index.rhythmic_tracking_with_a_midi"><b>Rhythmic tracking</b> with a MIDI kit</li>
-          <li data-i18n="common.all_200_curated_fills">All 200 curated fills</li>
+          <li data-i18n="common.every_subdivision_quarter_to_32nd">Every subdivision: quarter notes to 32nds, triplets to septuplets</li>
           <li data-i18n="index.colour_coded_grid_with_r">Colour-coded grid with R / L / K sticking</li>
           <li data-i18n="index.metronome_playback_feel_favorites_10">Metronome, playback feel, favorites, 10 languages</li>
         </ul>
@@ -515,15 +474,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </details>
       <details>
         <summary data-i18n="index.can_it_listen_through_the">Can it listen through the microphone?</summary>
-        <div class="answer"><p data-i18n="index.not_yet_microphone_tracking_for">Not yet. Microphone tracking for acoustic kits is in development and shows as "Soon" in the app.</p></div>
+        <div class="answer"><p data-i18n="index.not_yet_tracking_works_with_midi">Not yet. Tracking works with a MIDI e-kit or pad for now; microphone tracking for acoustic kits is still in development.</p></div>
       </details>
       <details>
         <summary data-i18n="index.does_it_work_on_ipad">Does it work on iPad? Offline?</summary>
-        <div class="answer"><p data-i18n="index.yes_to_both_it_runs">Yes to both. It runs on iPhone and iPad with iOS 26.5 or later, and everything works without a connection. The network is only used to refresh the fill library and show the subscription screen.</p></div>
+        <div class="answer"><p data-i18n="index.yes_to_both_it_runs_v2">Yes to both. It runs on iPhone and iPad with iOS 26.5 or later, and everything works without a connection. The network is only used for background content updates and the subscription screen.</p></div>
       </details>
       <details>
         <summary data-i18n="index.how_much_does_it_cost">How much does it cost?</summary>
-        <div class="answer"><p data-i18n="index.the_app_is_free_including">The app is free, including the generator, tracking and all 200 curated fills. An optional Premium subscription unlocks multi-bar fills, sheet music and groove context.</p></div>
+        <div class="answer"><p data-i18n="index.the_app_is_free_including_v2">The app is free, including the generator and tracking. An optional Premium subscription unlocks multi-bar fills, sheet music and groove context.</p></div>
       </details>
       <details>
         <summary data-i18n="index.where_can_i_get_it">Where can I get it?</summary>
@@ -541,7 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div style="position:relative">
         <p data-i18n="index.free_on_the_app_store" class="eyebrow" style="color:#8E8E93">Free on the App Store</p>
         <h2 data-i18n="index.your_next_fill_is_one" style="margin-top:14px">Your next fill is one tap away.</h2>
-        <p data-i18n="index.download_drum_chops_free_the">Download Drum Chops free — the generator, tracking and all 200 curated fills are included. No account, no ads.</p>
+        <p data-i18n="index.download_drum_chops_free_the_v2">Download Drum Chops free — the generator and tracking are included. No account, no ads.</p>
         <div class="store-cta">
           <a data-i18n="index.download_on_the_app_store" class="btn btn-primary js-store-cta" href="https://apps.apple.com/app/drum-chops/id6785203081">
             <svg width="16" height="19" viewBox="0 0 17 20" fill="currentColor" aria-hidden="true"><path d="M14.1 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .7 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.2 1.2-2.5 1.2-2.5 0-.1-2.3-.9-2.3-3.5zM11.9 3.8c.6-.8 1-1.8.9-2.9-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-.9 2.8 1 .1 2-.5 2.7-1.3z"/></svg>
